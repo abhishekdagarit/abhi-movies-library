@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080a0f">
+  <meta name="theme-color" content="#141414">
   <title>Abhi's Movies &amp; Series Library</title>
   <style>
     :root {
       color-scheme: dark;
-      --bg: #080a0f;
+      --bg: #141414;
       --panel: rgba(255, 255, 255, .055);
       --panel-strong: rgba(255, 255, 255, .085);
-      --line: rgba(255, 255, 255, .105);
-      --text: #f5f4f1;
-      --muted: #9b9ba4;
-      --subtle: #666974;
-      --accent: #f5bf63;
-      --accent-dark: #241b0e;
+      --line: rgba(255, 255, 255, .12);
+      --text: #f5f5f1;
+      --muted: #b3b3b3;
+      --subtle: #737373;
+      --accent: #e50914;
+      --accent-dark: #5c080d;
       --radius: 20px;
     }
 
@@ -30,7 +30,7 @@
         radial-gradient(ellipse at 96% 15%, rgba(108, 67, 39, .16), transparent 30rem),
         var(--bg);
       color: var(--text);
-      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
     button, input, select { font: inherit; }
@@ -42,7 +42,7 @@
     .shell { width: min(1480px, 100%); margin: 0 auto; padding: 24px clamp(16px, 4vw, 60px) 56px; }
     .topbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
     .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--text); text-decoration: none; }
-    .brand-mark { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid rgba(245,191,99,.42); border-radius: 12px; background: linear-gradient(145deg, rgba(245,191,99,.16), rgba(245,191,99,.035)); color: var(--accent); }
+    .brand-mark { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); border-radius: 12px; background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent); }
     .brand-name { font-size: 15px; font-weight: 700; letter-spacing: -.035em; }
     .brand-caption { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
     .topbar-end { display: flex; align-items: center; gap: 12px; }
@@ -90,21 +90,21 @@
     .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 21px 16px; }
     .movie-card { min-width: 0; cursor: pointer; outline: none; }
     .poster { position: relative; aspect-ratio: 2 / 2.85; overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; background: linear-gradient(150deg, #30343a, #17191d 70%); box-shadow: 0 12px 28px rgba(0,0,0,.24); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-    .movie-card:hover .poster, .movie-card:focus-visible .poster { transform: translateY(-5px) scale(1.015); border-color: rgba(245,191,99,.42); box-shadow: 0 20px 36px rgba(0,0,0,.38); }
+    .movie-card:hover .poster, .movie-card:focus-visible .poster { transform: translateY(-5px) scale(1.015); border-color: color-mix(in srgb, var(--accent) 45%, transparent); box-shadow: 0 20px 36px rgba(0,0,0,.38); }
     .poster img { display: block; width: 100%; height: 100%; object-fit: contain; background: #1a1c20; }
-    .poster-fallback { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 17px; overflow: hidden; background: radial-gradient(ellipse at 50% 22%, rgba(245,191,99,.2), transparent 42%), linear-gradient(145deg, #343944, #121419 75%); text-align: center; }
+    .poster-fallback { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 17px; overflow: hidden; background: radial-gradient(ellipse at 50% 22%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 42%), linear-gradient(145deg, #343944, #121419 75%); text-align: center; }
     .poster-fallback[hidden] { display: none; }
-    .fallback-mark { margin-bottom: 15px; color: rgba(245,191,99,.82); font-size: 28px; }
+    .fallback-mark { margin-bottom: 15px; color: var(--accent); font-size: 28px; }
     .fallback-title { font-family: Georgia, serif; font-size: clamp(15px, 2vw, 21px); font-weight: 700; line-height: 1.15; text-wrap: balance; }
     .poster-shade { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(0,0,0,.56)); pointer-events: none; }
     .poster-badge { position: absolute; z-index: 1; top: 9px; left: 9px; max-width: calc(100% - 18px); padding: 5px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 100px; background: rgba(9,10,13,.66); color: rgba(255,255,255,.92); font-size: 8px; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; backdrop-filter: blur(10px); }
-    .movie-card[data-status="watched"] .poster-badge { border-color: rgba(245,191,99,.35); color: #ffdb9d; }
+    .movie-card[data-status="watched"] .poster-badge { border-color: color-mix(in srgb, var(--accent) 40%, transparent); color: #fff; }
     .card-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 10px 2px 0; }
     .card-title { margin: 0; overflow: hidden; color: #f0efec; font-size: 12px; font-weight: 650; letter-spacing: -.01em; line-height: 1.35; text-overflow: ellipsis; }
     .card-subtitle { margin: 4px 0 0; overflow: hidden; color: #858791; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
     .card-kind { flex: 0 0 auto; margin-top: 1px; color: #757781; font-size: 8px; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
     .empty-state { grid-column: 1 / -1; display: grid; min-height: 245px; place-items: center; padding: 28px; border: 1px dashed rgba(255,255,255,.15); border-radius: 20px; background: rgba(255,255,255,.025); text-align: center; }
-    .empty-icon { display: grid; width: 50px; height: 50px; margin: 0 auto 14px; place-items: center; border: 1px solid rgba(245,191,99,.24); border-radius: 16px; background: rgba(245,191,99,.08); color: var(--accent); }
+    .empty-icon { display: grid; width: 50px; height: 50px; margin: 0 auto 14px; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); border-radius: 16px; background: color-mix(in srgb, var(--accent) 8%, transparent); color: var(--accent); }
     .empty-state h3 { margin: 0; font-size: 16px; }
     .empty-state p { max-width: 360px; margin: 8px 0 17px; color: var(--muted); font-size: 12px; line-height: 1.6; }
     .footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: #62646d; font-size: 10px; text-align: center; }
@@ -167,7 +167,8 @@
 
     /* Crisp, reduced-noise visual pass. */
     body {
-      background: #0b0c0f;
+      background: #141414;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     .shell {
       width: min(1440px, 100%);
@@ -181,7 +182,9 @@
       width: 36px;
       height: 36px;
       border-radius: 10px;
-      background: rgba(245,191,99,.08);
+      border-color: rgba(229,9,20,.5);
+      background: rgba(229,9,20,.1);
+      color: #e50914;
     }
     .intro {
       grid-template-columns: minmax(0, 1fr);
@@ -192,17 +195,17 @@
       padding-bottom: 18px;
       border-color: rgba(255,255,255,.1);
       border-radius: 20px;
-      background: #131519;
+      background: #181818;
       box-shadow: 0 22px 64px rgba(0,0,0,.24);
     }
     .spotlight-backdrop img {
-      opacity: .42;
+      opacity: .4;
       filter: blur(3px) saturate(.78);
       transform: scale(1.1);
       transition: opacity .45s ease, transform 7s ease;
     }
     .intro::before {
-      background: linear-gradient(90deg, rgba(11,12,15,.94) 0%, rgba(11,12,15,.78) 46%, rgba(11,12,15,.35) 100%), linear-gradient(0deg, rgba(10,11,14,.72) 0%, rgba(10,11,14,.08) 72%);
+      background: linear-gradient(90deg, rgba(20,20,20,.96) 0%, rgba(20,20,20,.84) 42%, rgba(20,20,20,.38) 100%), linear-gradient(0deg, rgba(20,20,20,.76) 0%, rgba(20,20,20,.06) 75%);
     }
     .intro-copy { max-width: 740px; transition: opacity .24s ease, transform .24s ease; }
     .intro-copy.is-switching { opacity: .35; transform: translateY(5px); }
@@ -265,7 +268,7 @@
     .genre-select { min-width: 0; }
     .filter-group { gap: 2px; padding: 3px; border-radius: 10px; }
     .filter-button { min-height: 31px; padding: 0 10px; border-radius: 7px; font-size: 10px; }
-    .filter-button[aria-pressed="true"] { background: rgba(255,255,255,.12); box-shadow: none; }
+    .filter-button[aria-pressed="true"] { background: #e50914; color: #fff; box-shadow: none; }
     .filter-row { margin-bottom: 16px; }
     .filter-row h2 { font-size: 16px; letter-spacing: -.03em; }
     .filter-row p { color: #81838b; font-size: 10px; }
@@ -279,7 +282,7 @@
     }
     .movie-card:hover .poster, .movie-card:focus-visible .poster {
       transform: translateY(-4px);
-      border-color: rgba(245,191,99,.32);
+      border-color: rgba(229,9,20,.4);
       box-shadow: 0 15px 28px rgba(0,0,0,.34);
     }
     .poster img { background: #14161a; }
@@ -290,6 +293,11 @@
       border-color: rgba(255,255,255,.13);
       font-size: 7px;
       letter-spacing: .08em;
+    }
+    .movie-card[data-status="watched"] .poster-badge {
+      border-color: rgba(229,9,20,.45);
+      background: rgba(229,9,20,.88);
+      color: #fff;
     }
     .card-meta { padding: 9px 1px 0; }
     .card-title { font-size: 11px; font-weight: 600; }
