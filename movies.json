@@ -6,8 +6,9 @@
     "genre": "Sci-Fi",
     "status": "watched",
     "year": "2014",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "description": "A team of explorers travels beyond this galaxy to discover whether mankind has a future among the stars."
+    "review": "Sample review: A huge, emotional science-fiction story with striking cosmic imagery. Its ideas about time, family, and survival make it memorable long after the credits."
   },
   {
     "id": "inception",
@@ -16,8 +17,9 @@
     "genre": "Sci-Fi",
     "status": "watched",
     "year": "2010",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
-    "description": "A skilled thief who steals secrets through dreams is offered a chance to erase his past with one impossible job."
+    "review": "Sample review: A sleek, inventive heist that turns dream logic into a playground. The layered structure rewards attention, while the action keeps the ideas moving."
   },
   {
     "id": "dune-part-two",
@@ -26,8 +28,9 @@
     "genre": "Sci-Fi",
     "status": "to-watch",
     "year": "2024",
+    "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
-    "description": "Paul Atreides joins Chani and the Fremen as he seeks justice and confronts a future only he can foresee."
+    "review": "Sample note: On the watchlist. Looking forward to the sweeping desert landscapes, political tension, and the next chapter of Paul's journey."
   },
   {
     "id": "the-dark-knight",
@@ -36,8 +39,9 @@
     "genre": "Crime",
     "status": "watched",
     "year": "2008",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-    "description": "Batman faces a dangerous new criminal force that pushes Gotham and its protector to their limits."
+    "review": "Sample review: A tense crime saga with a commanding villain and difficult moral choices. The grounded city, sharp pacing, and escalating stakes make it a standout."
   },
   {
     "id": "parasite",
@@ -46,8 +50,9 @@
     "genre": "Thriller",
     "status": "watched",
     "year": "2019",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-    "description": "A cash-strapped family finds its way into the household of a wealthy family, setting two very different worlds on a collision course."
+    "review": "Sample review: A tightly constructed story that shifts tone with precision. Its class tensions, dark humor, and unsettling turns create a film that stays with you."
   },
   {
     "id": "everything-everywhere",
@@ -56,8 +61,9 @@
     "genre": "Adventure",
     "status": "to-watch",
     "year": "2022",
+    "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
-    "description": "An exhausted laundromat owner becomes the unlikely hero of a wild multiverse-spanning adventure."
+    "review": "Sample note: On the watchlist. Expecting an imaginative, fast-moving multiverse adventure with a heartfelt family story underneath."
   },
   {
     "id": "breaking-bad",
@@ -66,8 +72,9 @@
     "genre": "Crime",
     "status": "watched",
     "year": "2008",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
-    "description": "A chemistry teacher facing a life-changing diagnosis enters the world of drug manufacturing to provide for his family."
+    "review": "Sample review: A meticulously paced character transformation, supported by a remarkable ensemble. The escalating choices make each season feel consequential."
   },
   {
     "id": "stranger-things",
@@ -76,8 +83,9 @@
     "genre": "Sci-Fi",
     "status": "watched",
     "year": "2016",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
-    "description": "When a boy vanishes, a small town uncovers secret experiments, supernatural forces, and a mysterious girl."
+    "review": "Sample review: A warm ensemble adventure with eerie mysteries, memorable friendships, and a nostalgic supernatural atmosphere. The characters are the heart of it."
   },
   {
     "id": "the-last-of-us",
@@ -86,8 +94,9 @@
     "genre": "Drama",
     "status": "to-watch",
     "year": "2023",
+    "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
-    "description": "A hardened survivor escorts a teenager across a dangerous, changed America in a story of trust and survival."
+    "review": "Sample note: On the watchlist. Interested in the character-driven journey, the post-apocalyptic setting, and the relationship at the center of the story."
   },
   {
     "id": "the-bear",
@@ -96,8 +105,9 @@
     "genre": "Drama",
     "status": "to-watch",
     "year": "2022",
+    "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-    "description": "A talented young chef returns to Chicago to run his family’s sandwich shop and bring a new team together."
+    "review": "Sample note: On the watchlist. Curious to see the high-pressure kitchen, the messy family dynamics, and how the crew comes together."
   },
   {
     "id": "sherlock",
@@ -106,8 +116,9 @@
     "genre": "Mystery",
     "status": "watched",
     "year": "2010",
+    "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg",
-    "description": "A brilliant, unconventional detective and his flatmate solve modern mysteries across London."
+    "review": "Sample review: A brisk, clever modern take on classic mysteries. The central partnership and sharp cases make the episodes especially easy to revisit."
   },
   {
     "id": "arcane",
@@ -116,7 +127,8 @@
     "genre": "Animation",
     "status": "to-watch",
     "year": "2021",
+    "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
-    "description": "Two sisters find themselves on opposite sides of a conflict between a prosperous city and its underground."
+    "review": "Sample note: On the watchlist. The distinctive animation and story of two sisters divided by a city-wide conflict make this one stand out."
   }
 ]

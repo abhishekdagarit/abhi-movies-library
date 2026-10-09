@@ -419,7 +419,6 @@
       <div class="intro-copy">
         <p class="eyebrow" id="spotlight-kicker">Watched spotlight</p>
         <h1 id="page-title">Your screen.<br> Your stories.</h1>
-        <p id="spotlight-description">A considered collection of films and series: stories watched, and stories still waiting.</p>
         <div class="spotlight-meta" id="spotlight-meta"></div>
         <div class="spotlight-actions">
           <button class="spotlight-open" id="spotlight-open" type="button">▶&nbsp; View title</button>
@@ -585,7 +584,7 @@
           const matchesType = state.type === 'all' || item.type === state.type;
           const matchesStatus = state.status === 'all' || item.status === state.status;
           const matchesGenre = state.genre === 'all' || item.genre === state.genre;
-          const matchesQuery = !query || `${item.title} ${item.genre} ${item.year || ''} ${item.description || ''}`.toLocaleLowerCase().includes(query);
+          const matchesQuery = !query || `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''}`.toLocaleLowerCase().includes(query);
           return matchesType && matchesStatus && matchesGenre && matchesQuery;
         });
       }
@@ -600,7 +599,6 @@
         if (!hasItems) {
           $('#spotlight-kicker').textContent = 'Your collection';
           $('#page-title').textContent = 'No titles in this view';
-          $('#spotlight-description').textContent = 'Try a different filter or search to find something in your collection.';
           $('#spotlight-meta').replaceChildren();
           $('#spotlight-backdrop-image').removeAttribute('src');
           picks.replaceChildren();
@@ -619,7 +617,6 @@
         copy.classList.add('is-switching');
         requestAnimationFrame(() => requestAnimationFrame(() => copy.classList.remove('is-switching')));
         $('#page-title').textContent = item.title;
-        $('#spotlight-description').textContent = item.description;
 
         const backdrop = $('#spotlight-backdrop-image');
         backdrop.style.opacity = '.08';
@@ -756,27 +753,15 @@
         title.className = 'detail-title';
         title.id = 'detail-title';
         title.textContent = item.title;
-        const metadata = document.createElement('p');
-        metadata.className = 'detail-meta';
-        metadata.textContent = item.status === 'watched' ? 'In your watched collection' : 'Saved to your watchlist';
-        const description = document.createElement('p');
-        description.className = 'glass-synopsis';
-        description.textContent = item.description || '';
         const reviewPanel = document.createElement('section');
         reviewPanel.className = 'glass-review';
-        const reviewHeader = document.createElement('div');
-        reviewHeader.className = 'glass-review-header';
-        const reviewHeading = document.createElement('h4');
-        reviewHeading.className = 'glass-review-title';
-        reviewHeading.textContent = item.status === 'watched' ? 'Few Words' : 'Few Words';
-        reviewHeader.append(reviewHeading);
         const ratingBadge = makeRatingBadge(item);
-        if (ratingBadge) reviewHeader.append(ratingBadge);
         const review = document.createElement('p');
         review.className = 'glass-review-copy';
         review.textContent = item.review || 'No review added yet.';
-        reviewPanel.append(reviewHeader, review);
-        info.append(chips, title, metadata, description, reviewPanel);
+        if (ratingBadge) reviewPanel.append(ratingBadge);
+        reviewPanel.append(review);
+        info.append(chips, title, reviewPanel);
         layout.append(poster, info);
         content.append(layout);
         openModal(detailModal);
