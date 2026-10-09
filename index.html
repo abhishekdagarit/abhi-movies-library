@@ -67,15 +67,11 @@
     .spotlight-art { position: relative; z-index: 1; justify-self: center; width: min(100%, 190px); aspect-ratio: 2 / 2.85; overflow: hidden; border: 1px solid rgba(255,255,255,.25); border-radius: 13px; background: rgba(255,255,255,.06); box-shadow: 0 20px 55px rgba(0,0,0,.5), 0 0 35px rgba(255,255,255,.08); transform: rotate(2deg); transition: transform .3s ease; }
     .spotlight-art:hover { transform: rotate(0deg) translateY(-3px); }
     .spotlight-art img { display: block; width: 100%; height: 100%; object-fit: contain; }
-    .spotlight-picks { position: relative; z-index: 1; display: flex; grid-column: 1 / -1; gap: 9px; margin-top: -4px; overflow-x: auto; padding: 3px 2px 5px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.25) transparent; }
-    .spotlight-pick { position: relative; width: 42px; height: 59px; flex: 0 0 auto; overflow: hidden; padding: 0; border: 1px solid rgba(255,255,255,.2); border-radius: 7px; background: rgba(0,0,0,.35); cursor: pointer; opacity: .68; transition: .2s ease; }
-    .spotlight-pick:hover, .spotlight-pick[aria-pressed="true"] { transform: translateY(-2px); border-color: var(--accent); opacity: 1; box-shadow: 0 0 0 2px rgba(245,191,99,.2); }
-    .spotlight-pick img { width: 100%; height: 100%; object-fit: cover; }
-    .spotlight-picks-label { align-self: center; flex: 0 0 auto; margin-right: 4px; color: rgba(255,255,255,.58); font-size: 9px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
-    .stats { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(72px, 1fr)); gap: 8px; grid-column: 1; width: min(390px, 100%); margin-top: -10px; }
-    .stat { padding: 10px 12px; border: 1px solid rgba(255,255,255,.17); border-radius: 12px; background: rgba(12,14,18,.31); backdrop-filter: blur(15px); }
-    .stat-value { display: block; font-size: 20px; font-weight: 700; letter-spacing: -.04em; }
-    .stat-label { display: block; margin-top: 4px; color: rgba(255,255,255,.64); font-size: 9px; letter-spacing: .11em; text-transform: uppercase; white-space: nowrap; }
+    .spotlight-picks { position: relative; z-index: 1; display: flex; grid-column: 1 / -1; justify-content: center; gap: 8px; margin-top: -4px; padding: 7px; }
+    .spotlight-pick { width: 7px; height: 7px; flex: 0 0 auto; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.42); cursor: pointer; transition: width .22s ease, transform .22s ease, background .22s ease; }
+    .spotlight-pick:hover { transform: scale(1.25); background: rgba(255,255,255,.82); }
+    .spotlight-pick[aria-pressed="true"] { width: 23px; border-radius: 100px; background: var(--accent); }
+    [hidden] { display: none !important; }
 
     .filters { display: grid; grid-template-columns: minmax(170px, 1fr) auto auto; align-items: center; gap: 12px; margin-bottom: 24px; padding: 12px; border: 1px solid var(--line); border-radius: 17px; background: rgba(255,255,255,.035); }
     .search-wrap { position: relative; }
@@ -140,7 +136,6 @@
       .search-wrap { grid-column: 1 / -1; }
       .genre-select { min-width: 0; }
       .intro { grid-template-columns: minmax(0, 1fr) 145px; gap: 18px; }
-      .stats { width: min(370px, 100%); min-width: 0; align-self: flex-start; }
     }
     @media (max-width: 560px) {
       .shell { padding-top: 15px; }
@@ -155,12 +150,7 @@
       .spotlight-actions { gap: 7px; margin-top: 12px; }
       .spotlight-open { min-height: 35px; padding: 0 11px; font-size: 10px; }
       .spotlight-arrow { width: 33px; height: 33px; }
-      .stats { grid-column: 1 / -1; margin-top: 3px; }
-      .spotlight-picks { gap: 7px; margin-top: 0; }
-      .spotlight-pick { width: 37px; height: 52px; }
-      .stat { padding: 10px; }
-      .stat-value { font-size: 17px; }
-      .stat-label { font-size: 8px; letter-spacing: .07em; }
+      .spotlight-picks { margin-top: 0; }
       .filters { gap: 8px; padding: 9px; }
       .filter-button { padding: 0 9px; font-size: 10px; }
       .filter-group { width: 100%; justify-content: space-around; }
@@ -204,19 +194,14 @@
         <div class="spotlight-meta" id="spotlight-meta"></div>
         <div class="spotlight-actions">
           <button class="spotlight-open" id="spotlight-open" type="button">▶&nbsp; View title</button>
-          <div class="spotlight-controls" aria-label="Featured watched titles">
+          <div class="spotlight-controls" aria-label="Featured titles">
             <button class="spotlight-arrow" id="spotlight-previous" type="button" aria-label="Previous watched title">‹</button>
             <button class="spotlight-arrow" id="spotlight-next" type="button" aria-label="Next watched title">›</button>
           </div>
         </div>
       </div>
-      <div class="spotlight-art"><img id="spotlight-poster" src="" alt="Featured watched title poster"></div>
-      <div class="stats" aria-label="Collection overview">
-        <div class="stat"><span class="stat-value" id="stat-total">0</span><span class="stat-label">In library</span></div>
-        <div class="stat"><span class="stat-value" id="stat-watched">0</span><span class="stat-label">Watched</span></div>
-        <div class="stat"><span class="stat-value" id="stat-to-watch">0</span><span class="stat-label">To watch</span></div>
-      </div>
-      <nav class="spotlight-picks" id="spotlight-picks" aria-label="Choose a watched highlight"><span class="spotlight-picks-label">Watched</span></nav>
+      <div class="spotlight-art" id="spotlight-art"><img id="spotlight-poster" src="" alt="Featured watched title poster"></div>
+      <nav class="spotlight-picks" id="spotlight-picks" aria-label="Choose a featured title"></nav>
     </section>
 
     <section class="filters" aria-label="Filter your collection">
@@ -261,28 +246,56 @@
 
   <script>
     (() => {
-      // Edit this list to update the collection. Poster artwork is loaded from TMDB's image CDN.
-      const items = [
-        { id: 'interstellar', title: 'Interstellar', type: 'movie', genre: 'Sci-Fi', status: 'watched', year: '2014', poster: 'https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg', description: 'A team of explorers travels beyond this galaxy to discover whether mankind has a future among the stars.' },
-        { id: 'inception', title: 'Inception', type: 'movie', genre: 'Sci-Fi', status: 'watched', year: '2010', poster: 'https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg', description: 'A skilled thief who steals secrets through dreams is offered a chance to erase his past with one impossible job.' },
-        { id: 'dune-part-two', title: 'Dune: Part Two', type: 'movie', genre: 'Sci-Fi', status: 'to-watch', year: '2024', poster: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg', description: 'Paul Atreides joins Chani and the Fremen as he seeks justice and confronts a future only he can foresee.' },
-        { id: 'the-dark-knight', title: 'The Dark Knight', type: 'movie', genre: 'Crime', status: 'watched', year: '2008', poster: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg', description: 'Batman faces a dangerous new criminal force that pushes Gotham and its protector to their limits.' },
-        { id: 'parasite', title: 'Parasite', type: 'movie', genre: 'Thriller', status: 'watched', year: '2019', poster: 'https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg', description: 'A cash-strapped family finds its way into the household of a wealthy family, setting two very different worlds on a collision course.' },
-        { id: 'everything-everywhere', title: 'Everything Everywhere All at Once', type: 'movie', genre: 'Adventure', status: 'to-watch', year: '2022', poster: 'https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg', description: 'An exhausted laundromat owner becomes the unlikely hero of a wild multiverse-spanning adventure.' },
-        { id: 'breaking-bad', title: 'Breaking Bad', type: 'series', genre: 'Crime', status: 'watched', year: '2008', poster: 'https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg', description: 'A chemistry teacher facing a life-changing diagnosis enters the world of drug manufacturing to provide for his family.' },
-        { id: 'stranger-things', title: 'Stranger Things', type: 'series', genre: 'Sci-Fi', status: 'watched', year: '2016', poster: 'https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg', description: 'When a boy vanishes, a small town uncovers secret experiments, supernatural forces, and a mysterious girl.' },
-        { id: 'the-last-of-us', title: 'The Last of Us', type: 'series', genre: 'Drama', status: 'to-watch', year: '2023', poster: 'https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg', description: 'A hardened survivor escorts a teenager across a dangerous, changed America in a story of trust and survival.' },
-        { id: 'the-bear', title: 'The Bear', type: 'series', genre: 'Drama', status: 'to-watch', year: '2022', poster: 'https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg', description: 'A talented young chef returns to Chicago to run his family’s sandwich shop and bring a new team together.' },
-        { id: 'sherlock', title: 'Sherlock', type: 'series', genre: 'Mystery', status: 'watched', year: '2010', poster: 'https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', description: 'A brilliant, unconventional detective and his flatmate solve modern mysteries across London.' },
-        { id: 'arcane', title: 'Arcane', type: 'series', genre: 'Animation', status: 'to-watch', year: '2021', poster: 'https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', description: 'Two sisters find themselves on opposite sides of a conflict between a prosperous city and its underground.' }
-      ];
-      const state = { items, type: 'all', status: 'all', genre: 'all', query: '' };
+      // Movie and series records live in movies.json for easy offline editing.
+      const state = { items: [], type: 'all', status: 'all', genre: 'all', query: '' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
       const detailModal = $('#detail-modal');
-      const watchedItems = items.filter(item => item.status === 'watched');
+      let spotlightItems = [];
       let spotlightIndex = 0;
       let lastFocusedElement = null;
+
+      function showLoadMessage(message) {
+        const empty = document.createElement('div');
+        empty.className = 'empty-state';
+        const content = document.createElement('div');
+        const title = document.createElement('h3');
+        title.textContent = message;
+        const description = document.createElement('p');
+        description.textContent = 'Use a local web server to preview the page, or check that movies.json is present beside index.html.';
+        content.append(title, description);
+        empty.append(content);
+        grid.replaceChildren(empty);
+      }
+
+      async function loadCollection() {
+        try {
+          const response = await fetch('./movies.json');
+          if (!response.ok) throw new Error(`Could not load movies.json (${response.status})`);
+          const collection = await response.json();
+          if (!Array.isArray(collection)) throw new Error('movies.json must contain a JSON array');
+          state.items = collection.filter(item =>
+            item && typeof item.id === 'string' && typeof item.title === 'string' &&
+            ['movie', 'series'].includes(item.type) && ['watched', 'to-watch'].includes(item.status)
+          );
+          spotlightItems = filteredItems().slice(0, 5);
+          spotlightIndex = 0;
+          if (spotlightItems.length) {
+            $('#spotlight-art').hidden = false;
+            $('#spotlight-open').hidden = false;
+            $('.spotlight-controls').hidden = false;
+          } else {
+            $('#spotlight-art').hidden = true;
+            $('#spotlight-open').hidden = true;
+            $('.spotlight-controls').hidden = true;
+            $('#spotlight-picks').hidden = true;
+          }
+          render();
+        } catch (error) {
+          console.error(error);
+          showLoadMessage('Could not load the movie library');
+        }
+      }
 
       function makePoster(title, posterUrl, className = '') {
         const wrapper = document.createElement('div');
@@ -341,10 +354,32 @@
       }
 
       function renderSpotlight() {
-        const item = watchedItems[spotlightIndex];
-        if (!item) return;
+        spotlightItems = filteredItems().slice(0, 5);
+        const picks = $('#spotlight-picks');
+        const hasItems = spotlightItems.length > 0;
+        $('#spotlight-art').hidden = !hasItems;
+        $('#spotlight-open').hidden = !hasItems;
+        $('.spotlight-controls').hidden = !hasItems;
+        picks.hidden = !hasItems;
+        if (!hasItems) {
+          $('#spotlight-kicker').textContent = 'Your collection';
+          $('#page-title').textContent = 'No titles in this view';
+          $('#spotlight-description').textContent = 'Try a different filter or search to find something in your collection.';
+          $('#spotlight-meta').replaceChildren();
+          $('#spotlight-backdrop-image').removeAttribute('src');
+          $('#spotlight-poster').removeAttribute('src');
+          picks.replaceChildren();
+          return;
+        }
 
-        $('#spotlight-kicker').textContent = `Watched spotlight · ${item.type === 'series' ? 'Series' : 'Film'}`;
+        spotlightIndex = Number.isFinite(spotlightIndex) ? spotlightIndex % spotlightItems.length : 0;
+        const item = spotlightItems[spotlightIndex];
+
+        const currentGenre = state.genre !== 'all' ? state.genre : '';
+        const currentStatus = state.status !== 'all' ? (state.status === 'watched' ? 'Watched' : 'To watch') : '';
+        const currentType = state.type !== 'all' ? (state.type === 'series' ? 'Series' : 'Movies') : '';
+        const filterLabel = [currentType, currentStatus, currentGenre].filter(Boolean).join(' · ');
+        $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
         $('#page-title').textContent = item.title;
         $('#spotlight-description').textContent = item.description;
 
@@ -357,31 +392,21 @@
 
         const meta = $('#spotlight-meta');
         meta.replaceChildren();
-        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', 'Watched'].forEach(value => {
+        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', item.status === 'watched' ? 'Watched' : 'To watch'].forEach(value => {
           const chip = document.createElement('span');
           chip.className = 'spotlight-chip';
           chip.textContent = value;
           meta.append(chip);
         });
 
-        const picks = $('#spotlight-picks');
         picks.replaceChildren();
-        const label = document.createElement('span');
-        label.className = 'spotlight-picks-label';
-        label.textContent = 'Watched';
-        picks.append(label);
-        watchedItems.forEach((watchedItem, index) => {
+        spotlightItems.forEach((spotlightItem, index) => {
           const button = document.createElement('button');
           button.type = 'button';
           button.className = 'spotlight-pick';
-          button.setAttribute('aria-label', `Feature ${watchedItem.title}`);
+          button.setAttribute('aria-label', `Show featured title ${index + 1}: ${spotlightItem.title}`);
           button.setAttribute('aria-pressed', String(index === spotlightIndex));
-          button.title = watchedItem.title;
-          const image = document.createElement('img');
-          image.src = watchedItem.poster;
-          image.alt = '';
-          image.loading = 'lazy';
-          button.append(image);
+          button.title = spotlightItem.title;
           button.addEventListener('click', () => {
             spotlightIndex = index;
             renderSpotlight();
@@ -395,10 +420,7 @@
       function render() {
         renderGenres();
         const visibleItems = filteredItems();
-        const watched = state.items.filter(item => item.status === 'watched').length;
-        $('#stat-total').textContent = state.items.length;
-        $('#stat-watched').textContent = watched;
-        $('#stat-to-watch').textContent = state.items.length - watched;
+        renderSpotlight();
         $('#top-count').textContent = `${state.items.length} ${state.items.length === 1 ? 'title' : 'titles'} in your library`;
         $('#results-count').textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'title' : 'titles'}`;
         $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.status === 'watched' ? 'Watched' : state.status === 'to-watch' ? 'To watch' : state.genre !== 'all' ? state.genre : 'Your collection';
@@ -506,14 +528,17 @@
         openModal(detailModal);
       }
 
-      renderSpotlight();
-      render();
+      grid.classList.add('is-loading');
+      showLoadMessage('Loading your collection…');
+      loadCollection().finally(() => grid.classList.remove('is-loading'));
       $('#spotlight-previous').addEventListener('click', () => {
-        spotlightIndex = (spotlightIndex - 1 + watchedItems.length) % watchedItems.length;
+        if (!spotlightItems.length) return;
+        spotlightIndex = (spotlightIndex - 1 + spotlightItems.length) % spotlightItems.length;
         renderSpotlight();
       });
       $('#spotlight-next').addEventListener('click', () => {
-        spotlightIndex = (spotlightIndex + 1) % watchedItems.length;
+        if (!spotlightItems.length) return;
+        spotlightIndex = (spotlightIndex + 1) % spotlightItems.length;
         renderSpotlight();
       });
 
