@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#141414">
+  <meta name="theme-color" content="#11151a">
   <title>Abhi's Movies &amp; Series Library</title>
   <style>
     :root {
       color-scheme: dark;
-      --bg: #141414;
-      --panel: rgba(255, 255, 255, .055);
-      --panel-strong: rgba(255, 255, 255, .085);
+      --bg: #11151a;
+      --panel: rgba(255, 255, 255, .06);
+      --panel-strong: rgba(255, 255, 255, .1);
       --line: rgba(255, 255, 255, .12);
-      --text: #f5f5f1;
-      --muted: #b3b3b3;
-      --subtle: #737373;
-      --accent: #e50914;
-      --accent-dark: #5c080d;
+      --text: #f3f5f7;
+      --muted: #a4adb7;
+      --subtle: #76818c;
+      --accent: #c6d5e2;
+      --accent-dark: #26333f;
       --radius: 20px;
     }
 
@@ -396,6 +396,116 @@
       .card-title { font-size: 10px; }
       .footer { margin-top: 32px; }
     }
+
+    /* Quiet glass redesign: cool neutrals, soft surfaces, and reduced contrast. */
+    body {
+      background:
+        radial-gradient(ellipse at 15% 0%, rgba(122, 145, 164, .12), transparent 34rem),
+        radial-gradient(ellipse at 90% 24%, rgba(93, 111, 127, .08), transparent 30rem),
+        #11151a;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .shell { width: min(1360px, 100%); padding-inline: clamp(18px, 4vw, 52px); }
+    .topbar { border-color: rgba(226,235,243,.09); }
+    .brand-mark {
+      border-color: rgba(225,235,244,.16);
+      background: rgba(225,235,244,.07);
+      color: #d8e2eb;
+      box-shadow: inset 0 1px rgba(255,255,255,.08);
+    }
+    .brand-caption { color: #9da8b2; letter-spacing: .12em; }
+    .intro {
+      min-height: 300px;
+      border: 1px solid rgba(230,239,247,.12);
+      border-radius: 22px;
+      background: rgba(255,255,255,.045);
+      box-shadow: 0 24px 64px rgba(0,0,0,.18), inset 0 1px rgba(255,255,255,.07);
+      -webkit-backdrop-filter: blur(22px) saturate(120%);
+      backdrop-filter: blur(22px) saturate(120%);
+    }
+    .spotlight-backdrop img { opacity: .25; filter: blur(8px) saturate(.55); }
+    .intro::before {
+      background: linear-gradient(90deg, rgba(17,21,26,.9), rgba(17,21,26,.62) 58%, rgba(17,21,26,.38)), linear-gradient(0deg, rgba(17,21,26,.48), transparent 78%);
+    }
+    .eyebrow { color: #bdcbd7; font-weight: 650; letter-spacing: .17em; }
+    .intro h1 { font-weight: 600; letter-spacing: -.045em; }
+    .spotlight-meta { gap: 7px; }
+    .spotlight-chip {
+      border-color: rgba(231,239,246,.15);
+      background: rgba(228,237,245,.08);
+      color: rgba(241,246,250,.86);
+    }
+    .spotlight-open {
+      background: rgba(239,244,248,.92);
+      color: #202832;
+      box-shadow: 0 4px 14px rgba(0,0,0,.12);
+    }
+    .spotlight-open:hover { background: #fff; }
+    .spotlight-arrow {
+      border-color: rgba(230,239,247,.2);
+      background: rgba(231,239,246,.08);
+      color: #edf2f6;
+    }
+    .spotlight-arrow:hover { background: rgba(231,239,246,.16); }
+    .spotlight-pick { background: rgba(231,239,246,.36); }
+    .spotlight-pick[aria-pressed="true"] { background: #d5e0e9; }
+    .filters {
+      border-color: rgba(230,239,247,.1);
+      border-radius: 16px;
+      background: rgba(255,255,255,.045);
+      box-shadow: inset 0 1px rgba(255,255,255,.045);
+      -webkit-backdrop-filter: blur(18px) saturate(125%);
+      backdrop-filter: blur(18px) saturate(125%);
+    }
+    .search-input, .genre-select { background: rgba(10,13,17,.3); }
+    .filter-group { border-color: rgba(230,239,247,.1); background: rgba(10,13,17,.23); }
+    .filter-button:hover { background: rgba(230,239,247,.08); }
+    .filter-button[aria-pressed="true"] {
+      background: rgba(219,230,239,.15);
+      color: #f2f5f7;
+      box-shadow: inset 0 1px rgba(255,255,255,.09);
+    }
+    .movie-card {
+      border-color: rgba(230,239,247,.09);
+      background: rgba(222,232,240,.045);
+      box-shadow: 0 12px 30px rgba(0,0,0,.14), inset 0 1px rgba(255,255,255,.045);
+      -webkit-backdrop-filter: blur(18px) saturate(120%);
+      backdrop-filter: blur(18px) saturate(120%);
+    }
+    .movie-card:hover, .movie-card:focus-visible {
+      border-color: rgba(230,239,247,.17);
+      background: rgba(222,232,240,.075);
+      box-shadow: 0 18px 38px rgba(0,0,0,.25), inset 0 1px rgba(255,255,255,.075);
+    }
+    .poster { border-color: rgba(233,241,247,.08); background: #171c22; box-shadow: 0 8px 22px rgba(0,0,0,.18); }
+    .movie-card:hover .poster, .movie-card:focus-visible .poster { border-color: rgba(220,232,242,.24); box-shadow: 0 12px 26px rgba(0,0,0,.25); }
+    .poster img { background: #171c22; }
+    .movie-card[data-status="watched"] .poster-badge {
+      border-color: rgba(232,240,247,.18);
+      background: rgba(18,23,29,.75);
+      color: #edf2f6;
+    }
+    .rating-badge { border-color: rgba(230,239,247,.1); background: rgba(10,13,17,.28); }
+    .rating-stars { background-image: linear-gradient(90deg, #d7c89a 0%, #d7c89a 100%) !important; }
+    .glass-review {
+      border-color: rgba(230,239,247,.12);
+      background: rgba(226,236,244,.06);
+      box-shadow: inset 0 1px rgba(255,255,255,.06), 0 12px 28px rgba(0,0,0,.15);
+    }
+    .glass-review-copy { color: #d0d8de; }
+    .dialog {
+      border-color: rgba(230,239,247,.13);
+      border-radius: 22px;
+      background: rgba(23,28,34,.93);
+      box-shadow: 0 28px 82px rgba(0,0,0,.42), inset 0 1px rgba(255,255,255,.06);
+    }
+    .dialog-close { border-color: rgba(230,239,247,.14); background: rgba(230,239,247,.07); }
+    .detail-chip { border-color: rgba(230,239,247,.12); background: rgba(230,239,247,.04); }
+    .footer { border-color: rgba(230,239,247,.08); color: #75818c; }
+    @media (max-width: 560px) {
+      .shell { padding-inline: 14px; }
+      .intro { min-height: 250px; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
   </style>
 </head>
@@ -479,6 +589,7 @@
       let spotlightItems = [];
       let spotlightIndex = 0;
       let lastFocusedElement = null;
+      let spotlightFadeTimeout = null;
 
       function showLoadMessage(message) {
         const empty = document.createElement('div');
@@ -613,7 +724,8 @@
         $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
         const copy = $('.intro-copy');
         copy.classList.add('is-switching');
-        requestAnimationFrame(() => requestAnimationFrame(() => copy.classList.remove('is-switching')));
+        window.clearTimeout(spotlightFadeTimeout);
+        spotlightFadeTimeout = window.setTimeout(() => copy.classList.remove('is-switching'), 240);
         $('#page-title').textContent = item.title;
 
         const backdrop = $('#spotlight-backdrop-image');
