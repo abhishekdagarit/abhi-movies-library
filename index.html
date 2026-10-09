@@ -768,7 +768,7 @@
         reviewHeader.className = 'glass-review-header';
         const reviewHeading = document.createElement('h4');
         reviewHeading.className = 'glass-review-title';
-        reviewHeading.textContent = item.status === 'watched' ? 'My review' : 'Note for later';
+        reviewHeading.textContent = item.status === 'watched' ? 'Few Words' : 'Note for later';
         reviewHeader.append(reviewHeading);
         const ratingBadge = makeRatingBadge(item);
         if (ratingBadge) reviewHeader.append(ratingBadge);
