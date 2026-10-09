@@ -112,9 +112,8 @@
     .modal-backdrop { position: fixed; z-index: 10; inset: 0; display: grid; place-items: center; padding: 18px; background: rgba(3,4,7,.72); backdrop-filter: blur(14px); }
     .modal-backdrop[hidden] { display: none; }
     .dialog { width: min(640px, 100%); max-height: min(90vh, 850px); overflow: auto; border: 1px solid rgba(255,255,255,.17); border-radius: 23px; background: rgba(27,29,34,.9); box-shadow: 0 30px 100px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.08); backdrop-filter: blur(24px) saturate(140%); }
-    .dialog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding: 23px 24px 18px; border-bottom: 1px solid var(--line); }
+    .dialog-header { display: flex; align-items: flex-start; justify-content: flex-end; gap: 20px; padding: 18px 22px 0; border-bottom: 0; }
     .dialog-kicker { margin: 0 0 5px; color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
-    .dialog-header h2 { margin: 0; font-size: 21px; letter-spacing: -.035em; }
     .dialog-close { display: grid; width: 34px; height: 34px; flex: 0 0 auto; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: rgba(255,255,255,.055); color: var(--muted); cursor: pointer; font-size: 19px; }
     .dialog-close:hover { background: rgba(255,255,255,.12); color: var(--text); }
     .detail-layout { display: grid; grid-template-columns: minmax(130px, 190px) minmax(0, 1fr); gap: 22px; padding: 24px; }
