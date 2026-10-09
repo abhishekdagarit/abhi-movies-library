@@ -168,6 +168,181 @@
       .detail-description { grid-row: 2; }
       .detail-poster { grid-row: 1 / span 2; }
     }
+
+    /* Crisp, reduced-noise visual pass. */
+    body {
+      background: #0b0c0f;
+    }
+    .shell {
+      width: min(1440px, 100%);
+      padding-top: 22px;
+    }
+    .topbar {
+      padding-bottom: 19px;
+      border-color: rgba(255,255,255,.08);
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(245,191,99,.08);
+    }
+    .intro {
+      min-height: 316px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      border-color: rgba(255,255,255,.1);
+      border-radius: 20px;
+      background: #131519;
+      box-shadow: 0 22px 64px rgba(0,0,0,.24);
+    }
+    .spotlight-backdrop img {
+      opacity: .4;
+      filter: saturate(.8);
+    }
+    .intro::before {
+      background: linear-gradient(90deg, #111317 0%, rgba(17,19,23,.95) 35%, rgba(17,19,23,.68) 67%, rgba(17,19,23,.38) 100%), linear-gradient(0deg, rgba(10,11,14,.66), transparent 60%);
+    }
+    .eyebrow {
+      margin-bottom: 12px;
+      font-size: 9px;
+      letter-spacing: .2em;
+    }
+    .intro h1 {
+      font-size: clamp(34px, 4.8vw, 56px);
+      letter-spacing: -.06em;
+      line-height: 1.02;
+    }
+    .intro-copy > p:last-of-type {
+      max-width: 470px;
+      margin-top: 11px;
+      color: rgba(244,244,241,.7);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    .spotlight-meta { gap: 6px; margin-top: 13px; }
+    .spotlight-chip {
+      padding: 5px 8px;
+      border-color: rgba(255,255,255,.15);
+      background: rgba(12,14,18,.36);
+      font-size: 8px;
+      letter-spacing: .025em;
+    }
+    .spotlight-actions { gap: 8px; margin-top: 16px; }
+    .spotlight-open {
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 8px;
+      font-size: 10px;
+    }
+    .spotlight-arrow {
+      width: 36px;
+      height: 36px;
+      border-color: rgba(255,255,255,.18);
+      background: rgba(12,14,18,.2);
+    }
+    .spotlight-art {
+      width: min(100%, 178px);
+      border-color: rgba(255,255,255,.16);
+      border-radius: 10px;
+      box-shadow: 0 18px 40px rgba(0,0,0,.38);
+      transform: none;
+    }
+    .spotlight-art:hover { transform: translateY(-2px); }
+    .spotlight-picks { gap: 7px; margin-top: -1px; }
+    .spotlight-pick { width: 6px; height: 6px; background: rgba(255,255,255,.32); }
+    .spotlight-pick[aria-pressed="true"] { width: 20px; }
+    .filters {
+      grid-template-columns: minmax(180px, 1fr) auto minmax(135px, auto) auto;
+      gap: 9px;
+      margin-bottom: 28px;
+      padding: 9px;
+      border-color: rgba(255,255,255,.08);
+      border-radius: 14px;
+      background: rgba(255,255,255,.025);
+    }
+    .search-input, .genre-select {
+      min-height: 40px;
+      border-radius: 9px;
+      background: rgba(0,0,0,.22);
+      font-size: 11px;
+    }
+    .genre-select { min-width: 0; }
+    .filter-group { gap: 2px; padding: 3px; border-radius: 10px; }
+    .filter-button { min-height: 31px; padding: 0 10px; border-radius: 7px; font-size: 10px; }
+    .filter-button[aria-pressed="true"] { background: rgba(255,255,255,.12); box-shadow: none; }
+    .filter-row { margin-bottom: 16px; }
+    .filter-row h2 { font-size: 16px; letter-spacing: -.03em; }
+    .filter-row p { color: #81838b; font-size: 10px; }
+    .results-count { color: #81838b; font-size: 10px; }
+    .movie-grid { gap: 23px 17px; }
+    .poster {
+      border-color: rgba(255,255,255,.08);
+      border-radius: 11px;
+      background: #14161a;
+      box-shadow: 0 8px 22px rgba(0,0,0,.2);
+    }
+    .movie-card:hover .poster, .movie-card:focus-visible .poster {
+      transform: translateY(-4px);
+      border-color: rgba(245,191,99,.32);
+      box-shadow: 0 15px 28px rgba(0,0,0,.34);
+    }
+    .poster img { background: #14161a; }
+    .poster-badge {
+      top: 8px;
+      left: 8px;
+      padding: 4px 7px;
+      border-color: rgba(255,255,255,.13);
+      font-size: 7px;
+      letter-spacing: .08em;
+    }
+    .card-meta { padding: 9px 1px 0; }
+    .card-title { font-size: 11px; font-weight: 600; }
+    .card-subtitle { margin-top: 3px; color: #777a83; font-size: 9px; }
+    .card-kind { color: #696c74; font-size: 7px; }
+    .empty-state { border-color: rgba(255,255,255,.1); border-radius: 16px; background: rgba(255,255,255,.018); }
+    .dialog {
+      border-color: rgba(255,255,255,.12);
+      border-radius: 20px;
+      background: rgba(21,23,27,.96);
+      box-shadow: 0 28px 80px rgba(0,0,0,.48);
+    }
+    .dialog-header { padding: 20px 22px 16px; }
+    .detail-layout { gap: 19px; padding: 21px; }
+    .detail-poster { border-color: rgba(255,255,255,.08); border-radius: 11px; }
+    .detail-description { margin-top: 15px; color: #b7b8bd; font-size: 11px; line-height: 1.75; }
+    .footer { margin-top: 40px; border-color: rgba(255,255,255,.08); color: #5e6068; font-size: 9px; }
+
+    @media (max-width: 850px) {
+      .filters { grid-template-columns: minmax(0, 1fr) minmax(130px, auto); }
+      .filters > .filter-group[aria-label="Filter by format"] { grid-column: 1; grid-row: 2; }
+      .filters > .genre-select { grid-column: 2; grid-row: 2; }
+      .filters > .filter-group[aria-label="Filter by watch status"] { grid-column: 1 / -1; grid-row: 3; }
+    }
+    @media (max-width: 560px) {
+      .shell { padding: 14px 14px 38px; }
+      .topbar { padding-bottom: 14px; }
+      .brand-mark { width: 33px; height: 33px; }
+      .brand-name { font-size: 13px; }
+      .brand-caption { font-size: 8px; letter-spacing: .13em; }
+      .intro { min-height: 0; gap: 10px; margin: 17px 0 18px; padding: 19px 14px 14px; border-radius: 17px; }
+      .intro h1 { font-size: 32px; }
+      .intro-copy > p:last-of-type { margin-top: 9px; font-size: 11px; }
+      .spotlight-art { width: 84px; }
+      .spotlight-meta { gap: 4px; margin-top: 9px; }
+      .spotlight-chip { padding: 4px 6px; font-size: 7px; }
+      .spotlight-actions { margin-top: 11px; }
+      .spotlight-open { min-height: 33px; padding: 0 10px; }
+      .spotlight-arrow { width: 31px; height: 31px; }
+      .spotlight-picks { padding: 6px; }
+      .filters { gap: 7px; padding: 8px; margin-bottom: 22px; }
+      .filter-button { padding: 0 8px; font-size: 9px; }
+      .search-input, .genre-select { min-height: 38px; font-size: 10px; }
+      .movie-grid { gap: 18px 11px; }
+      .poster { border-radius: 9px; }
+      .card-title { font-size: 10px; }
+      .footer { margin-top: 32px; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
   </style>
 </head>
