@@ -294,6 +294,57 @@
       font-size: 7px;
       letter-spacing: .08em;
     }
+    .movie-card {
+      padding: 9px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 15px;
+      background: rgba(255,255,255,.055);
+      box-shadow: 0 10px 28px rgba(0,0,0,.16), inset 0 1px rgba(255,255,255,.045);
+      -webkit-backdrop-filter: blur(16px) saturate(125%);
+      backdrop-filter: blur(16px) saturate(125%);
+      transition: transform .24s ease, background .24s ease, border-color .24s ease, box-shadow .24s ease;
+    }
+    .movie-card:hover, .movie-card:focus-visible {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,.17);
+      background: rgba(255,255,255,.085);
+      box-shadow: 0 18px 36px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.08);
+    }
+    .movie-card:hover .poster, .movie-card:focus-visible .poster { transform: none; }
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
+      margin-top: 7px;
+      padding: 4px 7px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 7px;
+      background: rgba(0,0,0,.25);
+    }
+    .rating-stars {
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-size: 11px;
+      letter-spacing: .02em;
+      line-height: 1;
+    }
+    .rating-value { color: #d6d6d6; font-size: 9px; font-weight: 700; }
+    .glass-review {
+      margin-top: 17px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 14px;
+      background: rgba(255,255,255,.055);
+      box-shadow: inset 0 1px rgba(255,255,255,.06), 0 10px 24px rgba(0,0,0,.14);
+      -webkit-backdrop-filter: blur(18px) saturate(130%);
+      backdrop-filter: blur(18px) saturate(130%);
+    }
+    .glass-review-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,.09); }
+    .glass-review-title { margin: 0; color: #f1f1f1; font-size: 10px; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+    .glass-review-copy { margin: 11px 0 0; color: #c5c5c5; font-size: 11px; line-height: 1.75; white-space: pre-wrap; }
+    .glass-synopsis { margin-top: 14px; color: #a9a9a9; font-size: 11px; line-height: 1.7; }
     .movie-card[data-status="watched"] .poster-badge {
       border-color: rgba(229,9,20,.45);
       background: rgba(229,9,20,.88);
@@ -340,7 +391,8 @@
       .filters { gap: 7px; padding: 8px; margin-bottom: 22px; }
       .filter-button { padding: 0 8px; font-size: 9px; }
       .search-input, .genre-select { min-height: 38px; font-size: 10px; }
-      .movie-grid { gap: 18px 11px; }
+      .movie-grid { gap: 14px 10px; }
+      .movie-card { padding: 7px; border-radius: 12px; }
       .poster { border-radius: 9px; }
       .card-title { font-size: 10px; }
       .footer { margin-top: 32px; }
@@ -498,6 +550,25 @@
         return wrapper;
       }
 
+      function makeRatingBadge(item) {
+        if (item.status !== 'watched' || !Number.isFinite(Number(item.rating))) return null;
+        const rating = Math.max(0, Math.min(5, Number(item.rating)));
+        const badge = document.createElement('span');
+        badge.className = 'rating-badge';
+        badge.setAttribute('aria-label', `Rating ${rating} out of 5 stars`);
+        const stars = document.createElement('span');
+        stars.className = 'rating-stars';
+        stars.setAttribute('aria-hidden', 'true');
+        stars.textContent = '★★★★★';
+        const filled = `${rating / 5 * 100}%`;
+        stars.style.backgroundImage = `linear-gradient(90deg, #f5b50a 0%, #f5b50a ${filled}, rgba(255,255,255,.25) ${filled}, rgba(255,255,255,.25) 100%)`;
+        const value = document.createElement('span');
+        value.className = 'rating-value';
+        value.textContent = `${rating}/5`;
+        badge.append(stars, value);
+        return badge;
+      }
+
       function renderGenres() {
         const genreFilter = $('#genre-filter');
         const current = state.genre;
@@ -630,6 +701,8 @@
           subtitle.className = 'card-subtitle';
           subtitle.textContent = [item.genre, item.year].filter(Boolean).join(' · ') || 'Genre not set';
           text.append(title, subtitle);
+          const ratingBadge = makeRatingBadge(item);
+          if (ratingBadge) text.append(ratingBadge);
           const kind = document.createElement('span');
           kind.className = 'card-kind';
           kind.textContent = item.type === 'series' ? 'Series' : 'Film';
@@ -687,9 +760,23 @@
         metadata.className = 'detail-meta';
         metadata.textContent = item.status === 'watched' ? 'In your watched collection' : 'Saved to your watchlist';
         const description = document.createElement('p');
-        description.className = 'detail-description';
-        description.textContent = item.description || 'No personal note yet.';
-        info.append(chips, title, metadata, description);
+        description.className = 'glass-synopsis';
+        description.textContent = item.description || '';
+        const reviewPanel = document.createElement('section');
+        reviewPanel.className = 'glass-review';
+        const reviewHeader = document.createElement('div');
+        reviewHeader.className = 'glass-review-header';
+        const reviewHeading = document.createElement('h4');
+        reviewHeading.className = 'glass-review-title';
+        reviewHeading.textContent = item.status === 'watched' ? 'My review' : 'Note for later';
+        reviewHeader.append(reviewHeading);
+        const ratingBadge = makeRatingBadge(item);
+        if (ratingBadge) reviewHeader.append(ratingBadge);
+        const review = document.createElement('p');
+        review.className = 'glass-review-copy';
+        review.textContent = item.review || 'No review added yet.';
+        reviewPanel.append(reviewHeader, review);
+        info.append(chips, title, metadata, description, reviewPanel);
         layout.append(poster, info);
         content.append(layout);
         openModal(detailModal);
