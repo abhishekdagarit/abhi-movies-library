@@ -64,9 +64,6 @@
     .spotlight-controls { display: flex; gap: 7px; }
     .spotlight-arrow { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; background: rgba(12,14,18,.3); color: white; cursor: pointer; font-size: 19px; backdrop-filter: blur(12px); }
     .spotlight-arrow:hover { background: rgba(255,255,255,.16); }
-    .spotlight-art { position: relative; z-index: 1; justify-self: center; width: min(100%, 190px); aspect-ratio: 2 / 2.85; overflow: hidden; border: 1px solid rgba(255,255,255,.25); border-radius: 13px; background: rgba(255,255,255,.06); box-shadow: 0 20px 55px rgba(0,0,0,.5), 0 0 35px rgba(255,255,255,.08); transform: rotate(2deg); transition: transform .3s ease; }
-    .spotlight-art:hover { transform: rotate(0deg) translateY(-3px); }
-    .spotlight-art img { display: block; width: 100%; height: 100%; object-fit: contain; }
     .spotlight-picks { position: relative; z-index: 1; display: flex; grid-column: 1 / -1; justify-content: center; gap: 8px; margin-top: -4px; padding: 7px; }
     .spotlight-pick { width: 7px; height: 7px; flex: 0 0 auto; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.42); cursor: pointer; transition: width .22s ease, transform .22s ease, background .22s ease; }
     .spotlight-pick:hover { transform: scale(1.25); background: rgba(255,255,255,.82); }
@@ -144,7 +141,6 @@
       .intro { min-height: 0; grid-template-columns: minmax(0, 1fr) 92px; gap: 11px; margin-top: 19px; padding: 22px 16px 18px; border-radius: 20px; }
       .intro h1 { max-width: 340px; font-size: 35px; }
       .intro-copy > p:last-child { font-size: 12px; }
-      .spotlight-art { width: 92px; align-self: center; border-radius: 9px; }
       .spotlight-meta { gap: 5px; margin-top: 10px; }
       .spotlight-chip { padding: 4px 7px; font-size: 8px; }
       .spotlight-actions { gap: 7px; margin-top: 12px; }
@@ -188,21 +184,28 @@
       background: rgba(245,191,99,.08);
     }
     .intro {
-      min-height: 316px;
+      grid-template-columns: minmax(0, 1fr);
+      align-items: end;
+      min-height: 360px;
       margin-top: 24px;
       margin-bottom: 24px;
+      padding-bottom: 18px;
       border-color: rgba(255,255,255,.1);
       border-radius: 20px;
       background: #131519;
       box-shadow: 0 22px 64px rgba(0,0,0,.24);
     }
     .spotlight-backdrop img {
-      opacity: .4;
-      filter: saturate(.8);
+      opacity: .42;
+      filter: blur(3px) saturate(.78);
+      transform: scale(1.1);
+      transition: opacity .45s ease, transform 7s ease;
     }
     .intro::before {
-      background: linear-gradient(90deg, #111317 0%, rgba(17,19,23,.95) 35%, rgba(17,19,23,.68) 67%, rgba(17,19,23,.38) 100%), linear-gradient(0deg, rgba(10,11,14,.66), transparent 60%);
+      background: linear-gradient(90deg, rgba(11,12,15,.94) 0%, rgba(11,12,15,.78) 46%, rgba(11,12,15,.35) 100%), linear-gradient(0deg, rgba(10,11,14,.72) 0%, rgba(10,11,14,.08) 72%);
     }
+    .intro-copy { max-width: 740px; transition: opacity .24s ease, transform .24s ease; }
+    .intro-copy.is-switching { opacity: .35; transform: translateY(5px); }
     .eyebrow {
       margin-bottom: 12px;
       font-size: 9px;
@@ -241,14 +244,6 @@
       border-color: rgba(255,255,255,.18);
       background: rgba(12,14,18,.2);
     }
-    .spotlight-art {
-      width: min(100%, 178px);
-      border-color: rgba(255,255,255,.16);
-      border-radius: 10px;
-      box-shadow: 0 18px 40px rgba(0,0,0,.38);
-      transform: none;
-    }
-    .spotlight-art:hover { transform: translateY(-2px); }
     .spotlight-picks { gap: 7px; margin-top: -1px; }
     .spotlight-pick { width: 6px; height: 6px; background: rgba(255,255,255,.32); }
     .spotlight-pick[aria-pressed="true"] { width: 20px; }
@@ -328,7 +323,6 @@
       .intro { min-height: 0; gap: 10px; margin: 17px 0 18px; padding: 19px 14px 14px; border-radius: 17px; }
       .intro h1 { font-size: 32px; }
       .intro-copy > p:last-of-type { margin-top: 9px; font-size: 11px; }
-      .spotlight-art { width: 84px; }
       .spotlight-meta { gap: 4px; margin-top: 9px; }
       .spotlight-chip { padding: 4px 6px; font-size: 7px; }
       .spotlight-actions { margin-top: 11px; }
@@ -370,12 +364,11 @@
         <div class="spotlight-actions">
           <button class="spotlight-open" id="spotlight-open" type="button">▶&nbsp; View title</button>
           <div class="spotlight-controls" aria-label="Featured titles">
-            <button class="spotlight-arrow" id="spotlight-previous" type="button" aria-label="Previous watched title">‹</button>
-            <button class="spotlight-arrow" id="spotlight-next" type="button" aria-label="Next watched title">›</button>
+            <button class="spotlight-arrow" id="spotlight-previous" type="button" aria-label="Previous featured title">‹</button>
+            <button class="spotlight-arrow" id="spotlight-next" type="button" aria-label="Next featured title">›</button>
           </div>
         </div>
       </div>
-      <div class="spotlight-art" id="spotlight-art"><img id="spotlight-poster" src="" alt="Featured watched title poster"></div>
       <nav class="spotlight-picks" id="spotlight-picks" aria-label="Choose a featured title"></nav>
     </section>
 
@@ -455,16 +448,6 @@
           );
           spotlightItems = filteredItems().slice(0, 5);
           spotlightIndex = 0;
-          if (spotlightItems.length) {
-            $('#spotlight-art').hidden = false;
-            $('#spotlight-open').hidden = false;
-            $('.spotlight-controls').hidden = false;
-          } else {
-            $('#spotlight-art').hidden = true;
-            $('#spotlight-open').hidden = true;
-            $('.spotlight-controls').hidden = true;
-            $('#spotlight-picks').hidden = true;
-          }
           render();
         } catch (error) {
           console.error(error);
@@ -532,7 +515,6 @@
         spotlightItems = filteredItems().slice(0, 5);
         const picks = $('#spotlight-picks');
         const hasItems = spotlightItems.length > 0;
-        $('#spotlight-art').hidden = !hasItems;
         $('#spotlight-open').hidden = !hasItems;
         $('.spotlight-controls').hidden = !hasItems;
         picks.hidden = !hasItems;
@@ -542,7 +524,6 @@
           $('#spotlight-description').textContent = 'Try a different filter or search to find something in your collection.';
           $('#spotlight-meta').replaceChildren();
           $('#spotlight-backdrop-image').removeAttribute('src');
-          $('#spotlight-poster').removeAttribute('src');
           picks.replaceChildren();
           return;
         }
@@ -555,15 +536,18 @@
         const currentType = state.type !== 'all' ? (state.type === 'series' ? 'Series' : 'Movies') : '';
         const filterLabel = [currentType, currentStatus, currentGenre].filter(Boolean).join(' · ');
         $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
+        const copy = $('.intro-copy');
+        copy.classList.add('is-switching');
+        requestAnimationFrame(() => requestAnimationFrame(() => copy.classList.remove('is-switching')));
         $('#page-title').textContent = item.title;
         $('#spotlight-description').textContent = item.description;
 
         const backdrop = $('#spotlight-backdrop-image');
+        backdrop.style.opacity = '.08';
+        backdrop.onload = () => { backdrop.style.opacity = ''; };
+        backdrop.onerror = () => { backdrop.style.opacity = ''; };
         backdrop.src = item.poster;
         backdrop.alt = '';
-        const poster = $('#spotlight-poster');
-        poster.src = item.poster;
-        poster.alt = `${item.title} poster`;
 
         const meta = $('#spotlight-meta');
         meta.replaceChildren();
@@ -719,16 +703,26 @@
 
       document.querySelectorAll('[data-type]').forEach(button => button.addEventListener('click', () => {
         state.type = button.dataset.type;
+        spotlightIndex = 0;
         document.querySelectorAll('[data-type]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
         render();
       }));
       document.querySelectorAll('[data-status]').forEach(button => button.addEventListener('click', () => {
         state.status = button.dataset.status;
+        spotlightIndex = 0;
         document.querySelectorAll('[data-status]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
         render();
       }));
-      $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; render(); });
-      $('#search').addEventListener('input', event => { state.query = event.target.value; render(); });
+      $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; spotlightIndex = 0; render(); });
+      $('#search').addEventListener('input', event => { state.query = event.target.value; spotlightIndex = 0; render(); });
+
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        window.setInterval(() => {
+          if (spotlightItems.length < 2) return;
+          spotlightIndex = (spotlightIndex + 1) % spotlightItems.length;
+          renderSpotlight();
+        }, 6000);
+      }
 
       document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => closeModal(detailModal)));
       [detailModal].forEach(modal => modal.addEventListener('click', event => {
