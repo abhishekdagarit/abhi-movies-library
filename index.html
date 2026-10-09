@@ -33,9 +33,9 @@
       font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
-    button, input, select, textarea { font: inherit; }
+    button, input, select { font: inherit; }
     button { color: inherit; }
-    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    button:focus-visible, input:focus-visible, select:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 3px;
     }
@@ -47,12 +47,6 @@
     .brand-caption { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; }
     .topbar-end { display: flex; align-items: center; gap: 12px; }
     .collection-count { color: var(--muted); font-size: 12px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 0 16px; border: 1px solid transparent; border-radius: 12px; cursor: pointer; font-size: 12px; font-weight: 700; transition: transform .18s ease, background .18s ease, border-color .18s ease; }
-    .button:hover { transform: translateY(-1px); }
-    .button-primary { background: var(--accent); color: #17130c; box-shadow: 0 8px 25px rgba(245,191,99,.16); }
-    .button-primary:hover { background: #ffd080; }
-    .button-quiet { border-color: var(--line); background: var(--panel); color: var(--text); }
-    .button-quiet:hover { background: var(--panel-strong); }
 
     .intro { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 36px; min-height: 226px; margin: 28px 0 25px; padding: clamp(24px, 4vw, 48px); overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 26px; background: linear-gradient(110deg, rgba(25,28,34,.98) 2%, rgba(25,28,34,.92) 42%, rgba(25,28,34,.28) 100%), radial-gradient(ellipse at 78% 55%, rgba(194,137,79,.68), transparent 35%), linear-gradient(140deg, #343e45, #765741 68%, #26333a); box-shadow: 0 28px 90px rgba(0,0,0,.2); }
     .intro::before, .intro::after { position: absolute; z-index: 0; content: ""; pointer-events: none; }
@@ -74,7 +68,7 @@
     .search-input { padding: 0 14px 0 40px; }
     .search-input::placeholder { color: var(--subtle); }
     .genre-select { min-width: 150px; padding: 0 34px 0 12px; border-color: var(--line); cursor: pointer; }
-    .genre-select option, .form-select option { background: #17191e; color: var(--text); }
+    .genre-select option { background: #17191e; color: var(--text); }
     .filter-group { display: flex; gap: 3px; padding: 4px; border: 1px solid var(--line); border-radius: 12px; background: rgba(0,0,0,.16); }
     .filter-button { min-height: 32px; padding: 0 12px; border: 0; border-radius: 9px; background: transparent; color: var(--muted); cursor: pointer; font-size: 11px; font-weight: 650; white-space: nowrap; transition: .18s ease; }
     .filter-button:hover { background: rgba(255,255,255,.07); color: var(--text); }
@@ -114,14 +108,6 @@
     .dialog-header h2 { margin: 0; font-size: 21px; letter-spacing: -.035em; }
     .dialog-close { display: grid; width: 34px; height: 34px; flex: 0 0 auto; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: rgba(255,255,255,.055); color: var(--muted); cursor: pointer; font-size: 19px; }
     .dialog-close:hover { background: rgba(255,255,255,.12); color: var(--text); }
-    .form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 21px 24px 24px; }
-    .field { display: grid; gap: 7px; }
-    .field-full { grid-column: 1 / -1; }
-    .field label { color: #c2c1c0; font-size: 10px; font-weight: 650; }
-    .form-input, .form-select, .form-textarea { width: 100%; min-height: 42px; padding: 10px 12px; border: 1px solid rgba(255,255,255,.12); border-radius: 10px; background: rgba(0,0,0,.22); color: var(--text); font-size: 12px; }
-    .form-input::placeholder, .form-textarea::placeholder { color: #70727b; }
-    .form-textarea { min-height: 100px; resize: vertical; line-height: 1.55; }
-    .form-actions { grid-column: 1 / -1; display: flex; justify-content: flex-end; gap: 9px; margin-top: 4px; }
     .detail-layout { display: grid; grid-template-columns: minmax(130px, 190px) minmax(0, 1fr); gap: 22px; padding: 24px; }
     .detail-poster { position: relative; aspect-ratio: 2 / 2.85; overflow: hidden; border: 1px solid rgba(255,255,255,.1); border-radius: 14px; background: #17191d; }
     .detail-poster img { width: 100%; height: 100%; object-fit: contain; }
@@ -131,9 +117,6 @@
     .detail-title { margin: 0; font-size: clamp(22px, 4vw, 30px); letter-spacing: -.045em; line-height: 1.12; }
     .detail-meta { margin: 7px 0 0; color: var(--muted); font-size: 11px; }
     .detail-description { margin: 19px 0; color: #c1c0c0; font-size: 12px; line-height: 1.7; white-space: pre-wrap; }
-    .detail-actions { display: flex; flex-wrap: wrap; gap: 8px; }
-    .button-danger { border-color: rgba(237,111,111,.25); background: rgba(237,111,111,.08); color: #f2a0a0; }
-    .button-danger:hover { background: rgba(237,111,111,.15); }
 
     @media (min-width: 1500px) { .movie-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 25px 19px; } }
     @media (max-width: 850px) {
@@ -147,7 +130,6 @@
       .shell { padding-top: 15px; }
       .topbar { padding-bottom: 17px; }
       .collection-count { display: none; }
-      .button { min-height: 39px; padding: 0 12px; }
       .intro { min-height: auto; margin-top: 19px; padding: 23px 20px; border-radius: 20px; }
       .intro h1 { max-width: 340px; font-size: 35px; }
       .intro-copy > p:last-child { font-size: 12px; }
@@ -161,17 +143,14 @@
       .movie-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 19px 12px; }
       .poster { border-radius: 12px; }
       .card-title { font-size: 11px; }
-      .form { grid-template-columns: 1fr; padding: 18px; }
-      .field-full, .form-actions { grid-column: auto; }
       .dialog-header { padding: 19px 18px 15px; }
       .detail-layout { grid-template-columns: 92px minmax(0, 1fr); gap: 14px; padding: 17px; }
       .detail-description { grid-column: 1 / -1; margin: 14px 0; }
       .detail-info { display: contents; }
-      .detail-kinds, .detail-title, .detail-meta, .detail-actions { grid-column: 2; }
+      .detail-kinds, .detail-title, .detail-meta { grid-column: 2; }
       .detail-kinds { align-self: end; margin-bottom: -8px; }
       .detail-title { align-self: start; }
       .detail-description { grid-row: 2; }
-      .detail-actions { grid-row: 3; }
       .detail-poster { grid-row: 1 / span 2; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
@@ -187,8 +166,7 @@
         <span><span class="brand-name">SCREENROOM</span><span class="brand-caption">Abhi's film & series library</span></span>
       </a>
       <div class="topbar-end">
-        <span id="top-count" class="collection-count">Your private collection</span>
-        <button class="button button-primary" id="add-open" type="button"><span aria-hidden="true">＋</span> Add title</button>
+        <span id="top-count" class="collection-count">Your personal collection</span>
       </div>
     </header>
 
@@ -196,7 +174,7 @@
       <div class="intro-copy">
         <p class="eyebrow">A collection, not a queue</p>
         <h1 id="page-title">Your screen.<br> Your stories.</h1>
-        <p>Keep the films and series you love in one place. Add a title, choose a genre, and mark it for later or as watched.</p>
+        <p>A considered collection of films and series: stories watched, and stories still waiting.</p>
       </div>
       <div class="stats" aria-label="Collection overview">
         <div class="stat"><span class="stat-value" id="stat-total">0</span><span class="stat-label">In library</span></div>
@@ -232,26 +210,7 @@
       </div>
       <section id="movie-grid" class="movie-grid" aria-label="Movies and series"></section>
     </main>
-    <footer class="footer">SCREENROOM <span aria-hidden="true">·</span> Made for the stories you keep</footer>
-  </div>
-
-  <div id="add-modal" class="modal-backdrop" hidden>
-    <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="add-title">
-      <header class="dialog-header">
-        <div><p class="dialog-kicker">Add to your collection</p><h2 id="add-title">Save a title</h2></div>
-        <button class="dialog-close" type="button" data-close aria-label="Close dialog">×</button>
-      </header>
-      <form id="add-form" class="form">
-        <div class="field field-full"><label for="title-input">Title</label><input id="title-input" class="form-input" name="title" maxlength="100" placeholder="What did you watch—or want to watch?" required></div>
-        <div class="field"><label for="type-input">Format</label><select id="type-input" class="form-select" name="type"><option value="movie">Movie</option><option value="series">Series</option></select></div>
-        <div class="field"><label for="genre-input">Genre</label><select id="genre-input" class="form-select" name="genre" required></select></div>
-        <div class="field"><label for="status-input">Watch status</label><select id="status-input" class="form-select" name="status"><option value="to-watch">To watch</option><option value="watched">Watched</option></select></div>
-        <div class="field"><label for="year-input">Year <span style="color:var(--subtle)">(optional)</span></label><input id="year-input" class="form-input" name="year" type="number" min="1888" max="2100" placeholder="2025"></div>
-        <div class="field field-full"><label for="poster-input">Poster image URL <span style="color:var(--subtle)">(optional)</span></label><input id="poster-input" class="form-input" name="poster" type="url" placeholder="https://…"></div>
-        <div class="field field-full"><label for="description-input">Your note <span style="color:var(--subtle)">(optional)</span></label><textarea id="description-input" class="form-textarea" name="description" maxlength="1200" placeholder="What did you think? Add a note for later."></textarea></div>
-        <div class="form-actions"><button class="button button-quiet" type="button" data-close>Cancel</button><button class="button button-primary" type="submit">Add to library</button></div>
-      </form>
-    </section>
+    <footer class="footer">SCREENROOM <span aria-hidden="true">·</span> Made for the stories you keep <span aria-hidden="true">·</span> Poster images sourced from TMDB</footer>
   </div>
 
   <div id="detail-modal" class="modal-backdrop" hidden>
@@ -266,36 +225,26 @@
 
   <script>
     (() => {
-      const STORAGE_KEY = 'screenroom-library-v1';
-      const genres = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Fantasy', 'Horror', 'Mystery', 'Romance', 'Sci-Fi', 'Thriller', 'Other'];
-      const state = { items: loadItems(), type: 'all', status: 'all', genre: 'all', query: '' };
+      // Edit this list to update the collection. Poster artwork is loaded from TMDB's image CDN.
+      const items = [
+        { id: 'interstellar', title: 'Interstellar', type: 'movie', genre: 'Sci-Fi', status: 'watched', year: '2014', poster: 'https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg', description: 'A team of explorers travels beyond this galaxy to discover whether mankind has a future among the stars.' },
+        { id: 'inception', title: 'Inception', type: 'movie', genre: 'Sci-Fi', status: 'watched', year: '2010', poster: 'https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg', description: 'A skilled thief who steals secrets through dreams is offered a chance to erase his past with one impossible job.' },
+        { id: 'dune-part-two', title: 'Dune: Part Two', type: 'movie', genre: 'Sci-Fi', status: 'to-watch', year: '2024', poster: 'https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg', description: 'Paul Atreides joins Chani and the Fremen as he seeks justice and confronts a future only he can foresee.' },
+        { id: 'the-dark-knight', title: 'The Dark Knight', type: 'movie', genre: 'Crime', status: 'watched', year: '2008', poster: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg', description: 'Batman faces a dangerous new criminal force that pushes Gotham and its protector to their limits.' },
+        { id: 'parasite', title: 'Parasite', type: 'movie', genre: 'Thriller', status: 'watched', year: '2019', poster: 'https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg', description: 'A cash-strapped family finds its way into the household of a wealthy family, setting two very different worlds on a collision course.' },
+        { id: 'everything-everywhere', title: 'Everything Everywhere All at Once', type: 'movie', genre: 'Adventure', status: 'to-watch', year: '2022', poster: 'https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg', description: 'An exhausted laundromat owner becomes the unlikely hero of a wild multiverse-spanning adventure.' },
+        { id: 'breaking-bad', title: 'Breaking Bad', type: 'series', genre: 'Crime', status: 'watched', year: '2008', poster: 'https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg', description: 'A chemistry teacher facing a life-changing diagnosis enters the world of drug manufacturing to provide for his family.' },
+        { id: 'stranger-things', title: 'Stranger Things', type: 'series', genre: 'Sci-Fi', status: 'watched', year: '2016', poster: 'https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg', description: 'When a boy vanishes, a small town uncovers secret experiments, supernatural forces, and a mysterious girl.' },
+        { id: 'the-last-of-us', title: 'The Last of Us', type: 'series', genre: 'Drama', status: 'to-watch', year: '2023', poster: 'https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg', description: 'A hardened survivor escorts a teenager across a dangerous, changed America in a story of trust and survival.' },
+        { id: 'the-bear', title: 'The Bear', type: 'series', genre: 'Drama', status: 'to-watch', year: '2022', poster: 'https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg', description: 'A talented young chef returns to Chicago to run his family’s sandwich shop and bring a new team together.' },
+        { id: 'sherlock', title: 'Sherlock', type: 'series', genre: 'Mystery', status: 'watched', year: '2010', poster: 'https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg', description: 'A brilliant, unconventional detective and his flatmate solve modern mysteries across London.' },
+        { id: 'arcane', title: 'Arcane', type: 'series', genre: 'Animation', status: 'to-watch', year: '2021', poster: 'https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg', description: 'Two sisters find themselves on opposite sides of a conflict between a prosperous city and its underground.' }
+      ];
+      const state = { items, type: 'all', status: 'all', genre: 'all', query: '' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
-      const addModal = $('#add-modal');
       const detailModal = $('#detail-modal');
-      const addForm = $('#add-form');
       let lastFocusedElement = null;
-
-      function loadItems() {
-        try {
-          const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-          return Array.isArray(stored) ? stored.filter(item => item && typeof item.title === 'string') : [];
-        } catch {
-          return [];
-        }
-      }
-
-      function saveItems() {
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items));
-        } catch {
-          window.alert('Your browser could not save this title. Check that local storage is enabled.');
-        }
-      }
-
-      function escapeHtml(value = '') {
-        return String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-      }
 
       function makePoster(title, posterUrl, className = '') {
         const wrapper = document.createElement('div');
@@ -373,18 +322,10 @@
           icon.className = 'empty-icon';
           icon.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>';
           const title = document.createElement('h3');
-          title.textContent = state.items.length ? 'No titles match those filters' : 'Your library starts here';
+          title.textContent = 'No titles match those filters';
           const description = document.createElement('p');
-          description.textContent = state.items.length ? 'Try another format, status, genre, or search.' : 'Add the movies and series you love. Keep a watchlist, remember what you have seen, and make this collection yours.';
+          description.textContent = 'Try another format, status, genre, or search.';
           content.append(icon, title, description);
-          if (!state.items.length) {
-            const addButton = document.createElement('button');
-            addButton.className = 'button button-primary';
-            addButton.type = 'button';
-            addButton.textContent = '＋ Add your first title';
-            addButton.addEventListener('click', openAdd);
-            content.append(addButton);
-          }
           empty.append(content);
           grid.append(empty);
           return;
@@ -426,11 +367,6 @@
         });
       }
 
-      function fillGenreOptions() {
-        const select = $('#genre-input');
-        select.replaceChildren(...genres.map(genre => new Option(genre, genre)));
-      }
-
       function openModal(modal) {
         lastFocusedElement = document.activeElement;
         modal.hidden = false;
@@ -441,13 +377,8 @@
 
       function closeModal(modal) {
         modal.hidden = true;
-        if (addModal.hidden && detailModal.hidden) document.body.style.overflow = '';
+        if (detailModal.hidden) document.body.style.overflow = '';
         if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') lastFocusedElement.focus();
-      }
-
-      function openAdd() {
-        addForm.reset();
-        openModal(addModal);
       }
 
       function openDetails(id) {
@@ -479,66 +410,13 @@
         const description = document.createElement('p');
         description.className = 'detail-description';
         description.textContent = item.description || 'No personal note yet.';
-        const actions = document.createElement('div');
-        actions.className = 'detail-actions';
-        const toggle = document.createElement('button');
-        toggle.type = 'button';
-        toggle.className = 'button button-primary';
-        toggle.textContent = item.status === 'watched' ? '↺ Move to to watch' : '✓ Mark as watched';
-        toggle.addEventListener('click', () => {
-          const target = state.items.find(entry => entry.id === item.id);
-          if (!target) return;
-          target.status = target.status === 'watched' ? 'to-watch' : 'watched';
-          saveItems();
-          render();
-          openDetails(target.id);
-        });
-        const remove = document.createElement('button');
-        remove.type = 'button';
-        remove.className = 'button button-danger';
-        remove.textContent = 'Remove title';
-        remove.addEventListener('click', () => {
-          state.items = state.items.filter(entry => entry.id !== item.id);
-          saveItems();
-          closeModal(detailModal);
-          render();
-        });
-        actions.append(toggle, remove);
-        info.append(chips, title, metadata, description, actions);
+        info.append(chips, title, metadata, description);
         layout.append(poster, info);
         content.append(layout);
         openModal(detailModal);
       }
 
-      fillGenreOptions();
       render();
-      $('#add-open').addEventListener('click', openAdd);
-      addForm.addEventListener('submit', event => {
-        event.preventDefault();
-        const formData = new FormData(addForm);
-        const title = String(formData.get('title') || '').trim();
-        if (!title) return;
-        state.items.unshift({
-          id: (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`,
-          title,
-          type: formData.get('type') === 'series' ? 'series' : 'movie',
-          genre: String(formData.get('genre') || 'Other'),
-          status: formData.get('status') === 'watched' ? 'watched' : 'to-watch',
-          year: String(formData.get('year') || '').trim(),
-          poster: String(formData.get('poster') || '').trim(),
-          description: String(formData.get('description') || '').trim()
-        });
-        state.type = 'all';
-        state.status = 'all';
-        state.genre = 'all';
-        state.query = '';
-        $('#search').value = '';
-        document.querySelectorAll('[data-type]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.type === 'all')));
-        document.querySelectorAll('[data-status]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.status === 'all')));
-        saveItems();
-        render();
-        closeModal(addModal);
-      });
 
       document.querySelectorAll('[data-type]').forEach(button => button.addEventListener('click', () => {
         state.type = button.dataset.type;
@@ -553,15 +431,12 @@
       $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; render(); });
       $('#search').addEventListener('input', event => { state.query = event.target.value; render(); });
 
-      document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => closeModal(button.closest('.modal-backdrop'))));
-      [addModal, detailModal].forEach(modal => modal.addEventListener('click', event => {
+      document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => closeModal(detailModal)));
+      [detailModal].forEach(modal => modal.addEventListener('click', event => {
         if (event.target === modal) closeModal(modal);
       }));
       document.addEventListener('keydown', event => {
-        if (event.key === 'Escape') {
-          if (!detailModal.hidden) closeModal(detailModal);
-          else if (!addModal.hidden) closeModal(addModal);
-        }
+        if (event.key === 'Escape' && !detailModal.hidden) closeModal(detailModal);
       });
     })();
   </script>
