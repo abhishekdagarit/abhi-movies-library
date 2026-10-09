@@ -48,16 +48,32 @@
     .topbar-end { display: flex; align-items: center; gap: 12px; }
     .collection-count { color: var(--muted); font-size: 12px; }
 
-    .intro { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 36px; min-height: 226px; margin: 28px 0 25px; padding: clamp(24px, 4vw, 48px); overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 26px; background: linear-gradient(110deg, rgba(25,28,34,.98) 2%, rgba(25,28,34,.92) 42%, rgba(25,28,34,.28) 100%), radial-gradient(ellipse at 78% 55%, rgba(194,137,79,.68), transparent 35%), linear-gradient(140deg, #343e45, #765741 68%, #26333a); box-shadow: 0 28px 90px rgba(0,0,0,.2); }
-    .intro::before, .intro::after { position: absolute; z-index: 0; content: ""; pointer-events: none; }
-    .intro::before { top: -40%; right: 8%; width: 38%; height: 190%; transform: rotate(25deg); background: linear-gradient(90deg, transparent, rgba(255,255,255,.07), transparent); }
-    .intro::after { right: 10%; bottom: -95px; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; box-shadow: 0 0 0 24px rgba(255,255,255,.025), 0 0 0 50px rgba(255,255,255,.02); }
-    .intro-copy, .stats { position: relative; z-index: 1; }
+    .intro { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(150px, 205px); align-items: center; gap: 26px; min-height: 340px; margin: 28px 0 25px; padding: clamp(24px, 4vw, 42px); overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 26px; background: #17191e; box-shadow: 0 28px 90px rgba(0,0,0,.28); isolation: isolate; }
+    .spotlight-backdrop { position: absolute; z-index: -2; inset: 0; overflow: hidden; }
+    .spotlight-backdrop img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .35; filter: blur(1px) saturate(.75); transform: scale(1.04); transition: opacity .35s ease; }
+    .intro::before { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(90deg, #14161b 0%, rgba(20,22,27,.96) 34%, rgba(20,22,27,.68) 65%, rgba(20,22,27,.42) 100%), linear-gradient(0deg, rgba(10,11,14,.64), transparent 58%); }
+    .intro-copy { position: relative; z-index: 1; max-width: 680px; align-self: center; }
     .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; }
-    .intro h1 { max-width: 620px; margin: 0; font-size: clamp(32px, 5vw, 54px); font-weight: 650; letter-spacing: -.055em; line-height: 1.03; }
-    .intro-copy > p:last-child { max-width: 490px; margin: 13px 0 0; color: rgba(244,244,241,.69); font-size: 13px; line-height: 1.65; }
-    .stats { display: grid; grid-template-columns: repeat(3, minmax(72px, 1fr)); gap: 8px; align-self: flex-end; min-width: min(310px, 38%); }
-    .stat { padding: 13px 14px; border: 1px solid rgba(255,255,255,.17); border-radius: 14px; background: rgba(12,14,18,.27); backdrop-filter: blur(15px); }
+    .intro h1 { max-width: 680px; margin: 0; font-size: clamp(32px, 5vw, 58px); font-weight: 700; letter-spacing: -.055em; line-height: 1.03; text-wrap: balance; }
+    .intro-copy > p:last-of-type { max-width: 510px; margin: 13px 0 0; color: rgba(244,244,241,.76); font-size: 13px; line-height: 1.65; }
+    .spotlight-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .spotlight-chip { padding: 5px 9px; border: 1px solid rgba(255,255,255,.2); border-radius: 100px; background: rgba(12,14,18,.28); color: rgba(255,255,255,.78); font-size: 9px; backdrop-filter: blur(10px); }
+    .spotlight-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 18px; }
+    .spotlight-open { min-height: 40px; padding: 0 15px; border: 0; border-radius: 9px; background: #f2f1ed; color: #15161a; cursor: pointer; font-size: 11px; font-weight: 750; transition: background .2s, transform .2s; }
+    .spotlight-open:hover { transform: translateY(-1px); background: #fff; }
+    .spotlight-controls { display: flex; gap: 7px; }
+    .spotlight-arrow { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; background: rgba(12,14,18,.3); color: white; cursor: pointer; font-size: 19px; backdrop-filter: blur(12px); }
+    .spotlight-arrow:hover { background: rgba(255,255,255,.16); }
+    .spotlight-art { position: relative; z-index: 1; justify-self: center; width: min(100%, 190px); aspect-ratio: 2 / 2.85; overflow: hidden; border: 1px solid rgba(255,255,255,.25); border-radius: 13px; background: rgba(255,255,255,.06); box-shadow: 0 20px 55px rgba(0,0,0,.5), 0 0 35px rgba(255,255,255,.08); transform: rotate(2deg); transition: transform .3s ease; }
+    .spotlight-art:hover { transform: rotate(0deg) translateY(-3px); }
+    .spotlight-art img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .spotlight-picks { position: relative; z-index: 1; display: flex; grid-column: 1 / -1; gap: 9px; margin-top: -4px; overflow-x: auto; padding: 3px 2px 5px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.25) transparent; }
+    .spotlight-pick { position: relative; width: 42px; height: 59px; flex: 0 0 auto; overflow: hidden; padding: 0; border: 1px solid rgba(255,255,255,.2); border-radius: 7px; background: rgba(0,0,0,.35); cursor: pointer; opacity: .68; transition: .2s ease; }
+    .spotlight-pick:hover, .spotlight-pick[aria-pressed="true"] { transform: translateY(-2px); border-color: var(--accent); opacity: 1; box-shadow: 0 0 0 2px rgba(245,191,99,.2); }
+    .spotlight-pick img { width: 100%; height: 100%; object-fit: cover; }
+    .spotlight-picks-label { align-self: center; flex: 0 0 auto; margin-right: 4px; color: rgba(255,255,255,.58); font-size: 9px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .stats { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(72px, 1fr)); gap: 8px; grid-column: 1; width: min(390px, 100%); margin-top: -10px; }
+    .stat { padding: 10px 12px; border: 1px solid rgba(255,255,255,.17); border-radius: 12px; background: rgba(12,14,18,.31); backdrop-filter: blur(15px); }
     .stat-value { display: block; font-size: 20px; font-weight: 700; letter-spacing: -.04em; }
     .stat-label { display: block; margin-top: 4px; color: rgba(255,255,255,.64); font-size: 9px; letter-spacing: .11em; text-transform: uppercase; white-space: nowrap; }
 
@@ -123,16 +139,25 @@
       .filters { grid-template-columns: 1fr 1fr; }
       .search-wrap { grid-column: 1 / -1; }
       .genre-select { min-width: 0; }
-      .intro { align-items: flex-start; flex-direction: column; gap: 24px; }
+      .intro { grid-template-columns: minmax(0, 1fr) 145px; gap: 18px; }
       .stats { width: min(370px, 100%); min-width: 0; align-self: flex-start; }
     }
     @media (max-width: 560px) {
       .shell { padding-top: 15px; }
       .topbar { padding-bottom: 17px; }
       .collection-count { display: none; }
-      .intro { min-height: auto; margin-top: 19px; padding: 23px 20px; border-radius: 20px; }
+      .intro { min-height: 0; grid-template-columns: minmax(0, 1fr) 92px; gap: 11px; margin-top: 19px; padding: 22px 16px 18px; border-radius: 20px; }
       .intro h1 { max-width: 340px; font-size: 35px; }
       .intro-copy > p:last-child { font-size: 12px; }
+      .spotlight-art { width: 92px; align-self: center; border-radius: 9px; }
+      .spotlight-meta { gap: 5px; margin-top: 10px; }
+      .spotlight-chip { padding: 4px 7px; font-size: 8px; }
+      .spotlight-actions { gap: 7px; margin-top: 12px; }
+      .spotlight-open { min-height: 35px; padding: 0 11px; font-size: 10px; }
+      .spotlight-arrow { width: 33px; height: 33px; }
+      .stats { grid-column: 1 / -1; margin-top: 3px; }
+      .spotlight-picks { gap: 7px; margin-top: 0; }
+      .spotlight-pick { width: 37px; height: 52px; }
       .stat { padding: 10px; }
       .stat-value { font-size: 17px; }
       .stat-label { font-size: 8px; letter-spacing: .07em; }
@@ -171,16 +196,27 @@
     </header>
 
     <section class="intro" aria-labelledby="page-title">
+      <div class="spotlight-backdrop" aria-hidden="true"><img id="spotlight-backdrop-image" src="" alt=""></div>
       <div class="intro-copy">
-        <p class="eyebrow">A collection, not a queue</p>
+        <p class="eyebrow" id="spotlight-kicker">Watched spotlight</p>
         <h1 id="page-title">Your screen.<br> Your stories.</h1>
-        <p>A considered collection of films and series: stories watched, and stories still waiting.</p>
+        <p id="spotlight-description">A considered collection of films and series: stories watched, and stories still waiting.</p>
+        <div class="spotlight-meta" id="spotlight-meta"></div>
+        <div class="spotlight-actions">
+          <button class="spotlight-open" id="spotlight-open" type="button">▶&nbsp; View title</button>
+          <div class="spotlight-controls" aria-label="Featured watched titles">
+            <button class="spotlight-arrow" id="spotlight-previous" type="button" aria-label="Previous watched title">‹</button>
+            <button class="spotlight-arrow" id="spotlight-next" type="button" aria-label="Next watched title">›</button>
+          </div>
+        </div>
       </div>
+      <div class="spotlight-art"><img id="spotlight-poster" src="" alt="Featured watched title poster"></div>
       <div class="stats" aria-label="Collection overview">
         <div class="stat"><span class="stat-value" id="stat-total">0</span><span class="stat-label">In library</span></div>
         <div class="stat"><span class="stat-value" id="stat-watched">0</span><span class="stat-label">Watched</span></div>
         <div class="stat"><span class="stat-value" id="stat-to-watch">0</span><span class="stat-label">To watch</span></div>
       </div>
+      <nav class="spotlight-picks" id="spotlight-picks" aria-label="Choose a watched highlight"><span class="spotlight-picks-label">Watched</span></nav>
     </section>
 
     <section class="filters" aria-label="Filter your collection">
@@ -244,6 +280,8 @@
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
       const detailModal = $('#detail-modal');
+      const watchedItems = items.filter(item => item.status === 'watched');
+      let spotlightIndex = 0;
       let lastFocusedElement = null;
 
       function makePoster(title, posterUrl, className = '') {
@@ -300,6 +338,58 @@
           const matchesQuery = !query || `${item.title} ${item.genre} ${item.year || ''} ${item.description || ''}`.toLocaleLowerCase().includes(query);
           return matchesType && matchesStatus && matchesGenre && matchesQuery;
         });
+      }
+
+      function renderSpotlight() {
+        const item = watchedItems[spotlightIndex];
+        if (!item) return;
+
+        $('#spotlight-kicker').textContent = `Watched spotlight · ${item.type === 'series' ? 'Series' : 'Film'}`;
+        $('#page-title').textContent = item.title;
+        $('#spotlight-description').textContent = item.description;
+
+        const backdrop = $('#spotlight-backdrop-image');
+        backdrop.src = item.poster;
+        backdrop.alt = '';
+        const poster = $('#spotlight-poster');
+        poster.src = item.poster;
+        poster.alt = `${item.title} poster`;
+
+        const meta = $('#spotlight-meta');
+        meta.replaceChildren();
+        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', 'Watched'].forEach(value => {
+          const chip = document.createElement('span');
+          chip.className = 'spotlight-chip';
+          chip.textContent = value;
+          meta.append(chip);
+        });
+
+        const picks = $('#spotlight-picks');
+        picks.replaceChildren();
+        const label = document.createElement('span');
+        label.className = 'spotlight-picks-label';
+        label.textContent = 'Watched';
+        picks.append(label);
+        watchedItems.forEach((watchedItem, index) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'spotlight-pick';
+          button.setAttribute('aria-label', `Feature ${watchedItem.title}`);
+          button.setAttribute('aria-pressed', String(index === spotlightIndex));
+          button.title = watchedItem.title;
+          const image = document.createElement('img');
+          image.src = watchedItem.poster;
+          image.alt = '';
+          image.loading = 'lazy';
+          button.append(image);
+          button.addEventListener('click', () => {
+            spotlightIndex = index;
+            renderSpotlight();
+          });
+          picks.append(button);
+        });
+
+        $('#spotlight-open').onclick = () => openDetails(item.id);
       }
 
       function render() {
@@ -416,7 +506,16 @@
         openModal(detailModal);
       }
 
+      renderSpotlight();
       render();
+      $('#spotlight-previous').addEventListener('click', () => {
+        spotlightIndex = (spotlightIndex - 1 + watchedItems.length) % watchedItems.length;
+        renderSpotlight();
+      });
+      $('#spotlight-next').addEventListener('click', () => {
+        spotlightIndex = (spotlightIndex + 1) % watchedItems.length;
+        renderSpotlight();
+      });
 
       document.querySelectorAll('[data-type]').forEach(button => button.addEventListener('click', () => {
         state.type = button.dataset.type;
