@@ -698,6 +698,17 @@
       .movie-grid { gap: 15px 10px; }
       .movie-card { padding: 7px; }
     }
+    .tag-editor { margin-top: 16px; color: #53616c; }
+    .tag-editor label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 650; }
+    .tag-input { width: 100%; min-height: 40px; padding: 9px 11px; border: 1px solid rgba(87,105,120,.2); border-radius: 9px; background: rgba(255,255,255,.65); color: #2d3b46; font-size: 12px; }
+    .tag-help { margin: 7px 0 10px; color: #71808b; font-size: 11px; line-height: 1.6; }
+    .tag-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .tag-action { padding: 9px 12px; border: 1px solid rgba(87,105,120,.2); border-radius: 9px; background: rgba(255,255,255,.65); color: #34434f; cursor: pointer; font-size: 11px; }
+    .tag-action:hover { background: #fff; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    button.detail-chip { cursor: pointer; overflow-wrap: anywhere; }
+    .tag-status { color: #53616c; font-size: 11px; }
+    @media (max-width: 560px) { .tag-editor { grid-column: 1 / -1; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
   </style>
 </head>
@@ -711,6 +722,7 @@
         <span class="brand-caption">Movies &amp; Series Library</span>
       </a>
       <div class="topbar-end">
+        <button id="download-collection" class="tag-action" type="button" disabled>Download collection</button>
         <span id="top-count" class="collection-count">Your personal collection</span>
       </div>
     </header>
@@ -735,7 +747,7 @@
     <section class="filters" aria-label="Filter your collection">
       <label class="search-wrap">
         <svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.7" stroke="currentColor" stroke-width="1.5"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <input id="search" class="search-input" type="search" placeholder="Search titles or people" aria-label="Search titles or people">
+        <input id="search" class="search-input" type="search" placeholder="Search titles or tags" aria-label="Search titles or tags" aria-describedby="search-help">
       </label>
       <div class="filter-group" aria-label="Filter by format">
         <button class="filter-button" type="button" data-type="all" aria-pressed="true">All</button>
@@ -754,7 +766,7 @@
 
     <main>
       <div class="filter-row">
-        <div><h2 id="collection-heading">Your collection</h2><p>Everything you chose to keep.</p></div>
+        <div><h2 id="collection-heading">Your collection</h2><p id="search-help">Search a tag, or separate terms with commas to match all of them.</p></div>
         <span id="results-count" class="results-count">0 titles</span>
       </div>
       <section id="movie-grid" class="movie-grid" aria-label="Movies and series"></section>
@@ -778,10 +790,23 @@
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
       const detailModal = $('#detail-modal');
+      const tagStorageKey = 'abhi-movies-library-tags';
+      let savedTags = {};
       let spotlightItems = [];
       let spotlightIndex = 0;
       let lastFocusedElement = null;
       let spotlightFadeTimeout = null;
+
+      function parseTags(value) {
+        const seen = new Set();
+        const values = Array.isArray(value) ? value : typeof value === 'string' ? value.split(',') : [];
+        return values.filter(value => typeof value === 'string').map(tag => tag.trim()).filter(tag => {
+          const key = tag.toLocaleLowerCase();
+          if (!key || seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+      }
 
       function showLoadMessage(message) {
         const empty = document.createElement('div');
@@ -806,6 +831,17 @@
             item && typeof item.id === 'string' && typeof item.title === 'string' &&
             ['movie', 'series'].includes(item.type) && ['watched', 'to-watch'].includes(item.status)
           );
+          try {
+            const stored = JSON.parse(localStorage.getItem(tagStorageKey) || '{}');
+            if (stored && typeof stored === 'object' && !Array.isArray(stored)) savedTags = stored;
+          } catch (error) {
+            console.warn('Saved browser tags could not be loaded.', error);
+          }
+          state.items = state.items.map(item => ({
+            ...item,
+            tags: parseTags(Object.hasOwn(savedTags, item.id) ? savedTags[item.id] : item.tags).join(', ')
+          }));
+          $('#download-collection').disabled = false;
           spotlightItems = filteredItems().slice(0, 5);
           spotlightIndex = 0;
           render();
@@ -880,12 +916,13 @@
       }
 
       function filteredItems() {
-        const query = state.query.trim().toLocaleLowerCase();
+        const terms = state.query.toLocaleLowerCase().split(',').map(term => term.trim()).filter(Boolean);
         return state.items.filter(item => {
           const matchesType = state.type === 'all' || item.type === state.type;
           const matchesStatus = state.status === 'all' || item.status === state.status;
           const matchesGenre = state.genre === 'all' || item.genre === state.genre;
-          const matchesQuery = !query || `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''}`.toLocaleLowerCase().includes(query);
+          const searchable = `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''} ${parseTags(item.tags).join(' ')}`.toLocaleLowerCase();
+          const matchesQuery = terms.every(term => searchable.includes(term));
           return matchesType && matchesStatus && matchesGenre && matchesQuery;
         });
       }
@@ -973,7 +1010,7 @@
           const title = document.createElement('h3');
           title.textContent = 'No titles match those filters';
           const description = document.createElement('p');
-          description.textContent = 'Try another format, status, genre, or search.';
+          description.textContent = 'Try another format, status, genre, or tag. Comma-separated search terms must all match.';
           content.append(icon, title, description);
           empty.append(content);
           grid.append(empty);
@@ -1063,7 +1100,71 @@
         review.textContent = item.review || 'No review added yet.';
         if (ratingBadge) reviewPanel.append(ratingBadge);
         reviewPanel.append(review);
-        info.append(chips, title, reviewPanel);
+        const tagEditor = document.createElement('form');
+        tagEditor.className = 'tag-editor';
+        const tagLabel = document.createElement('label');
+        tagLabel.htmlFor = 'detail-tags';
+        tagLabel.textContent = 'Tags';
+        const tagInput = document.createElement('input');
+        tagInput.id = 'detail-tags';
+        tagInput.className = 'tag-input';
+        tagInput.type = 'text';
+        tagInput.value = item.tags;
+        tagInput.placeholder = 'space, mind-bending, favorites';
+        tagInput.setAttribute('aria-describedby', 'tag-help');
+        const help = document.createElement('p');
+        help.id = 'tag-help';
+        help.className = 'tag-help';
+        help.textContent = 'Separate tags with commas. Saved in this browser; download the collection and replace movies.json to keep them across devices.';
+        const actions = document.createElement('div');
+        actions.className = 'tag-actions';
+        const save = document.createElement('button');
+        save.type = 'submit';
+        save.className = 'tag-action';
+        save.textContent = 'Save tags';
+        const status = document.createElement('span');
+        status.className = 'tag-status';
+        status.setAttribute('role', 'status');
+        actions.append(save, status);
+        const tagList = document.createElement('div');
+        tagList.className = 'tag-list';
+        function renderTagList() {
+          tagList.replaceChildren();
+          parseTags(item.tags).forEach(tag => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'detail-chip';
+            button.textContent = tag;
+            button.setAttribute('aria-label', `Search for tag: ${tag}`);
+            button.addEventListener('click', () => {
+              state.query = tag;
+              $('#search').value = tag;
+              spotlightIndex = 0;
+              closeModal(detailModal);
+              render();
+              $('#search').focus();
+            });
+            tagList.append(button);
+          });
+        }
+        tagEditor.append(tagLabel, tagInput, help, actions, tagList);
+        renderTagList();
+        tagInput.addEventListener('input', () => { status.textContent = 'Unsaved changes'; });
+        tagEditor.addEventListener('submit', event => {
+          event.preventDefault();
+          item.tags = parseTags(tagInput.value).join(', ');
+          tagInput.value = item.tags;
+          savedTags[item.id] = item.tags;
+          try {
+            localStorage.setItem(tagStorageKey, JSON.stringify(savedTags));
+            status.textContent = 'Tags saved in this browser.';
+          } catch (error) {
+            status.textContent = 'Browser storage unavailable. Download the collection to keep your tags.';
+          }
+          renderTagList();
+          render();
+        });
+        info.append(chips, title, reviewPanel, tagEditor);
         layout.append(poster, info);
         content.append(layout);
         openModal(detailModal);
@@ -1097,6 +1198,15 @@
       }));
       $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; spotlightIndex = 0; render(); });
       $('#search').addEventListener('input', event => { state.query = event.target.value; spotlightIndex = 0; render(); });
+      $('#download-collection').addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify(state.items, null, 2) + '\n'], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'movies.json';
+        link.click();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
 
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         window.setInterval(() => {

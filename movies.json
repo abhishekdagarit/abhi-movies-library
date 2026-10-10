@@ -1,6 +1,7 @@
 [
   {
     "id": "interstellar",
+    "tags": "space, time travel",
     "title": "Interstellar",
     "type": "movie",
     "genre": "Sci-Fi",
@@ -12,6 +13,7 @@
   },
   {
     "id": "inception",
+    "tags": "dreams, mind-bending",
     "title": "Inception",
     "type": "movie",
     "genre": "Sci-Fi",
@@ -23,6 +25,7 @@
   },
   {
     "id": "dune-part-two",
+    "tags": "",
     "title": "Dune: Part Two",
     "type": "movie",
     "genre": "Sci-Fi",
@@ -34,6 +37,7 @@
   },
   {
     "id": "the-dark-knight",
+    "tags": "",
     "title": "The Dark Knight",
     "type": "movie",
     "genre": "Crime",
@@ -45,6 +49,7 @@
   },
   {
     "id": "parasite",
+    "tags": "",
     "title": "Parasite",
     "type": "movie",
     "genre": "Thriller",
@@ -56,6 +61,7 @@
   },
   {
     "id": "everything-everywhere",
+    "tags": "",
     "title": "Everything Everywhere All at Once",
     "type": "movie",
     "genre": "Adventure",
@@ -67,6 +73,7 @@
   },
   {
     "id": "breaking-bad",
+    "tags": "",
     "title": "Breaking Bad",
     "type": "series",
     "genre": "Crime",
@@ -78,6 +85,7 @@
   },
   {
     "id": "stranger-things",
+    "tags": "",
     "title": "Stranger Things",
     "type": "series",
     "genre": "Sci-Fi",
@@ -89,6 +97,7 @@
   },
   {
     "id": "the-last-of-us",
+    "tags": "",
     "title": "The Last of Us",
     "type": "series",
     "genre": "Drama",
@@ -100,6 +109,7 @@
   },
   {
     "id": "the-bear",
+    "tags": "",
     "title": "The Bear",
     "type": "series",
     "genre": "Drama",
@@ -111,6 +121,7 @@
   },
   {
     "id": "sherlock",
+    "tags": "",
     "title": "Sherlock",
     "type": "series",
     "genre": "Mystery",
@@ -122,6 +133,7 @@
   },
   {
     "id": "arcane",
+    "tags": "",
     "title": "Arcane",
     "type": "series",
     "genre": "Animation",
@@ -130,5 +142,17 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
     "review": "Sample note: On the watchlist. The distinctive animation and story of two sisters divided by a city-wide conflict make this one stand out."
+  },
+  {
+    "id": "the-edge-of-seventeen",
+    "tags": "",
+    "title": "The Edge Of Seventeen",
+    "type": "movie",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2016",
+    "rating": null,
+    "poster": "https://www.themoviedb.org/movie/376660-the-edge-of-seventeen#",
+    "review": "I liked to trailer, seems like a good one to watch, A feel good kinda movie."
   }
 ]
