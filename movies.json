@@ -2246,7 +2246,7 @@
   {
     "id": "handsome-guys",
     "tags": "",
-    "title": "Handsome Guys",
+    "title": "Handsome Guys (핸섬가이즈)",
     "type": "movie",
     "genre": "",
     "status": "to-watch",
@@ -3405,6 +3405,30 @@
     "year": "2007",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/qNen8x5gaikjIg9CFihgxYcJwQe.jpg",
+    "review": ""
+  },
+  {
+    "id": "vibe-2026",
+    "tags": "",
+    "title": "Vibe",
+    "type": "movie",
+    "genre": "",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/1K2cYaK42vcQkg1iITxF6xcbJrs.jpg",
+    "review": ""
+  },
+  {
+    "id": "single-papa",
+    "tags": "",
+    "title": "Single Papa",
+    "type": "series",
+    "genre": "",
+    "status": "watched",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/kSj4h1uVAKGn9yVjJTC1tQGcnoZ.jpg",
     "review": ""
   },
   {
