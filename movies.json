@@ -1028,7 +1028,7 @@
     "status": "to-watch",
     "year": "2018",
     "rating": null,
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/lMND7RVCyke2m2TCZeTviKbBIki.jpg",
     "review": ""
   },
   {
@@ -1040,7 +1040,7 @@
     "status": "to-watch",
     "year": "1979",
     "rating": null,
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/r87D2LNJmTBOMS71KbKcKnUDwhY.jpg",
     "review": ""
   }
 ]
