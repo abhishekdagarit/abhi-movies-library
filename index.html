@@ -157,7 +157,7 @@
       .detail-layout { grid-template-columns: 92px minmax(0, 1fr); gap: 14px; padding: 17px; }
       .detail-description { grid-column: 1 / -1; margin: 14px 0; }
       .detail-info { display: contents; }
-      .detail-kinds, .detail-title, .detail-meta { grid-column: 2; }
+      .detail-kinds, .detail-title, .detail-meta, .detail-status-control, .detail-status-hint { grid-column: 2; }
       .detail-kinds { align-self: end; margin-bottom: -8px; }
       .detail-title { align-self: start; }
       .detail-description { grid-row: 2; }
@@ -676,6 +676,11 @@
     .detail-kinds { margin-bottom: 9px; }
     .detail-chip { border-color: rgba(91,108,121,.13); background: rgba(255,255,255,.42); color: #71808b; }
     .detail-title { color: #2d3b46; font-weight: 620; }
+    .detail-status-control { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 16px; color: #71808b; font-size: 10px; font-weight: 700; }
+    .detail-status-select { min-height: 36px; padding: 0 30px 0 10px; border: 1px solid rgba(91,108,121,.18); border-radius: 9px; background: rgba(255,255,255,.72); color: #34434f; font-size: 11px; cursor: pointer; }
+    .detail-status-select option { background: #fff; color: #34434f; }
+    .detail-status-hint { margin: 6px 0 0; color: #89949d; font-size: 9px; }
+    .movie-card[data-status="in-progress"] .poster-badge { border-color: rgba(191,145,76,.38); background: rgba(255,249,235,.9); color: #82612f; }
     .glass-review {
       margin-top: 14px;
       border-color: rgba(255,255,255,.82);
@@ -762,6 +767,7 @@
       <div class="filter-group" aria-label="Filter by watch status">
         <button class="filter-button" type="button" data-status="all" aria-pressed="true">All status</button>
         <button class="filter-button" type="button" data-status="to-watch" aria-pressed="false">To watch</button>
+        <button class="filter-button" type="button" data-status="in-progress" aria-pressed="false">In progress</button>
         <button class="filter-button" type="button" data-status="watched" aria-pressed="false">Watched</button>
       </div>
     </section>
@@ -789,6 +795,7 @@
     (() => {
       // Movie and series records live in movies.json for easy offline editing.
       const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '' };
+      const statusLabels = { 'to-watch': 'To watch', 'in-progress': 'In progress', watched: 'Watched' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
       const detailModal = $('#detail-modal');
@@ -806,6 +813,30 @@
           seen.add(key);
           return true;
         });
+      }
+
+      function readStatusOverrides() {
+        try {
+          const saved = JSON.parse(localStorage.getItem('abhi-movies-status-overrides') || '{}');
+          return saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
+        } catch {
+          return {};
+        }
+      }
+
+      function updateItemStatus(id, status) {
+        const item = state.items.find(entry => entry.id === id);
+        if (!item || !Object.prototype.hasOwnProperty.call(statusLabels, status)) return;
+        item.status = status;
+        try {
+          const overrides = readStatusOverrides();
+          overrides[id] = status;
+          localStorage.setItem('abhi-movies-status-overrides', JSON.stringify(overrides));
+        } catch (error) {
+          console.warn('Could not save this status in browser storage.', error);
+        }
+        render();
+        openDetails(id);
       }
 
       function showLoadMessage(message) {
@@ -827,10 +858,14 @@
           if (!response.ok) throw new Error(`Could not load movies.json (${response.status})`);
           const collection = await response.json();
           if (!Array.isArray(collection)) throw new Error('movies.json must contain a JSON array');
+          const statusOverrides = readStatusOverrides();
           state.items = collection.filter(item =>
             item && typeof item.id === 'string' && typeof item.title === 'string' &&
-            ['movie', 'series'].includes(item.type) && ['watched', 'to-watch'].includes(item.status)
-          );
+            ['movie', 'series'].includes(item.type) && ['watched', 'to-watch', 'in-progress'].includes(statusOverrides[item.id] || item.status)
+          ).map(item => ({
+            ...item,
+            status: ['watched', 'to-watch', 'in-progress'].includes(statusOverrides[item.id]) ? statusOverrides[item.id] : item.status
+          }));
           state.items = state.items.map(item => ({
             ...item,
             tags: parseTags(item.tags).join(', ')
@@ -957,7 +992,7 @@
         const item = spotlightItems[spotlightIndex];
 
         const currentGenre = state.genre !== 'all' ? state.genre : '';
-        const currentStatus = state.status !== 'all' ? (state.status === 'watched' ? 'Watched' : 'To watch') : '';
+        const currentStatus = state.status !== 'all' ? statusLabels[state.status] : '';
         const currentType = state.type !== 'all' ? (state.type === 'series' ? 'Series' : 'Movies') : '';
         const currentTag = state.tag ? $('#tag-filter').selectedOptions[0].textContent : '';
         const filterLabel = [currentType, currentStatus, currentGenre, currentTag].filter(Boolean).join(' · ');
@@ -977,7 +1012,7 @@
 
         const meta = $('#spotlight-meta');
         meta.replaceChildren();
-        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', item.status === 'watched' ? 'Watched' : 'To watch'].forEach(value => {
+        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', statusLabels[item.status]].forEach(value => {
           const chip = document.createElement('span');
           chip.className = 'spotlight-chip';
           chip.textContent = value;
@@ -1008,7 +1043,7 @@
         renderSpotlight();
         $('#top-count').textContent = `${state.items.length} ${state.items.length === 1 ? 'title' : 'titles'} in your library`;
         $('#results-count').textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'title' : 'titles'}`;
-        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.status === 'watched' ? 'Watched' : state.status === 'to-watch' ? 'To watch' : state.genre !== 'all' ? state.genre : 'Your collection';
+        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
         grid.replaceChildren();
 
         if (!visibleItems.length) {
@@ -1036,7 +1071,7 @@
           card.setAttribute('role', 'button');
           card.setAttribute('aria-label', `View ${item.title} details`);
           const poster = makePoster(item.title, item.poster);
-          poster.querySelector('.poster-badge').textContent = item.status === 'watched' ? 'Watched' : 'To watch';
+          poster.querySelector('.poster-badge').textContent = statusLabels[item.status];
           const meta = document.createElement('div');
           meta.className = 'card-meta';
           const text = document.createElement('div');
@@ -1088,7 +1123,7 @@
         const layout = document.createElement('div');
         layout.className = 'detail-layout';
         const poster = makePoster(item.title, item.poster, 'detail-poster');
-        poster.querySelector('.poster-badge').textContent = item.status === 'watched' ? 'Watched' : 'To watch';
+        poster.querySelector('.poster-badge').textContent = statusLabels[item.status];
         const info = document.createElement('div');
         info.className = 'detail-info';
         const chips = document.createElement('div');
@@ -1103,6 +1138,18 @@
         title.className = 'detail-title';
         title.id = 'detail-title';
         title.textContent = item.title;
+        const statusControl = document.createElement('label');
+        statusControl.className = 'detail-status-control';
+        statusControl.textContent = 'Watch status';
+        const statusSelect = document.createElement('select');
+        statusSelect.className = 'detail-status-select';
+        statusSelect.setAttribute('aria-label', `Watch status for ${item.title}`);
+        Object.entries(statusLabels).forEach(([value, label]) => statusSelect.add(new Option(label, value, false, item.status === value)));
+        statusSelect.addEventListener('change', () => updateItemStatus(item.id, statusSelect.value));
+        statusControl.append(statusSelect);
+        const statusHint = document.createElement('p');
+        statusHint.className = 'detail-status-hint';
+        statusHint.textContent = 'Status changes are saved in this browser.';
         const reviewPanel = document.createElement('section');
         reviewPanel.className = 'glass-review';
         const ratingBadge = makeRatingBadge(item);
@@ -1120,7 +1167,7 @@
           chip.textContent = tag;
           tagList.append(chip);
         });
-        info.append(chips, title, reviewPanel);
+        info.append(chips, title, statusControl, statusHint, reviewPanel);
         if (tagList.childElementCount) info.append(tagList);
         layout.append(poster, info);
         content.append(layout);
