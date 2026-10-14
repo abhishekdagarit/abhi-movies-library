@@ -108,6 +108,7 @@
   },
   {
     "id": "no-reservations",
+    "hallOfFame": true,
     "tags": "",
     "title": "No Reservations",
     "type": "movie",
@@ -300,6 +301,7 @@
   },
   {
     "id": "meet-joe-black",
+    "hallOfFame": true,
     "tags": "",
     "title": "Meet Joe Black",
     "type": "movie",
@@ -324,6 +326,7 @@
   },
   {
     "id": "notting-hill",
+    "hallOfFame": true,
     "tags": "",
     "title": "Notting Hill",
     "type": "movie",
@@ -384,6 +387,7 @@
   },
   {
     "id": "kate-and-leopold",
+    "hallOfFame": true,
     "tags": "",
     "title": "Kate & Leopold",
     "type": "movie",
@@ -480,6 +484,7 @@
   },
   {
     "id": "october-2018",
+    "hallOfFame": true,
     "tags": "",
     "title": "October",
     "type": "movie",
@@ -576,6 +581,7 @@
   },
   {
     "id": "yes-man",
+    "hallOfFame": true,
     "tags": "",
     "title": "Yes Man",
     "type": "movie",
@@ -660,6 +666,7 @@
   },
   {
     "id": "boston-legal",
+    "hallOfFame": true,
     "tags": "",
     "title": "Boston Legal",
     "type": "series",
@@ -672,6 +679,7 @@
   },
   {
     "id": "the-lucky-one",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Lucky One",
     "type": "movie",
@@ -720,6 +728,7 @@
   },
   {
     "id": "dead-poets-society",
+    "hallOfFame": true,
     "tags": "",
     "title": "Dead Poets Society",
     "type": "movie",
@@ -756,6 +765,7 @@
   },
   {
     "id": "qarib-qarib-single",
+    "hallOfFame": true,
     "tags": "",
     "title": "Qarib Qarib Singlle",
     "type": "movie",
@@ -768,6 +778,7 @@
   },
   {
     "id": "kantara",
+    "hallOfFame": true,
     "tags": "",
     "title": "Kantara",
     "type": "movie",
@@ -840,6 +851,7 @@
   },
   {
     "id": "womb",
+    "hallOfFame": true,
     "tags": "",
     "title": "Womb",
     "type": "movie",
@@ -935,19 +947,8 @@
     "review": ""
   },
   {
-    "id": "adbhut",
-    "tags": "",
-    "title": "Adbhut",
-    "type": "movie",
-    "genre": "",
-    "status": "to-watch",
-    "year": "2024",
-    "rating": null,
-    "poster": "https://image.tmdb.org/t/p/w500/vYe4mtJAgNelVUWG5O91bndDYU5.jpg",
-    "review": ""
-  },
-  {
     "id": "phenomenon-1996",
+    "hallOfFame": true,
     "tags": "",
     "title": "Phenomenon",
     "type": "movie",
@@ -960,6 +961,7 @@
   },
   {
     "id": "indecent-proposal",
+    "hallOfFame": true,
     "tags": "",
     "title": "Indecent Proposal",
     "type": "movie",
@@ -1027,7 +1029,7 @@
     "status": "to-watch",
     "year": "2018",
     "rating": null,
-    "poster": "https://image.tmdb.org/t/p/w500/lMmoND7RVCyke2m2TCZeTviKbBIki.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/lMND7RVCyke2m2TCZeTviKbBIki.jpg",
     "review": ""
   },
   {
@@ -1092,6 +1094,7 @@
   },
   {
     "id": "before-we-go",
+    "hallOfFame": true,
     "tags": "",
     "title": "Before We Go",
     "type": "movie",
@@ -1104,6 +1107,7 @@
   },
   {
     "id": "karwaan",
+    "hallOfFame": true,
     "tags": "",
     "title": "Karwaan",
     "type": "movie",
@@ -1152,6 +1156,7 @@
   },
   {
     "id": "good-will-hunting",
+    "hallOfFame": true,
     "tags": "",
     "title": "Good Will Hunting",
     "type": "movie",
@@ -1176,6 +1181,7 @@
   },
   {
     "id": "house-md",
+    "hallOfFame": true,
     "tags": "",
     "title": "House M.D.",
     "type": "series",
@@ -1200,6 +1206,7 @@
   },
   {
     "id": "piku",
+    "hallOfFame": true,
     "tags": "",
     "title": "Piku",
     "type": "movie",
@@ -1212,6 +1219,7 @@
   },
   {
     "id": "ankhon-dekhi",
+    "hallOfFame": true,
     "tags": "",
     "title": "Ankhon Dekhi",
     "type": "movie",
@@ -1224,6 +1232,7 @@
   },
   {
     "id": "fleabag",
+    "hallOfFame": true,
     "tags": "",
     "title": "Fleabag",
     "type": "series",
@@ -1296,6 +1305,7 @@
   },
   {
     "id": "true-detective",
+    "hallOfFame": true,
     "tags": "",
     "title": "True Detective",
     "type": "series",
@@ -1380,6 +1390,7 @@
   },
   {
     "id": "the-notebook",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Notebook",
     "type": "movie",
@@ -1416,6 +1427,7 @@
   },
   {
     "id": "betrayal-2003",
+    "hallOfFame": true,
     "tags": "",
     "title": "Betrayal",
     "type": "movie",
@@ -1476,6 +1488,7 @@
   },
   {
     "id": "tom-clancys-jack-ryan",
+    "hallOfFame": true,
     "tags": "",
     "title": "Tom Clancy's Jack Ryan",
     "type": "series",
@@ -1524,6 +1537,7 @@
   },
   {
     "id": "project-x-2012",
+    "hallOfFame": true,
     "tags": "",
     "title": "Project X",
     "type": "movie",
@@ -1560,6 +1574,7 @@
   },
   {
     "id": "mr-robot",
+    "hallOfFame": true,
     "tags": "",
     "title": "Mr. Robot",
     "type": "series",
@@ -1644,6 +1659,7 @@
   },
   {
     "id": "peaky-blinders",
+    "hallOfFame": true,
     "tags": "",
     "title": "Peaky Blinders",
     "type": "series",
@@ -1668,6 +1684,7 @@
   },
   {
     "id": "f1-2025",
+    "hallOfFame": true,
     "tags": "",
     "title": "F1",
     "type": "movie",
@@ -2160,6 +2177,7 @@
   },
   {
     "id": "asur",
+    "hallOfFame": true,
     "tags": "",
     "title": "Asur",
     "type": "series",
@@ -2232,6 +2250,7 @@
   },
   {
     "id": "ex-machina",
+    "hallOfFame": true,
     "tags": "",
     "title": "Ex Machina",
     "type": "movie",
@@ -2388,6 +2407,7 @@
   },
   {
     "id": "the-wonderfools",
+    "hallOfFame": true,
     "tags": "",
     "title": "The WONDERfools",
     "type": "series",
@@ -2424,6 +2444,7 @@
   },
   {
     "id": "code-of-silence-2025",
+    "hallOfFame": true,
     "tags": "",
     "title": "Code of Silence",
     "type": "series",
@@ -2891,7 +2912,7 @@
     "review": ""
   },
   {
-    "id": "widows-bay",
+    "id": "widow's-bay",
     "tags": "",
     "title": "Widow's Bay",
     "type": "series",
@@ -3000,6 +3021,7 @@
   },
   {
     "id": "the-pitt",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Pitt",
     "type": "series",
@@ -3240,6 +3262,7 @@
   },
   {
     "id": "banshee",
+    "hallOfFame": true,
     "tags": "",
     "title": "Banshee",
     "type": "series",
@@ -3264,6 +3287,7 @@
   },
   {
     "id": "the-girlfriend-2025",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Girlfriend",
     "type": "series",
@@ -3420,6 +3444,7 @@
   },
   {
     "id": "single-papa",
+    "hallOfFame": true,
     "tags": "",
     "title": "Single Papa",
     "type": "series",
@@ -3504,6 +3529,7 @@
   },
   {
     "id": "life-like-2019",
+    "hallOfFame": true,
     "tags": "",
     "title": "Life Like",
     "type": "movie",
@@ -3804,6 +3830,7 @@
   },
   {
     "id": "the-silence-of-the-lambs",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Silence of the Lambs",
     "type": "movie",
@@ -3816,6 +3843,7 @@
   },
   {
     "id": "hachi-a-dogs-tale",
+    "hallOfFame": true,
     "tags": "",
     "title": "Hachi: A Dog's Tale",
     "type": "movie",
@@ -4008,6 +4036,7 @@
   },
   {
     "id": "shall-we-dance-2004",
+    "hallOfFame": true,
     "tags": "",
     "title": "Shall We Dance?",
     "type": "movie",
@@ -4148,6 +4177,19 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-sum-of-all-fears",
+    "hallOfFame": true,
+    "tags": "",
+    "title": "The Sum of All Fears",
+    "type": "movie",
+    "genre": "",
+    "status": "watched",
+    "year": "2002",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/3E4LW4bjRhEMDeeXeIsmkJ94v8K.jpg",
     "review": ""
   }
 ]
