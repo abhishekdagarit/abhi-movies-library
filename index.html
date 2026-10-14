@@ -98,7 +98,7 @@
     .fallback-title { font-family: Georgia, serif; font-size: clamp(15px, 2vw, 21px); font-weight: 700; line-height: 1.15; text-wrap: balance; }
     .poster-shade { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(0,0,0,.56)); pointer-events: none; }
     .poster-badge { position: absolute; z-index: 1; top: 9px; left: 9px; max-width: calc(100% - 18px); padding: 5px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 100px; background: rgba(9,10,13,.66); color: rgba(255,255,255,.92); font-size: 8px; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; backdrop-filter: blur(10px); }
-    .hall-of-fame-heart { position: absolute; z-index: 2; top: 8px; right: 8px; display: grid; width: 29px; height: 29px; place-items: center; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; background: rgba(20,20,20,.55); color: #e53946; font-size: 16px; line-height: 1; text-shadow: 0 1px 5px rgba(0,0,0,.35); backdrop-filter: blur(8px); }
+    .hall-of-fame-heart { position: absolute; z-index: 2; top: 8px; right: 8px; display: grid; width: 20px; height: 20px; place-items: center; color: #e53946; font-size: 13px; line-height: 1; text-shadow: 0 1px 4px rgba(0,0,0,.38); pointer-events: none; }
     .movie-card[data-status="watched"] .poster-badge { border-color: color-mix(in srgb, var(--accent) 40%, transparent); color: #fff; }
     .card-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 10px 2px 0; }
     .card-title { margin: 0; overflow: hidden; color: #f0efec; font-size: 12px; font-weight: 650; letter-spacing: -.01em; line-height: 1.35; text-overflow: ellipsis; }
@@ -704,12 +704,13 @@
       .movie-grid { gap: 15px 10px; }
       .movie-card { padding: 7px; }
     }
-    .filters { grid-template-columns: minmax(170px, 1fr) auto minmax(110px, auto) minmax(110px, auto) auto; }
+    .filters { grid-template-columns: minmax(170px, 1fr) auto minmax(110px, auto) minmax(110px, auto) auto auto; }
     @media (max-width: 1100px) {
       .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .search-wrap { grid-column: 1 / -1; }
       .filters > .filter-group[aria-label="Filter by format"] { grid-column: 1; grid-row: 2; }
       .filters > .filter-group[aria-label="Filter by watch status"] { grid-column: 2; grid-row: 2; }
+      .filters > .filter-group[aria-label="Filter by Hall of Fame"] { grid-column: 1 / -1; grid-row: 3; }
       .genre-select { min-width: 0; }
     }
     .tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
@@ -771,6 +772,9 @@
         <button class="filter-button" type="button" data-status="in-progress" aria-pressed="false">In progress</button>
         <button class="filter-button" type="button" data-status="watched" aria-pressed="false">Watched</button>
       </div>
+      <div class="filter-group" aria-label="Filter by Hall of Fame">
+        <button class="filter-button" id="hall-of-fame-filter" type="button" aria-pressed="false">♥ Hall of Fame</button>
+      </div>
     </section>
 
     <main>
@@ -795,7 +799,7 @@
   <script>
     (() => {
       // Movie and series records live in movies.json for easy offline editing.
-      const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '' };
+      const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '', hallOfFameOnly: false };
       const statusLabels = { 'to-watch': 'To watch', 'in-progress': 'In progress', watched: 'Watched' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
@@ -976,9 +980,10 @@
           const matchesStatus = state.status === 'all' || item.status === state.status;
           const matchesGenre = state.genre === 'all' || item.genre === state.genre;
           const matchesTag = !state.tag || parseTags(item.tags).some(tag => tag.toLocaleLowerCase() === state.tag);
+          const matchesHallOfFame = !state.hallOfFameOnly || item.hallOfFame === true;
           const searchable = `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''} ${parseTags(item.tags).join(' ')}`.toLocaleLowerCase();
           const matchesQuery = terms.every(term => searchable.includes(term));
-          return matchesType && matchesStatus && matchesGenre && matchesTag && matchesQuery;
+          return matchesType && matchesStatus && matchesGenre && matchesTag && matchesHallOfFame && matchesQuery;
         });
       }
 
@@ -1005,7 +1010,8 @@
         const currentStatus = state.status !== 'all' ? statusLabels[state.status] : '';
         const currentType = state.type !== 'all' ? (state.type === 'series' ? 'Series' : 'Movies') : '';
         const currentTag = state.tag ? $('#tag-filter').selectedOptions[0].textContent : '';
-        const filterLabel = [currentType, currentStatus, currentGenre, currentTag].filter(Boolean).join(' · ');
+        const currentHallOfFame = state.hallOfFameOnly ? 'Hall of Fame' : '';
+        const filterLabel = [currentType, currentStatus, currentGenre, currentTag, currentHallOfFame].filter(Boolean).join(' · ');
         $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
         const copy = $('.intro-copy');
         copy.classList.add('is-switching');
@@ -1053,7 +1059,7 @@
         renderSpotlight();
         $('#top-count').textContent = `${state.items.length} ${state.items.length === 1 ? 'title' : 'titles'} in your library`;
         $('#results-count').textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'title' : 'titles'}`;
-        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
+        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.status !== 'all' ? statusLabels[state.status] : state.hallOfFameOnly ? 'Hall of Fame' : state.genre !== 'all' ? state.genre : 'Your collection';
         grid.replaceChildren();
 
         if (!visibleItems.length) {
@@ -1210,6 +1216,12 @@
         document.querySelectorAll('[data-status]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
         render();
       }));
+      $('#hall-of-fame-filter').addEventListener('click', event => {
+        state.hallOfFameOnly = !state.hallOfFameOnly;
+        spotlightIndex = 0;
+        event.currentTarget.setAttribute('aria-pressed', String(state.hallOfFameOnly));
+        render();
+      });
       $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; spotlightIndex = 0; render(); });
       $('#tag-filter').addEventListener('change', event => { state.tag = event.target.value; spotlightIndex = 0; render(); });
       $('#search').addEventListener('input', event => { state.query = event.target.value; spotlightIndex = 0; render(); });
