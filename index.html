@@ -98,6 +98,7 @@
     .fallback-title { font-family: Georgia, serif; font-size: clamp(15px, 2vw, 21px); font-weight: 700; line-height: 1.15; text-wrap: balance; }
     .poster-shade { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(0,0,0,.56)); pointer-events: none; }
     .poster-badge { position: absolute; z-index: 1; top: 9px; left: 9px; max-width: calc(100% - 18px); padding: 5px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 100px; background: rgba(9,10,13,.66); color: rgba(255,255,255,.92); font-size: 8px; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; backdrop-filter: blur(10px); }
+    .hall-of-fame-heart { position: absolute; z-index: 2; top: 8px; right: 8px; display: grid; width: 29px; height: 29px; place-items: center; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; background: rgba(20,20,20,.55); color: #e53946; font-size: 16px; line-height: 1; text-shadow: 0 1px 5px rgba(0,0,0,.35); backdrop-filter: blur(8px); }
     .movie-card[data-status="watched"] .poster-badge { border-color: color-mix(in srgb, var(--accent) 40%, transparent); color: #fff; }
     .card-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 10px 2px 0; }
     .card-title { margin: 0; overflow: hidden; color: #f0efec; font-size: 12px; font-weight: 650; letter-spacing: -.01em; line-height: 1.35; text-overflow: ellipsis; }
@@ -880,13 +881,22 @@
         }
       }
 
-      function makePoster(title, posterUrl, className = '') {
+      function makePoster(title, posterUrl, className = '', hallOfFame = false) {
         const wrapper = document.createElement('div');
         wrapper.className = `poster ${className}`.trim();
         const badge = document.createElement('span');
         badge.className = 'poster-badge';
         badge.textContent = 'Your collection';
         wrapper.append(badge);
+        if (hallOfFame) {
+          const heart = document.createElement('span');
+          heart.className = 'hall-of-fame-heart';
+          heart.textContent = '♥';
+          heart.setAttribute('role', 'img');
+          heart.setAttribute('aria-label', 'Hall of Fame');
+          heart.title = 'Hall of Fame';
+          wrapper.append(heart);
+        }
 
         const fallback = document.createElement('div');
         fallback.className = 'poster-fallback';
@@ -1070,7 +1080,7 @@
           card.tabIndex = 0;
           card.setAttribute('role', 'button');
           card.setAttribute('aria-label', `View ${item.title} details`);
-          const poster = makePoster(item.title, item.poster);
+          const poster = makePoster(item.title, item.poster, '', item.hallOfFame === true);
           poster.querySelector('.poster-badge').textContent = statusLabels[item.status];
           const meta = document.createElement('div');
           meta.className = 'card-meta';
@@ -1122,7 +1132,7 @@
         content.replaceChildren();
         const layout = document.createElement('div');
         layout.className = 'detail-layout';
-        const poster = makePoster(item.title, item.poster, 'detail-poster');
+        const poster = makePoster(item.title, item.poster, 'detail-poster', item.hallOfFame === true);
         poster.querySelector('.poster-badge').textContent = statusLabels[item.status];
         const info = document.createElement('div');
         info.className = 'detail-info';
