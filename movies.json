@@ -104,6 +104,7 @@
     "status": "to-watch",
     "year": "2016",
     "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/15FykQKiM0aYpC1MuybR43xl8eF.jpg",
     "review": "I liked to trailer, seems like a good one to watch, A feel good kinda movie."
   },
   {
@@ -140,6 +141,7 @@
     "status": "to-watch",
     "year": "2013",
     "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/15FykQKiM0aYpC1MuybR43xl8eF.jpg",
     "poster": "https://image.tmdb.org/t/p/w500/wwleMzF1coegmnieJiMvsOgYTQ9.jpg",
     "review": ""
   },
@@ -932,7 +934,8 @@
     "year": "2023",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg",
-    "review": "Liked it because of the first scene, the girl in the yellow dress"
+    "review": "Liked it because of the first scene, the girl in the yellow dress",
+    "sceneLiked": true
   },
   {
     "id": "perfect-days",
@@ -2732,7 +2735,7 @@
     "title": "Bloodhounds",
     "type": "series",
     "genre": "",
-    "status": "to-watch",
+    "status": "in-progress",
     "year": "2023",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/uSQzD7TXsL96J5ggDrJFdUs8uXU.jpg",
@@ -2769,7 +2772,7 @@
     "title": "Girl on the Third Floor",
     "type": "movie",
     "genre": "",
-    "status": "to-watch",
+    "status": "in-progress",
     "year": "2019",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/gm5JXIMPxRMFNeEtzso3VUDXQSs.jpg",
@@ -3300,7 +3303,7 @@
     "title": "Training Day",
     "type": "movie",
     "genre": "",
-    "status": "to-watch",
+    "status": "watched",
     "year": "2001",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/bUeiwBQdupBLQthMCHKV7zv56uv.jpg",
@@ -3312,7 +3315,7 @@
     "title": "Borderline",
     "type": "movie",
     "genre": "",
-    "status": "to-watch",
+    "status": "watched",
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/hUrNKVrkMN7sdt0oAioopMcxyoq.jpg",
@@ -4214,6 +4217,78 @@
     "year": "2002",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/3E4LW4bjRhEMDeeXeIsmkJ94v8K.jpg",
+    "review": ""
+  },
+  {
+    "id": "manifest",
+    "tags": "",
+    "title": "Manifest",
+    "type": "series",
+    "genre": "",
+    "status": "in-progress",
+    "year": "2018",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/eTemCphrglLKrXOsNRhYezHA7H9.jpg",
+    "review": ""
+  },
+  {
+    "id": "after-life",
+    "tags": "",
+    "title": "After Life",
+    "type": "series",
+    "genre": "",
+    "status": "in-progress",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6eJf4h9XcvqK64vbx27EFlLVURm.jpg",
+    "review": ""
+  },
+  {
+    "id": "a-man-called-otto",
+    "tags": "",
+    "title": "A Man Called Otto",
+    "type": "movie",
+    "genre": "",
+    "status": "watched",
+    "year": "2022",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/130H1gap9lFfiTF9iDrqNIkFvC9.jpg",
+    "review": ""
+  },
+  {
+    "id": "this-is-how-you-die",
+    "tags": "",
+    "title": "This Is How You Die",
+    "type": "movie",
+    "genre": "",
+    "status": "to-watch",
+    "year": "2013",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/jI4pEkrUss8MbWlbzskzYBMyaIc.jpg",
+    "review": ""
+  },
+  {
+    "id": "citizen-vigilante",
+    "tags": "",
+    "title": "Citizen Vigilante",
+    "type": "movie",
+    "genre": "",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
+    "review": ""
+  },
+  {
+    "id": "munich-2005",
+    "tags": "",
+    "title": "Munich",
+    "type": "movie",
+    "genre": "",
+    "status": "watched",
+    "year": "2005",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/iUekaw96QLInZpsNwRTlRKrZgwm.jpg",
     "review": ""
   }
 ]

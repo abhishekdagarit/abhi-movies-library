@@ -769,12 +769,13 @@
       <div class="filter-group" aria-label="Filter by watch status">
         <button class="filter-button" type="button" data-status="all" aria-pressed="true">All status</button>
         <button class="filter-button" type="button" data-status="to-watch" aria-pressed="false">To check out</button>
-        <button class="filter-button" type="button" data-status="in-progress" aria-pressed="false">Complete watching</button>
+        <button class="filter-button" type="button" data-status="in-progress" aria-pressed="false">Yet to complete</button>
         <button class="filter-button" type="button" data-status="watched" aria-pressed="false">Watched</button>
       </div>
       <div class="filter-group" aria-label="Filter by Hall of Fame">
         <button class="filter-button" id="hall-of-fame-filter" type="button" aria-pressed="false">♥ Hall of Fame</button>
         <button class="filter-button" id="liked-filter" type="button" aria-pressed="false">I liked these</button>
+        <button class="filter-button" id="scene-liked-filter" type="button" aria-pressed="false">Like these for a scene</button>
       </div>
     </section>
 
@@ -800,8 +801,8 @@
   <script>
     (() => {
       // Movie and series records live in movies.json for easy offline editing.
-      const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '', hallOfFameOnly: false, likedOnly: false };
-      const statusLabels = { 'to-watch': 'To check out', 'in-progress': 'Complete watching', watched: 'Watched' };
+      const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '', hallOfFameOnly: false, likedOnly: false, sceneLikedOnly: false };
+      const statusLabels = { 'to-watch': 'To check out', 'in-progress': 'Yet to complete', watched: 'Watched' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
       const detailModal = $('#detail-modal');
@@ -983,9 +984,10 @@
           const matchesTag = !state.tag || parseTags(item.tags).some(tag => tag.toLocaleLowerCase() === state.tag);
           const matchesHallOfFame = !state.hallOfFameOnly || item.hallOfFame === true;
           const matchesLiked = !state.likedOnly || (item.status === 'watched' && item.hallOfFame !== true);
+          const matchesSceneLiked = !state.sceneLikedOnly || item.sceneLiked === true;
           const searchable = `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''} ${parseTags(item.tags).join(' ')}`.toLocaleLowerCase();
           const matchesQuery = terms.every(term => searchable.includes(term));
-          return matchesType && matchesStatus && matchesGenre && matchesTag && matchesHallOfFame && matchesLiked && matchesQuery;
+          return matchesType && matchesStatus && matchesGenre && matchesTag && matchesHallOfFame && matchesLiked && matchesSceneLiked && matchesQuery;
         });
       }
 
@@ -1014,7 +1016,8 @@
         const currentTag = state.tag ? $('#tag-filter').selectedOptions[0].textContent : '';
         const currentHallOfFame = state.hallOfFameOnly ? 'Hall of Fame' : '';
         const currentLiked = state.likedOnly ? 'I liked these' : '';
-        const filterLabel = [currentType, currentStatus, currentGenre, currentTag, currentHallOfFame, currentLiked].filter(Boolean).join(' · ');
+        const currentSceneLiked = state.sceneLikedOnly ? 'Like these for a scene' : '';
+        const filterLabel = [currentType, currentStatus, currentGenre, currentTag, currentHallOfFame, currentLiked, currentSceneLiked].filter(Boolean).join(' · ');
         $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
         const copy = $('.intro-copy');
         copy.classList.add('is-switching');
@@ -1062,7 +1065,7 @@
         renderSpotlight();
         $('#top-count').textContent = `${state.items.length} ${state.items.length === 1 ? 'title' : 'titles'} in your library`;
         $('#results-count').textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'title' : 'titles'}`;
-        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.likedOnly ? 'I liked these' : state.hallOfFameOnly ? 'Hall of Fame' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
+        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.sceneLikedOnly ? 'Like these for a scene' : state.likedOnly ? 'I liked these' : state.hallOfFameOnly ? 'Hall of Fame' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
         grid.replaceChildren();
 
         if (!visibleItems.length) {
@@ -1221,18 +1224,29 @@
       }));
       $('#hall-of-fame-filter').addEventListener('click', event => {
         state.hallOfFameOnly = !state.hallOfFameOnly;
-        if (state.hallOfFameOnly) state.likedOnly = false;
+        if (state.hallOfFameOnly) { state.likedOnly = false; state.sceneLikedOnly = false; }
         spotlightIndex = 0;
         event.currentTarget.setAttribute('aria-pressed', String(state.hallOfFameOnly));
         $('#liked-filter').setAttribute('aria-pressed', String(state.likedOnly));
+        $('#scene-liked-filter').setAttribute('aria-pressed', String(state.sceneLikedOnly));
         render();
       });
       $('#liked-filter').addEventListener('click', event => {
         state.likedOnly = !state.likedOnly;
-        if (state.likedOnly) state.hallOfFameOnly = false;
+        if (state.likedOnly) { state.hallOfFameOnly = false; state.sceneLikedOnly = false; }
         spotlightIndex = 0;
         event.currentTarget.setAttribute('aria-pressed', String(state.likedOnly));
         $('#hall-of-fame-filter').setAttribute('aria-pressed', String(state.hallOfFameOnly));
+        $('#scene-liked-filter').setAttribute('aria-pressed', String(state.sceneLikedOnly));
+        render();
+      });
+      $('#scene-liked-filter').addEventListener('click', event => {
+        state.sceneLikedOnly = !state.sceneLikedOnly;
+        if (state.sceneLikedOnly) { state.hallOfFameOnly = false; state.likedOnly = false; }
+        spotlightIndex = 0;
+        event.currentTarget.setAttribute('aria-pressed', String(state.sceneLikedOnly));
+        $('#hall-of-fame-filter').setAttribute('aria-pressed', String(state.hallOfFameOnly));
+        $('#liked-filter').setAttribute('aria-pressed', String(state.likedOnly));
         render();
       });
       $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; spotlightIndex = 0; render(); });
