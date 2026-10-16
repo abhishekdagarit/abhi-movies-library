@@ -404,7 +404,7 @@
     "title": "Killers of the Flower Moon",
     "type": "movie",
     "genre": "",
-    "status": "watched",
+    "status": "to-watch",
     "year": "2023",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
@@ -998,6 +998,7 @@
   },
   {
     "id": "the-voyeurs",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Voyeurs",
     "type": "movie",
@@ -1010,6 +1011,7 @@
   },
   {
     "id": "the-housemaid-2025",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Housemaid",
     "type": "movie",
@@ -1082,6 +1084,7 @@
   },
   {
     "id": "fight-club",
+    "hallOfFame": true,
     "tags": "",
     "title": "Fight Club",
     "type": "movie",
@@ -1377,18 +1380,6 @@
     "review": ""
   },
   {
-    "id": "shekhar-home",
-    "tags": "",
-    "title": "Shekhar Home",
-    "type": "series",
-    "genre": "",
-    "status": "to-watch",
-    "year": "2024",
-    "rating": null,
-    "poster": "https://image.tmdb.org/t/p/w500/cO6Qz9R1C5rh4lGaT5YRvPc2IH3.jpg",
-    "review": ""
-  },
-  {
     "id": "the-notebook",
     "hallOfFame": true,
     "tags": "",
@@ -1501,6 +1492,7 @@
   },
   {
     "id": "special-ops-lioness",
+    "hallOfFame": true,
     "tags": "",
     "title": "Special Ops: Lioness",
     "type": "series",
@@ -2141,6 +2133,7 @@
   },
   {
     "id": "rehnaa-hai-terre-dil-mein",
+    "hallOfFame": true,
     "tags": "",
     "title": "Rehnaa Hai Terre Dil Mein",
     "type": "movie",
@@ -2323,6 +2316,7 @@
   },
   {
     "id": "the-lunchbox",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Lunchbox",
     "type": "movie",
@@ -2371,6 +2365,7 @@
   },
   {
     "id": "main-vaapas-aaunga",
+    "hallOfFame": true,
     "tags": "",
     "title": "Main Vaapas Aaunga",
     "type": "movie",
@@ -2745,6 +2740,7 @@
   },
   {
     "id": "the-wrath-of-becky",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Wrath of Becky",
     "type": "movie",
@@ -2961,6 +2957,7 @@
   },
   {
     "id": "manorama-six-feet-under",
+    "hallOfFame": true,
     "tags": "",
     "title": "Manorama Six Feet Under",
     "type": "movie",
@@ -3274,6 +3271,42 @@
     "review": ""
   },
   {
+    "id": "laal-rang",
+    "tags": "",
+    "title": "Laal Rang",
+    "type": "movie",
+    "genre": "",
+    "status": "to-watch",
+    "year": "2016",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/5koaZYQ0s63c7wlX6k75qS9QCpF.jpg",
+    "review": ""
+  },
+  {
+    "id": "babygirl-2024",
+    "tags": "",
+    "title": "Babygirl",
+    "type": "movie",
+    "genre": "",
+    "status": "to-watch",
+    "year": "2024",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ilwO6elz3mLV9CToT7C8pjVeKX0.jpg",
+    "review": ""
+  },
+  {
+    "id": "training-day",
+    "tags": "",
+    "title": "Training Day",
+    "type": "movie",
+    "genre": "",
+    "status": "to-watch",
+    "year": "2001",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/bUeiwBQdupBLQthMCHKV7zv56uv.jpg",
+    "review": ""
+  },
+  {
     "id": "borderline-2025",
     "tags": "",
     "title": "Borderline",
@@ -3420,6 +3453,7 @@
   },
   {
     "id": "fracture-2007",
+    "hallOfFame": true,
     "tags": "",
     "title": "Fracture",
     "type": "movie",
@@ -3721,18 +3755,6 @@
     "review": ""
   },
   {
-    "id": "mrs-2023",
-    "tags": "",
-    "title": "Mrs.",
-    "type": "movie",
-    "genre": "",
-    "status": "watched",
-    "year": "2023",
-    "rating": null,
-    "poster": "https://image.tmdb.org/t/p/w500/oua21BWpycKYHDFxOcMqJwsm9Rb.jpg",
-    "review": ""
-  },
-  {
     "id": "white-nights-1985",
     "tags": "",
     "title": "White Nights",
@@ -3794,6 +3816,7 @@
   },
   {
     "id": "the-kashmir-files",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Kashmir Files",
     "type": "movie",
@@ -3964,6 +3987,7 @@
   },
   {
     "id": "the-time-travelers-wife",
+    "hallOfFame": true,
     "tags": "",
     "title": "The Time Traveler's Wife",
     "type": "movie",
