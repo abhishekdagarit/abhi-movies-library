@@ -767,14 +767,14 @@
         <option value="">All tags</option>
       </select>
       <div class="filter-group" aria-label="Filter by watch status">
-        <button class="filter-button" type="button" data-status="all" aria-pressed="true">All status</button>
+        <button class="filter-button" type="button" data-status="all" aria-pressed="true">All</button>
         <button class="filter-button" type="button" data-status="to-watch" aria-pressed="false">To check out</button>
-        <button class="filter-button" type="button" data-status="in-progress" aria-pressed="false">Yet to complete</button>
+        <button class="filter-button" type="button" data-status="in-progress" aria-pressed="false">Yet to finish</button>
         <button class="filter-button" type="button" data-status="watched" aria-pressed="false">Watched</button>
       </div>
       <div class="filter-group" aria-label="Filter by Hall of Fame">
         <button class="filter-button" id="hall-of-fame-filter" type="button" aria-pressed="false">♥ Hall of Fame</button>
-        <button class="filter-button" id="liked-filter" type="button" aria-pressed="false">I liked these</button>
+        <button class="filter-button" id="liked-filter" type="button" aria-pressed="false">I like these</button>
         <button class="filter-button" id="scene-liked-filter" type="button" aria-pressed="false">Like these for a scene</button>
       </div>
     </section>
@@ -802,7 +802,7 @@
     (() => {
       // Movie and series records live in movies.json for easy offline editing.
       const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '', hallOfFameOnly: false, likedOnly: false, sceneLikedOnly: false };
-      const statusLabels = { 'to-watch': 'To check out', 'in-progress': 'Yet to complete', watched: 'Watched' };
+      const statusLabels = { 'to-watch': 'To check out', 'in-progress': 'Yet to finish', watched: 'Watched' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
       const detailModal = $('#detail-modal');
@@ -1015,7 +1015,7 @@
         const currentType = state.type !== 'all' ? (state.type === 'series' ? 'Series' : 'Movies') : '';
         const currentTag = state.tag ? $('#tag-filter').selectedOptions[0].textContent : '';
         const currentHallOfFame = state.hallOfFameOnly ? 'Hall of Fame' : '';
-        const currentLiked = state.likedOnly ? 'I liked these' : '';
+        const currentLiked = state.likedOnly ? 'I like these' : '';
         const currentSceneLiked = state.sceneLikedOnly ? 'Like these for a scene' : '';
         const filterLabel = [currentType, currentStatus, currentGenre, currentTag, currentHallOfFame, currentLiked, currentSceneLiked].filter(Boolean).join(' · ');
         $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
@@ -1065,7 +1065,7 @@
         renderSpotlight();
         $('#top-count').textContent = `${state.items.length} ${state.items.length === 1 ? 'title' : 'titles'} in your library`;
         $('#results-count').textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'title' : 'titles'}`;
-        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.sceneLikedOnly ? 'Like these for a scene' : state.likedOnly ? 'I liked these' : state.hallOfFameOnly ? 'Hall of Fame' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
+        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.sceneLikedOnly ? 'Like these for a scene' : state.likedOnly ? 'I like these' : state.hallOfFameOnly ? 'Hall of Fame' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
         grid.replaceChildren();
 
         if (!visibleItems.length) {
