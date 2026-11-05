@@ -1,7 +1,6 @@
 [
   {
     "id": "interstellar",
-    "tags": "space, time travel, in collection",
     "title": "Interstellar",
     "type": "movie",
     "genre": "Sci-Fi",
@@ -9,11 +8,11 @@
     "year": "2014",
     "rating": 5,
     "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "review": "Sample review: A huge, emotional science-fiction story with striking cosmic imagery. Its ideas about time, family, and survival make it memorable long after the credits."
+    "review": "Sample review: A huge, emotional science-fiction story with striking cosmic imagery. Its ideas about time, family, and survival make it memorable long after the credits.",
+    "inCollection": true
   },
   {
     "id": "inception",
-    "tags": "dreams, mind-bending",
     "title": "Inception",
     "type": "movie",
     "genre": "Sci-Fi",
@@ -25,7 +24,6 @@
   },
   {
     "id": "the-dark-knight",
-    "tags": "",
     "title": "The Dark Knight",
     "type": "movie",
     "genre": "Crime",
@@ -37,7 +35,6 @@
   },
   {
     "id": "breaking-bad",
-    "tags": "",
     "title": "Breaking Bad",
     "type": "series",
     "genre": "Crime",
@@ -49,7 +46,6 @@
   },
   {
     "id": "stranger-things",
-    "tags": "",
     "title": "Stranger Things",
     "type": "series",
     "genre": "Sci-Fi",
@@ -61,7 +57,6 @@
   },
   {
     "id": "the-last-of-us",
-    "tags": "",
     "title": "The Last of Us",
     "type": "series",
     "genre": "Drama",
@@ -73,7 +68,6 @@
   },
   {
     "id": "the-bear",
-    "tags": "in collection",
     "title": "The Bear",
     "type": "series",
     "genre": "Drama",
@@ -81,11 +75,11 @@
     "year": "2022",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-    "review": "Sample note: On the watchlist. Curious to see the high-pressure kitchen, the messy family dynamics, and how the crew comes together."
+    "review": "Sample note: On the watchlist. Curious to see the high-pressure kitchen, the messy family dynamics, and how the crew comes together.",
+    "inCollection": true
   },
   {
     "id": "sherlock",
-    "tags": "",
     "title": "Sherlock",
     "type": "series",
     "genre": "Mystery",
@@ -97,7 +91,6 @@
   },
   {
     "id": "the-edge-of-seventeen",
-    "tags": "fun, any-time-watch",
     "title": "The Edge Of Seventeen",
     "type": "movie",
     "genre": "Comedy",
@@ -110,7 +103,6 @@
   {
     "id": "no-reservations",
     "hallOfFame": true,
-    "tags": "",
     "title": "No Reservations",
     "type": "movie",
     "genre": "",
@@ -122,7 +114,6 @@
   },
   {
     "id": "tallulah",
-    "tags": "",
     "title": "Tallulah",
     "type": "movie",
     "genre": "",
@@ -134,7 +125,6 @@
   },
   {
     "id": "monday-mornings",
-    "tags": "",
     "title": "Monday Mornings",
     "type": "series",
     "genre": "",
@@ -146,7 +136,6 @@
   },
   {
     "id": "vicky-cristina-barcelona",
-    "tags": "",
     "title": "Vicky Cristina Barcelona",
     "type": "movie",
     "genre": "",
@@ -158,7 +147,6 @@
   },
   {
     "id": "limitless",
-    "tags": "",
     "title": "Limitless",
     "type": "movie",
     "genre": "",
@@ -170,7 +158,6 @@
   },
   {
     "id": "dumb-money",
-    "tags": "",
     "title": "Dumb Money",
     "type": "movie",
     "genre": "",
@@ -182,7 +169,6 @@
   },
   {
     "id": "office-space",
-    "tags": "",
     "title": "Office Space",
     "type": "movie",
     "genre": "",
@@ -194,7 +180,6 @@
   },
   {
     "id": "the-words",
-    "tags": "in collection",
     "title": "The Words",
     "type": "movie",
     "genre": "",
@@ -202,11 +187,11 @@
     "year": "2012",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/aJtPLZS7tlpiQl6pEr8H42K565x.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "we-live-in-time",
-    "tags": "",
     "title": "We Live in Time",
     "type": "movie",
     "genre": "",
@@ -218,7 +203,6 @@
   },
   {
     "id": "twilight",
-    "tags": "",
     "title": "Twilight",
     "type": "movie",
     "genre": "",
@@ -230,7 +214,6 @@
   },
   {
     "id": "the-twilight-saga-new-moon",
-    "tags": "",
     "title": "The Twilight Saga: New Moon",
     "type": "movie",
     "genre": "",
@@ -242,7 +225,6 @@
   },
   {
     "id": "the-twilight-saga-eclipse",
-    "tags": "",
     "title": "The Twilight Saga: Eclipse",
     "type": "movie",
     "genre": "",
@@ -254,7 +236,6 @@
   },
   {
     "id": "the-twilight-saga-breaking-dawn-part-1",
-    "tags": "",
     "title": "The Twilight Saga: Breaking Dawn - Part 1",
     "type": "movie",
     "genre": "",
@@ -266,7 +247,6 @@
   },
   {
     "id": "the-twilight-saga-breaking-dawn-part-2",
-    "tags": "",
     "title": "The Twilight Saga: Breaking Dawn - Part 2",
     "type": "movie",
     "genre": "",
@@ -278,7 +258,6 @@
   },
   {
     "id": "gone-with-the-wind",
-    "tags": "",
     "title": "Gone with the Wind",
     "type": "movie",
     "genre": "",
@@ -290,7 +269,6 @@
   },
   {
     "id": "the-sound-of-music",
-    "tags": "",
     "title": "The Sound of Music",
     "type": "movie",
     "genre": "",
@@ -303,7 +281,6 @@
   {
     "id": "meet-joe-black",
     "hallOfFame": true,
-    "tags": "",
     "title": "Meet Joe Black",
     "type": "movie",
     "genre": "",
@@ -315,7 +292,6 @@
   },
   {
     "id": "big",
-    "tags": "",
     "title": "Big",
     "type": "movie",
     "genre": "",
@@ -328,7 +304,6 @@
   {
     "id": "notting-hill",
     "hallOfFame": true,
-    "tags": "",
     "title": "Notting Hill",
     "type": "movie",
     "genre": "",
@@ -340,7 +315,6 @@
   },
   {
     "id": "dark-matter-2024",
-    "tags": "",
     "title": "Dark Matter",
     "type": "series",
     "genre": "",
@@ -352,7 +326,6 @@
   },
   {
     "id": "the-secret-life-of-walter-mitty",
-    "tags": "",
     "title": "The Secret Life of Walter Mitty",
     "type": "movie",
     "genre": "",
@@ -364,7 +337,6 @@
   },
   {
     "id": "plank-face",
-    "tags": "",
     "title": "Plank Face",
     "type": "movie",
     "genre": "",
@@ -376,7 +348,6 @@
   },
   {
     "id": "shattered-2022",
-    "tags": "",
     "title": "Shattered",
     "type": "movie",
     "genre": "",
@@ -389,7 +360,6 @@
   {
     "id": "kate-and-leopold",
     "hallOfFame": true,
-    "tags": "",
     "title": "Kate & Leopold",
     "type": "movie",
     "genre": "",
@@ -401,7 +371,6 @@
   },
   {
     "id": "killers-of-the-flower-moon",
-    "tags": "",
     "title": "Killers of the Flower Moon",
     "type": "movie",
     "genre": "",
@@ -413,7 +382,6 @@
   },
   {
     "id": "beautiful-boy",
-    "tags": "",
     "title": "Beautiful Boy",
     "type": "movie",
     "genre": "",
@@ -425,7 +393,6 @@
   },
   {
     "id": "theres-something-wrong-with-the-children",
-    "tags": "",
     "title": "There's Something Wrong with the Children",
     "type": "movie",
     "genre": "",
@@ -437,7 +404,6 @@
   },
   {
     "id": "the-age-of-adaline",
-    "tags": "",
     "title": "The Age of Adaline",
     "type": "movie",
     "genre": "",
@@ -449,7 +415,6 @@
   },
   {
     "id": "no-country-for-old-men",
-    "tags": "",
     "title": "No Country for Old Men",
     "type": "movie",
     "genre": "",
@@ -461,7 +426,6 @@
   },
   {
     "id": "the-jester",
-    "tags": "",
     "title": "The Jester",
     "type": "movie",
     "genre": "",
@@ -473,7 +437,6 @@
   },
   {
     "id": "prey-for-the-devil",
-    "tags": "",
     "title": "Prey for the Devil",
     "type": "movie",
     "genre": "",
@@ -486,7 +449,6 @@
   {
     "id": "october-2018",
     "hallOfFame": true,
-    "tags": "",
     "title": "October",
     "type": "movie",
     "genre": "",
@@ -498,7 +460,6 @@
   },
   {
     "id": "munjya",
-    "tags": "",
     "title": "Munjya",
     "type": "movie",
     "genre": "",
@@ -510,7 +471,6 @@
   },
   {
     "id": "when-harry-met-sally",
-    "tags": "",
     "title": "When Harry Met Sally...",
     "type": "movie",
     "genre": "",
@@ -522,7 +482,6 @@
   },
   {
     "id": "scent-of-a-woman",
-    "tags": "",
     "title": "Scent of a Woman",
     "type": "movie",
     "genre": "",
@@ -534,7 +493,6 @@
   },
   {
     "id": "rush-2013",
-    "tags": "",
     "title": "Rush",
     "type": "movie",
     "genre": "",
@@ -546,7 +504,6 @@
   },
   {
     "id": "lion-2016",
-    "tags": "",
     "title": "Lion",
     "type": "movie",
     "genre": "",
@@ -558,7 +515,6 @@
   },
   {
     "id": "eega",
-    "tags": "",
     "title": "Eega (Makkhi)",
     "type": "movie",
     "genre": "",
@@ -570,7 +526,6 @@
   },
   {
     "id": "before-sunrise",
-    "tags": "",
     "title": "Before Sunrise",
     "type": "movie",
     "genre": "",
@@ -583,7 +538,6 @@
   {
     "id": "yes-man",
     "hallOfFame": true,
-    "tags": "",
     "title": "Yes Man",
     "type": "movie",
     "genre": "",
@@ -595,7 +549,6 @@
   },
   {
     "id": "nerve",
-    "tags": "",
     "title": "Nerve",
     "type": "movie",
     "genre": "",
@@ -607,7 +560,6 @@
   },
   {
     "id": "baghead-2023",
-    "tags": "",
     "title": "Baghead",
     "type": "movie",
     "genre": "",
@@ -619,7 +571,6 @@
   },
   {
     "id": "frankie-and-johnny-1991",
-    "tags": "",
     "title": "Frankie and Johnny",
     "type": "movie",
     "genre": "",
@@ -631,7 +582,6 @@
   },
   {
     "id": "speak-no-evil-2024",
-    "tags": "",
     "title": "Speak No Evil",
     "type": "movie",
     "genre": "",
@@ -643,7 +593,6 @@
   },
   {
     "id": "in-the-mood-for-love",
-    "tags": "",
     "title": "In the Mood for Love",
     "type": "movie",
     "genre": "",
@@ -655,7 +604,6 @@
   },
   {
     "id": "mr-morgans-last-love",
-    "tags": "",
     "title": "Mr. Morgan's Last Love",
     "type": "movie",
     "genre": "",
@@ -668,7 +616,6 @@
   {
     "id": "boston-legal",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "Boston Legal",
     "type": "series",
     "genre": "",
@@ -676,12 +623,12 @@
     "year": "2004",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/b0bXUCfpcsgQ6EVVmucU2G76ixT.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-lucky-one",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Lucky One",
     "type": "movie",
     "genre": "",
@@ -693,7 +640,6 @@
   },
   {
     "id": "the-princess-bride",
-    "tags": "",
     "title": "The Princess Bride",
     "type": "movie",
     "genre": "",
@@ -705,7 +651,6 @@
   },
   {
     "id": "extraordinary-2023",
-    "tags": "",
     "title": "Extraordinary",
     "type": "series",
     "genre": "",
@@ -717,7 +662,6 @@
   },
   {
     "id": "antrum",
-    "tags": "",
     "title": "Antrum",
     "type": "movie",
     "genre": "",
@@ -730,7 +674,6 @@
   {
     "id": "dead-poets-society",
     "hallOfFame": true,
-    "tags": "",
     "title": "Dead Poets Society",
     "type": "movie",
     "genre": "",
@@ -742,7 +685,6 @@
   },
   {
     "id": "destination-wedding-2018",
-    "tags": "",
     "title": "Destination Wedding",
     "type": "movie",
     "genre": "",
@@ -754,7 +696,6 @@
   },
   {
     "id": "ramayana-the-legend-of-prince-rama",
-    "tags": "",
     "title": "Ramayana: The Legend of Prince Rama",
     "type": "movie",
     "genre": "",
@@ -767,7 +708,6 @@
   {
     "id": "qarib-qarib-single",
     "hallOfFame": true,
-    "tags": "",
     "title": "Qarib Qarib Singlle",
     "type": "movie",
     "genre": "",
@@ -780,7 +720,6 @@
   {
     "id": "kantara",
     "hallOfFame": true,
-    "tags": "",
     "title": "Kantara",
     "type": "movie",
     "genre": "",
@@ -792,7 +731,6 @@
   },
   {
     "id": "gifted-2017",
-    "tags": "",
     "title": "Gifted",
     "type": "movie",
     "genre": "",
@@ -804,7 +742,6 @@
   },
   {
     "id": "deep-water-2022",
-    "tags": "",
     "title": "Deep Water",
     "type": "movie",
     "genre": "",
@@ -816,7 +753,6 @@
   },
   {
     "id": "following-1998",
-    "tags": "",
     "title": "Following",
     "type": "movie",
     "genre": "",
@@ -828,7 +764,6 @@
   },
   {
     "id": "a-beautiful-mind",
-    "tags": "",
     "title": "A Beautiful Mind",
     "type": "movie",
     "genre": "",
@@ -840,7 +775,6 @@
   },
   {
     "id": "burnt",
-    "tags": "",
     "title": "Burnt",
     "type": "movie",
     "genre": "",
@@ -853,7 +787,6 @@
   {
     "id": "womb",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "Womb",
     "type": "movie",
     "genre": "",
@@ -861,11 +794,11 @@
     "year": "2010",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/raTEzBZBflPyVhOls4PmrryvPos.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "wind-river-2017",
-    "tags": "",
     "title": "Wind River",
     "type": "movie",
     "genre": "",
@@ -877,7 +810,6 @@
   },
   {
     "id": "exhuma",
-    "tags": "in collection",
     "title": "Exhuma",
     "type": "movie",
     "genre": "",
@@ -885,11 +817,11 @@
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/6dasJ58GGFcC62H9KuukAryltUp.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "begin-again",
-    "tags": "",
     "title": "Begin Again",
     "type": "movie",
     "genre": "",
@@ -901,7 +833,6 @@
   },
   {
     "id": "train-to-busan",
-    "tags": "",
     "title": "Train to Busan",
     "type": "movie",
     "genre": "",
@@ -913,7 +844,6 @@
   },
   {
     "id": "once-upon-a-time-in-hollywood",
-    "tags": "in collection",
     "title": "Once Upon a Time... in Hollywood",
     "type": "movie",
     "genre": "",
@@ -921,11 +851,11 @@
     "year": "2019",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "scream-vi",
-    "tags": "",
     "title": "Scream VI",
     "type": "movie",
     "genre": "",
@@ -938,7 +868,6 @@
   },
   {
     "id": "perfect-days",
-    "tags": "",
     "title": "Perfect Days",
     "type": "movie",
     "genre": "",
@@ -951,7 +880,6 @@
   {
     "id": "phenomenon-1996",
     "hallOfFame": true,
-    "tags": "",
     "title": "Phenomenon",
     "type": "movie",
     "genre": "",
@@ -964,7 +892,6 @@
   {
     "id": "indecent-proposal",
     "hallOfFame": true,
-    "tags": "",
     "title": "Indecent Proposal",
     "type": "movie",
     "genre": "",
@@ -976,7 +903,6 @@
   },
   {
     "id": "anyone-but-you",
-    "tags": "",
     "title": "Anyone but You",
     "type": "movie",
     "genre": "",
@@ -988,7 +914,6 @@
   },
   {
     "id": "the-prodigy-2019",
-    "tags": "",
     "title": "The Prodigy",
     "type": "movie",
     "genre": "",
@@ -1001,7 +926,6 @@
   {
     "id": "the-voyeurs",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Voyeurs",
     "type": "movie",
     "genre": "",
@@ -1014,7 +938,6 @@
   {
     "id": "the-housemaid-2025",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "The Housemaid",
     "type": "movie",
     "genre": "",
@@ -1022,11 +945,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-conductor-2018",
-    "tags": "",
     "title": "The Conductor",
     "type": "movie",
     "genre": "",
@@ -1038,7 +961,6 @@
   },
   {
     "id": "california-dreaming-1979",
-    "tags": "",
     "title": "California Dreaming",
     "type": "movie",
     "genre": "",
@@ -1050,7 +972,6 @@
   },
   {
     "id": "the-big-short",
-    "tags": "in collection",
     "title": "The Big Short",
     "type": "movie",
     "genre": "",
@@ -1058,11 +979,11 @@
     "year": "2015",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "bicentennial-man",
-    "tags": "",
     "title": "Bicentennial Man",
     "type": "movie",
     "genre": "",
@@ -1074,7 +995,6 @@
   },
   {
     "id": "ghost-town-2008",
-    "tags": "",
     "title": "Ghost Town",
     "type": "movie",
     "genre": "",
@@ -1087,7 +1007,6 @@
   {
     "id": "fight-club",
     "hallOfFame": true,
-    "tags": "",
     "title": "Fight Club",
     "type": "movie",
     "genre": "",
@@ -1100,7 +1019,6 @@
   {
     "id": "before-we-go",
     "hallOfFame": true,
-    "tags": "",
     "title": "Before We Go",
     "type": "movie",
     "genre": "",
@@ -1113,7 +1031,6 @@
   {
     "id": "karwaan",
     "hallOfFame": true,
-    "tags": "",
     "title": "Karwaan",
     "type": "movie",
     "genre": "",
@@ -1125,7 +1042,6 @@
   },
   {
     "id": "the-thinking-game",
-    "tags": "",
     "title": "The Thinking Game",
     "type": "movie",
     "genre": "",
@@ -1137,7 +1053,6 @@
   },
   {
     "id": "new-york-i-love-you",
-    "tags": "",
     "title": "New York, I Love You",
     "type": "movie",
     "genre": "",
@@ -1149,7 +1064,6 @@
   },
   {
     "id": "puzzle-2018",
-    "tags": "",
     "title": "Puzzle",
     "type": "movie",
     "genre": "",
@@ -1162,7 +1076,6 @@
   {
     "id": "good-will-hunting",
     "hallOfFame": true,
-    "tags": "",
     "title": "Good Will Hunting",
     "type": "movie",
     "genre": "",
@@ -1174,7 +1087,6 @@
   },
   {
     "id": "chaos-walking",
-    "tags": "",
     "title": "Chaos Walking",
     "type": "movie",
     "genre": "",
@@ -1187,7 +1099,6 @@
   {
     "id": "house-md",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "House M.D.",
     "type": "series",
     "genre": "",
@@ -1195,11 +1106,11 @@
     "year": "2004",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/3Cz7ySOQJmqiuTdrc6CY0r65yDI.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-whale",
-    "tags": "",
     "title": "The Whale",
     "type": "movie",
     "genre": "",
@@ -1212,7 +1123,6 @@
   {
     "id": "piku",
     "hallOfFame": true,
-    "tags": "",
     "title": "Piku",
     "type": "movie",
     "genre": "",
@@ -1225,7 +1135,6 @@
   {
     "id": "ankhon-dekhi",
     "hallOfFame": true,
-    "tags": "",
     "title": "Ankhon Dekhi",
     "type": "movie",
     "genre": "",
@@ -1238,7 +1147,6 @@
   {
     "id": "fleabag",
     "hallOfFame": true,
-    "tags": "",
     "title": "Fleabag",
     "type": "series",
     "genre": "",
@@ -1250,7 +1158,6 @@
   },
   {
     "id": "american-sniper",
-    "tags": "",
     "title": "American Sniper",
     "type": "movie",
     "genre": "",
@@ -1262,7 +1169,6 @@
   },
   {
     "id": "masaan",
-    "tags": "in collection",
     "title": "Masaan",
     "type": "movie",
     "genre": "",
@@ -1270,11 +1176,11 @@
     "year": "2015",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/wgcPR6Weth2yJDo5wBdNqW2TD6J.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "under-the-dome",
-    "tags": "",
     "title": "Under the Dome",
     "type": "series",
     "genre": "",
@@ -1286,7 +1192,6 @@
   },
   {
     "id": "flipped",
-    "tags": "",
     "title": "Flipped",
     "type": "movie",
     "genre": "",
@@ -1298,7 +1203,6 @@
   },
   {
     "id": "legion",
-    "tags": "",
     "title": "Legion",
     "type": "series",
     "genre": "",
@@ -1311,7 +1215,6 @@
   {
     "id": "true-detective",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "True Detective",
     "type": "series",
     "genre": "",
@@ -1319,11 +1222,11 @@
     "year": "2014",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/zYqVTiHK5ZajYcNzAW7qWte5NWS.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "her",
-    "tags": "",
     "title": "Her",
     "type": "movie",
     "genre": "",
@@ -1335,7 +1238,6 @@
   },
   {
     "id": "black-mass",
-    "tags": "",
     "title": "Black Mass",
     "type": "movie",
     "genre": "",
@@ -1347,7 +1249,6 @@
   },
   {
     "id": "caddo-lake",
-    "tags": "",
     "title": "Caddo Lake",
     "type": "movie",
     "genre": "",
@@ -1359,7 +1260,6 @@
   },
   {
     "id": "the-skin-i-live-in",
-    "tags": "",
     "title": "The Skin I Live In",
     "type": "movie",
     "genre": "",
@@ -1371,7 +1271,6 @@
   },
   {
     "id": "the-peanut-butter-falcon",
-    "tags": "",
     "title": "The Peanut Butter Falcon",
     "type": "movie",
     "genre": "",
@@ -1384,7 +1283,6 @@
   {
     "id": "the-notebook",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Notebook",
     "type": "movie",
     "genre": "",
@@ -1396,7 +1294,6 @@
   },
   {
     "id": "bad-times-at-the-el-royale",
-    "tags": "",
     "title": "Bad Times at the El Royale",
     "type": "movie",
     "genre": "",
@@ -1408,7 +1305,6 @@
   },
   {
     "id": "the-longest-ride",
-    "tags": "",
     "title": "The Longest Ride",
     "type": "movie",
     "genre": "",
@@ -1421,7 +1317,6 @@
   {
     "id": "betrayal-2003",
     "hallOfFame": true,
-    "tags": "",
     "title": "Betrayal",
     "type": "movie",
     "genre": "",
@@ -1433,7 +1328,6 @@
   },
   {
     "id": "the-gangster-the-cop-the-devil",
-    "tags": "",
     "title": "The Gangster, the Cop, the Devil",
     "type": "movie",
     "genre": "",
@@ -1445,7 +1339,6 @@
   },
   {
     "id": "closer-2004",
-    "tags": "",
     "title": "Closer",
     "type": "movie",
     "genre": "",
@@ -1457,7 +1350,6 @@
   },
   {
     "id": "the-machinist",
-    "tags": "",
     "title": "The Machinist",
     "type": "movie",
     "genre": "",
@@ -1469,7 +1361,6 @@
   },
   {
     "id": "reacher",
-    "tags": "",
     "title": "Reacher",
     "type": "series",
     "genre": "",
@@ -1482,7 +1373,6 @@
   {
     "id": "tom-clancys-jack-ryan",
     "hallOfFame": true,
-    "tags": "",
     "title": "Tom Clancy's Jack Ryan",
     "type": "series",
     "genre": "",
@@ -1495,7 +1385,6 @@
   {
     "id": "special-ops-lioness",
     "hallOfFame": true,
-    "tags": "",
     "title": "Special Ops: Lioness",
     "type": "series",
     "genre": "",
@@ -1507,7 +1396,6 @@
   },
   {
     "id": "fallen-tv-2024",
-    "tags": "",
     "title": "Fallen",
     "type": "series",
     "genre": "",
@@ -1519,7 +1407,6 @@
   },
   {
     "id": "the-godfather",
-    "tags": "in collection",
     "title": "The Godfather",
     "type": "movie",
     "genre": "",
@@ -1527,12 +1414,12 @@
     "year": "1972",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "project-x-2012",
     "hallOfFame": true,
-    "tags": "",
     "title": "Project X",
     "type": "movie",
     "genre": "",
@@ -1544,7 +1431,6 @@
   },
   {
     "id": "dream-lover-1994",
-    "tags": "",
     "title": "Dream Lover",
     "type": "movie",
     "genre": "",
@@ -1556,7 +1442,6 @@
   },
   {
     "id": "taxi-driver",
-    "tags": "in collection",
     "title": "Taxi Driver",
     "type": "movie",
     "genre": "",
@@ -1564,12 +1449,12 @@
     "year": "1976",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "mr-robot",
     "hallOfFame": true,
-    "tags": "",
     "title": "Mr. Robot",
     "type": "series",
     "genre": "",
@@ -1581,7 +1466,6 @@
   },
   {
     "id": "wild-cards",
-    "tags": "",
     "title": "Wild Cards",
     "type": "series",
     "genre": "",
@@ -1593,7 +1477,6 @@
   },
   {
     "id": "megan-leavey",
-    "tags": "",
     "title": "Megan Leavey",
     "type": "movie",
     "genre": "",
@@ -1605,7 +1488,6 @@
   },
   {
     "id": "exam",
-    "tags": "",
     "title": "Exam",
     "type": "movie",
     "genre": "",
@@ -1617,7 +1499,6 @@
   },
   {
     "id": "witchboard-remake",
-    "tags": "",
     "title": "Witchboard",
     "type": "movie",
     "genre": "",
@@ -1629,7 +1510,6 @@
   },
   {
     "id": "the-devils-advocate",
-    "tags": "",
     "title": "The Devil's Advocate",
     "type": "movie",
     "genre": "",
@@ -1641,7 +1521,6 @@
   },
   {
     "id": "monkey-man",
-    "tags": "",
     "title": "Monkey Man",
     "type": "movie",
     "genre": "",
@@ -1654,7 +1533,6 @@
   {
     "id": "peaky-blinders",
     "hallOfFame": true,
-    "tags": "",
     "title": "Peaky Blinders",
     "type": "series",
     "genre": "",
@@ -1666,7 +1544,6 @@
   },
   {
     "id": "the-lovely-bones",
-    "tags": "",
     "title": "The Lovely Bones",
     "type": "movie",
     "genre": "",
@@ -1679,7 +1556,6 @@
   {
     "id": "f1-2025",
     "hallOfFame": true,
-    "tags": "",
     "title": "F1",
     "type": "movie",
     "genre": "",
@@ -1691,7 +1567,6 @@
   },
   {
     "id": "the-extraordinary-journey-of-the-fakir",
-    "tags": "",
     "title": "The Extraordinary Journey of the Fakir",
     "type": "movie",
     "genre": "",
@@ -1703,7 +1578,6 @@
   },
   {
     "id": "andhera",
-    "tags": "",
     "title": "Andhera",
     "type": "series",
     "genre": "",
@@ -1715,7 +1589,6 @@
   },
   {
     "id": "weapons-2025",
-    "tags": "",
     "title": "Weapons",
     "type": "movie",
     "genre": "",
@@ -1727,7 +1600,6 @@
   },
   {
     "id": "wall-street",
-    "tags": "",
     "title": "Wall Street",
     "type": "movie",
     "genre": "",
@@ -1739,7 +1611,6 @@
   },
   {
     "id": "the-wolf-of-wall-street",
-    "tags": "",
     "title": "The Wolf of Wall Street",
     "type": "movie",
     "genre": "",
@@ -1751,7 +1622,6 @@
   },
   {
     "id": "american-sweatshop",
-    "tags": "",
     "title": "American Sweatshop",
     "type": "movie",
     "genre": "",
@@ -1763,7 +1633,6 @@
   },
   {
     "id": "mr-k-2025",
-    "tags": "",
     "title": "Mr. K",
     "type": "movie",
     "genre": "",
@@ -1775,7 +1644,6 @@
   },
   {
     "id": "too-big-to-fail",
-    "tags": "",
     "title": "Too Big to Fail",
     "type": "movie",
     "genre": "",
@@ -1787,7 +1655,6 @@
   },
   {
     "id": "modern-love",
-    "tags": "",
     "title": "Modern Love",
     "type": "series",
     "genre": "",
@@ -1799,7 +1666,6 @@
   },
   {
     "id": "the-mentalist",
-    "tags": "",
     "title": "The Mentalist",
     "type": "series",
     "genre": "",
@@ -1811,7 +1677,6 @@
   },
   {
     "id": "gulaal",
-    "tags": "",
     "title": "Gulaal",
     "type": "movie",
     "genre": "",
@@ -1823,7 +1688,6 @@
   },
   {
     "id": "revenge-2011",
-    "tags": "",
     "title": "Revenge",
     "type": "series",
     "genre": "",
@@ -1835,7 +1699,6 @@
   },
   {
     "id": "relay-1970",
-    "tags": "",
     "title": "Relay",
     "type": "movie",
     "genre": "",
@@ -1847,7 +1710,6 @@
   },
   {
     "id": "the-handmaids-tale",
-    "tags": "",
     "title": "The Handmaid's Tale",
     "type": "series",
     "genre": "",
@@ -1859,7 +1721,6 @@
   },
   {
     "id": "dept-q",
-    "tags": "",
     "title": "Dept. Q",
     "type": "series",
     "genre": "",
@@ -1871,7 +1732,6 @@
   },
   {
     "id": "american-psycho",
-    "tags": "",
     "title": "American Psycho",
     "type": "movie",
     "genre": "",
@@ -1883,7 +1743,6 @@
   },
   {
     "id": "3096-days",
-    "tags": "",
     "title": "3096 Days",
     "type": "movie",
     "genre": "",
@@ -1895,7 +1754,6 @@
   },
   {
     "id": "a-big-bold-beautiful-journey",
-    "tags": "",
     "title": "A Big Bold Beautiful Journey",
     "type": "movie",
     "genre": "",
@@ -1907,7 +1765,6 @@
   },
   {
     "id": "miss-sloane",
-    "tags": "",
     "title": "Miss Sloane",
     "type": "movie",
     "genre": "",
@@ -1919,7 +1776,6 @@
   },
   {
     "id": "flamin-hot",
-    "tags": "",
     "title": "Flamin' Hot",
     "type": "movie",
     "genre": "",
@@ -1931,7 +1787,6 @@
   },
   {
     "id": "sirens-2025",
-    "tags": "",
     "title": "Sirens",
     "type": "series",
     "genre": "",
@@ -1943,7 +1798,6 @@
   },
   {
     "id": "dancing-village-the-curse-begins",
-    "tags": "",
     "title": "Dancing Village: The Curse Begins",
     "type": "movie",
     "genre": "",
@@ -1955,7 +1809,6 @@
   },
   {
     "id": "the-hunting-party-2025",
-    "tags": "",
     "title": "The Hunting Party",
     "type": "series",
     "genre": "",
@@ -1967,7 +1820,6 @@
   },
   {
     "id": "atonement",
-    "tags": "in collection",
     "title": "Atonement",
     "type": "movie",
     "genre": "",
@@ -1975,11 +1827,11 @@
     "year": "2007",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/hMRIyBjPzxaSXWM06se3OcNjIQa.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "girl-in-the-basement",
-    "tags": "",
     "title": "Girl in the Basement",
     "type": "movie",
     "genre": "",
@@ -1991,7 +1843,6 @@
   },
   {
     "id": "whiplash",
-    "tags": "in collection",
     "title": "Whiplash",
     "type": "movie",
     "genre": "",
@@ -1999,11 +1850,11 @@
     "year": "2014",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "12-feet-deep",
-    "tags": "",
     "title": "12 Feet Deep",
     "type": "movie",
     "genre": "",
@@ -2015,7 +1866,6 @@
   },
   {
     "id": "the-oc",
-    "tags": "",
     "title": "The O.C.",
     "type": "series",
     "genre": "",
@@ -2027,7 +1877,6 @@
   },
   {
     "id": "dirty-dancing",
-    "tags": "",
     "title": "Dirty Dancing",
     "type": "movie",
     "genre": "",
@@ -2039,7 +1888,6 @@
   },
   {
     "id": "tracker-2024",
-    "tags": "",
     "title": "Tracker",
     "type": "series",
     "genre": "",
@@ -2051,7 +1899,6 @@
   },
   {
     "id": "game-of-thrones",
-    "tags": "",
     "title": "Game of Thrones",
     "type": "series",
     "genre": "",
@@ -2063,7 +1910,6 @@
   },
   {
     "id": "carlitos-way",
-    "tags": "",
     "title": "Carlito's Way",
     "type": "movie",
     "genre": "",
@@ -2075,7 +1921,6 @@
   },
   {
     "id": "chungking-express",
-    "tags": "",
     "title": "Chungking Express",
     "type": "movie",
     "genre": "",
@@ -2087,7 +1932,6 @@
   },
   {
     "id": "the-girl-who-escaped-kara-robinson-story",
-    "tags": "",
     "title": "The Girl Who Escaped: The Kara Robinson Story",
     "type": "movie",
     "genre": "",
@@ -2099,7 +1943,6 @@
   },
   {
     "id": "the-wire",
-    "tags": "",
     "title": "The Wire",
     "type": "series",
     "genre": "",
@@ -2111,7 +1954,6 @@
   },
   {
     "id": "irreversible",
-    "tags": "",
     "title": "Irreversible",
     "type": "movie",
     "genre": "",
@@ -2123,7 +1965,6 @@
   },
   {
     "id": "presumed-innocent-2024",
-    "tags": "",
     "title": "Presumed Innocent",
     "type": "series",
     "genre": "",
@@ -2136,7 +1977,6 @@
   {
     "id": "rehnaa-hai-terre-dil-mein",
     "hallOfFame": true,
-    "tags": "",
     "title": "Rehnaa Hai Terre Dil Mein",
     "type": "movie",
     "genre": "",
@@ -2148,7 +1988,6 @@
   },
   {
     "id": "scenes-from-a-marriage-2021",
-    "tags": "",
     "title": "Scenes from a Marriage",
     "type": "series",
     "genre": "",
@@ -2160,7 +1999,6 @@
   },
   {
     "id": "amuck-1972",
-    "tags": "",
     "title": "Amuck!",
     "type": "movie",
     "genre": "",
@@ -2173,7 +2011,6 @@
   {
     "id": "asur",
     "hallOfFame": true,
-    "tags": "",
     "title": "Asur",
     "type": "series",
     "genre": "",
@@ -2185,7 +2022,6 @@
   },
   {
     "id": "liberal-arts",
-    "tags": "",
     "title": "Liberal Arts",
     "type": "movie",
     "genre": "",
@@ -2197,7 +2033,6 @@
   },
   {
     "id": "butterfly-2025",
-    "tags": "",
     "title": "Butterfly",
     "type": "series",
     "genre": "",
@@ -2209,7 +2044,6 @@
   },
   {
     "id": "hyper-knife",
-    "tags": "",
     "title": "Hyper Knife",
     "type": "series",
     "genre": "",
@@ -2221,7 +2055,6 @@
   },
   {
     "id": "it-chapter-two",
-    "tags": "",
     "title": "It Chapter Two",
     "type": "movie",
     "genre": "",
@@ -2233,7 +2066,6 @@
   },
   {
     "id": "you-should-have-left",
-    "tags": "",
     "title": "You Should Have Left",
     "type": "movie",
     "genre": "",
@@ -2246,7 +2078,6 @@
   {
     "id": "ex-machina",
     "hallOfFame": true,
-    "tags": "",
     "title": "Ex Machina",
     "type": "movie",
     "genre": "",
@@ -2258,7 +2089,6 @@
   },
   {
     "id": "handsome-guys",
-    "tags": "",
     "title": "Handsome Guys (핸섬가이즈)",
     "type": "movie",
     "genre": "",
@@ -2270,7 +2100,6 @@
   },
   {
     "id": "before-i-disappear",
-    "tags": "",
     "title": "Before I Disappear",
     "type": "movie",
     "genre": "",
@@ -2282,7 +2111,6 @@
   },
   {
     "id": "love-reset",
-    "tags": "",
     "title": "Love Reset",
     "type": "movie",
     "genre": "",
@@ -2294,7 +2122,6 @@
   },
   {
     "id": "the-hitchhikers-guide-to-the-galaxy",
-    "tags": "",
     "title": "The Hitchhiker's Guide to the Galaxy",
     "type": "movie",
     "genre": "",
@@ -2306,7 +2133,6 @@
   },
   {
     "id": "my-sisters-bones",
-    "tags": "",
     "title": "My Sister's Bones",
     "type": "movie",
     "genre": "",
@@ -2319,7 +2145,6 @@
   {
     "id": "the-lunchbox",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Lunchbox",
     "type": "movie",
     "genre": "",
@@ -2331,7 +2156,6 @@
   },
   {
     "id": "something-very-bad-is-going-to-happen",
-    "tags": "in collection",
     "title": "Something Very Bad Is Going to Happen",
     "type": "series",
     "genre": "",
@@ -2339,11 +2163,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/tuj37DlqEqib8sTO4h3nHJeTAJ2.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "bring-it-on-ghost",
-    "tags": "",
     "title": "Bring It On, Ghost",
     "type": "series",
     "genre": "",
@@ -2355,7 +2179,6 @@
   },
   {
     "id": "looking-for-alaska",
-    "tags": "",
     "title": "Looking for Alaska",
     "type": "series",
     "genre": "",
@@ -2368,7 +2191,6 @@
   {
     "id": "main-vaapas-aaunga",
     "hallOfFame": true,
-    "tags": "",
     "title": "Main Vaapas Aaunga",
     "type": "movie",
     "genre": "",
@@ -2380,7 +2202,6 @@
   },
   {
     "id": "jana-gana-mana",
-    "tags": "",
     "title": "Jana Gana Mana",
     "type": "movie",
     "genre": "",
@@ -2392,7 +2213,6 @@
   },
   {
     "id": "gyaarah-gyaarah",
-    "tags": "",
     "title": "Gyaarah Gyaarah",
     "type": "series",
     "genre": "",
@@ -2405,7 +2225,6 @@
   {
     "id": "the-wonderfools",
     "hallOfFame": true,
-    "tags": "",
     "title": "The WONDERfools",
     "type": "series",
     "genre": "",
@@ -2417,7 +2236,6 @@
   },
   {
     "id": "haunted-heist",
-    "tags": "",
     "title": "Haunted Heist",
     "type": "movie",
     "genre": "",
@@ -2429,7 +2247,6 @@
   },
   {
     "id": "silo",
-    "tags": "",
     "title": "Silo",
     "type": "series",
     "genre": "",
@@ -2442,7 +2259,6 @@
   {
     "id": "code-of-silence-2025",
     "hallOfFame": true,
-    "tags": "",
     "title": "Code of Silence",
     "type": "series",
     "genre": "",
@@ -2454,7 +2270,6 @@
   },
   {
     "id": "the-godfather-part-ii",
-    "tags": "in collection",
     "title": "The Godfather Part II",
     "type": "movie",
     "genre": "",
@@ -2462,11 +2277,11 @@
     "year": "1974",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/8a1lJs7mFyGhGhZZDT1azJUoQiZ.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-godfather-part-iii",
-    "tags": "in collection",
     "title": "The Godfather Part III",
     "type": "movie",
     "genre": "",
@@ -2474,11 +2289,11 @@
     "year": "1990",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "blast-2026",
-    "tags": "",
     "title": "Blast",
     "type": "movie",
     "genre": "",
@@ -2490,7 +2305,6 @@
   },
   {
     "id": "fresh-2022",
-    "tags": "",
     "title": "Fresh",
     "type": "movie",
     "genre": "",
@@ -2502,7 +2316,6 @@
   },
   {
     "id": "burning-bright",
-    "tags": "",
     "title": "Burning Bright",
     "type": "movie",
     "genre": "",
@@ -2514,7 +2327,6 @@
   },
   {
     "id": "mansion-24",
-    "tags": "",
     "title": "Mansion 24",
     "type": "series",
     "genre": "",
@@ -2526,7 +2338,6 @@
   },
   {
     "id": "the-walking-dead",
-    "tags": "",
     "title": "The Walking Dead",
     "type": "series",
     "genre": "",
@@ -2538,7 +2349,6 @@
   },
   {
     "id": "over-your-dead-body-2026",
-    "tags": "",
     "title": "Over Your Dead Body",
     "type": "movie",
     "genre": "",
@@ -2550,7 +2360,6 @@
   },
   {
     "id": "the-girl-on-the-train-2016",
-    "tags": "",
     "title": "The Girl on the Train",
     "type": "movie",
     "genre": "",
@@ -2562,7 +2371,6 @@
   },
   {
     "id": "the-night-manager-2016",
-    "tags": "",
     "title": "The Night Manager",
     "type": "series",
     "genre": "",
@@ -2574,7 +2382,6 @@
   },
   {
     "id": "takshakudu",
-    "tags": "",
     "title": "Takshakudu",
     "type": "movie",
     "genre": "",
@@ -2586,7 +2393,6 @@
   },
   {
     "id": "the-punisher-2017",
-    "tags": "",
     "title": "Marvel's The Punisher",
     "type": "series",
     "genre": "",
@@ -2598,7 +2404,6 @@
   },
   {
     "id": "khanzab",
-    "tags": "",
     "title": "Khanzab",
     "type": "movie",
     "genre": "",
@@ -2610,7 +2415,6 @@
   },
   {
     "id": "house-of-the-dragon",
-    "tags": "",
     "title": "House of the Dragon",
     "type": "series",
     "genre": "",
@@ -2622,7 +2426,6 @@
   },
   {
     "id": "satluj-2026",
-    "tags": "",
     "title": "Satluj",
     "type": "movie",
     "genre": "",
@@ -2634,7 +2437,6 @@
   },
   {
     "id": "abraham-ozler",
-    "tags": "",
     "title": "Abraham Ozler",
     "type": "movie",
     "genre": "",
@@ -2646,7 +2448,6 @@
   },
   {
     "id": "barry",
-    "tags": "in collection",
     "title": "Barry",
     "type": "series",
     "genre": "",
@@ -2654,11 +2455,11 @@
     "year": "2018",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "better-call-saul",
-    "tags": "",
     "title": "Better Call Saul",
     "type": "series",
     "genre": "",
@@ -2670,7 +2471,6 @@
   },
   {
     "id": "the-agency-2024",
-    "tags": "",
     "title": "The Agency",
     "type": "series",
     "genre": "",
@@ -2682,7 +2482,6 @@
   },
   {
     "id": "chand-mera-dil",
-    "tags": "",
     "title": "Chand Mera Dil",
     "type": "movie",
     "genre": "",
@@ -2694,7 +2493,6 @@
   },
   {
     "id": "agent-kim-reactivated",
-    "tags": "",
     "title": "Agent Kim Reactivated",
     "type": "series",
     "genre": "",
@@ -2706,7 +2504,6 @@
   },
   {
     "id": "silicon-valley",
-    "tags": "",
     "title": "Silicon Valley",
     "type": "series",
     "genre": "",
@@ -2718,7 +2515,6 @@
   },
   {
     "id": "my-cousin-vinny",
-    "tags": "",
     "title": "My Cousin Vinny",
     "type": "movie",
     "genre": "",
@@ -2730,7 +2526,6 @@
   },
   {
     "id": "bloodhounds",
-    "tags": "in collection",
     "title": "Bloodhounds",
     "type": "series",
     "genre": "",
@@ -2738,12 +2533,12 @@
     "year": "2023",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/uSQzD7TXsL96J5ggDrJFdUs8uXU.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-wrath-of-becky",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Wrath of Becky",
     "type": "movie",
     "genre": "",
@@ -2755,7 +2550,6 @@
   },
   {
     "id": "obsession-2026",
-    "tags": "",
     "title": "Obsession",
     "type": "movie",
     "genre": "",
@@ -2767,7 +2561,6 @@
   },
   {
     "id": "girl-on-the-third-floor",
-    "tags": "",
     "title": "Girl on the Third Floor",
     "type": "movie",
     "genre": "",
@@ -2779,7 +2572,6 @@
   },
   {
     "id": "study-group",
-    "tags": "",
     "title": "Study Group",
     "type": "series",
     "genre": "",
@@ -2791,7 +2583,6 @@
   },
   {
     "id": "midnight-2021",
-    "tags": "",
     "title": "Midnight",
     "type": "movie",
     "genre": "",
@@ -2803,7 +2594,6 @@
   },
   {
     "id": "tighee",
-    "tags": "",
     "title": "Tighee",
     "type": "movie",
     "genre": "",
@@ -2815,7 +2605,6 @@
   },
   {
     "id": "i-will-find-you",
-    "tags": "",
     "title": "I Will Find You",
     "type": "series",
     "genre": "",
@@ -2827,7 +2616,6 @@
   },
   {
     "id": "the-price-of-confession",
-    "tags": "",
     "title": "The Price of Confession",
     "type": "series",
     "genre": "",
@@ -2839,7 +2627,6 @@
   },
   {
     "id": "night-hunter-2019",
-    "tags": "",
     "title": "Night Hunter",
     "type": "movie",
     "genre": "",
@@ -2851,7 +2638,6 @@
   },
   {
     "id": "honour-2026",
-    "tags": "",
     "title": "Honour",
     "type": "series",
     "genre": "",
@@ -2863,7 +2649,6 @@
   },
   {
     "id": "sambhavam-adhyayam-onnu",
-    "tags": "",
     "title": "Sambhavam Adhyayam Onnu",
     "type": "movie",
     "genre": "",
@@ -2875,7 +2660,6 @@
   },
   {
     "id": "in-your-eyes-2014",
-    "tags": "",
     "title": "In Your Eyes",
     "type": "movie",
     "genre": "",
@@ -2887,7 +2671,6 @@
   },
   {
     "id": "the-boys",
-    "tags": "",
     "title": "The Boys",
     "type": "series",
     "genre": "",
@@ -2899,7 +2682,6 @@
   },
   {
     "id": "this-means-war",
-    "tags": "",
     "title": "This Means War",
     "type": "movie",
     "genre": "",
@@ -2911,7 +2693,6 @@
   },
   {
     "id": "widow's-bay",
-    "tags": "",
     "title": "Widow's Bay",
     "type": "series",
     "genre": "",
@@ -2923,7 +2704,6 @@
   },
   {
     "id": "lighting-up-the-stars",
-    "tags": "",
     "title": "Lighting Up the Stars",
     "type": "movie",
     "genre": "",
@@ -2935,7 +2715,6 @@
   },
   {
     "id": "frankly-speaking",
-    "tags": "",
     "title": "Frankly Speaking",
     "type": "series",
     "genre": "",
@@ -2947,7 +2726,6 @@
   },
   {
     "id": "the-invite-2026",
-    "tags": "",
     "title": "The Invite",
     "type": "movie",
     "genre": "",
@@ -2960,7 +2738,6 @@
   {
     "id": "manorama-six-feet-under",
     "hallOfFame": true,
-    "tags": "",
     "title": "Manorama Six Feet Under",
     "type": "movie",
     "genre": "",
@@ -2972,7 +2749,6 @@
   },
   {
     "id": "kumbalangi-nights",
-    "tags": "",
     "title": "Kumbalangi Nights",
     "type": "movie",
     "genre": "",
@@ -2984,7 +2760,6 @@
   },
   {
     "id": "aavesham",
-    "tags": "",
     "title": "Aavesham",
     "type": "movie",
     "genre": "",
@@ -2996,7 +2771,6 @@
   },
   {
     "id": "viduthalai-part-2",
-    "tags": "",
     "title": "Viduthalai: Part II",
     "type": "movie",
     "genre": "",
@@ -3008,7 +2782,6 @@
   },
   {
     "id": "dtf-st-louis",
-    "tags": "",
     "title": "DTF St. Louis",
     "type": "series",
     "genre": "",
@@ -3021,7 +2794,6 @@
   {
     "id": "the-pitt",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "The Pitt",
     "type": "series",
     "genre": "",
@@ -3029,11 +2801,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "last-shift-2014",
-    "tags": "",
     "title": "Last Shift",
     "type": "movie",
     "genre": "",
@@ -3045,7 +2817,6 @@
   },
   {
     "id": "hell-house-llc",
-    "tags": "",
     "title": "Hell House LLC",
     "type": "movie",
     "genre": "",
@@ -3057,7 +2828,6 @@
   },
   {
     "id": "oculus",
-    "tags": "",
     "title": "Oculus",
     "type": "movie",
     "genre": "",
@@ -3069,7 +2839,6 @@
   },
   {
     "id": "gonjiam-haunted-asylum",
-    "tags": "",
     "title": "Gonjiam: Haunted Asylum",
     "type": "movie",
     "genre": "",
@@ -3081,7 +2850,6 @@
   },
   {
     "id": "what-you-wish-for",
-    "tags": "",
     "title": "What You Wish For",
     "type": "movie",
     "genre": "",
@@ -3093,7 +2861,6 @@
   },
   {
     "id": "materialists",
-    "tags": "",
     "title": "Materialists",
     "type": "movie",
     "genre": "",
@@ -3105,7 +2872,6 @@
   },
   {
     "id": "eden-lake",
-    "tags": "in collection",
     "title": "Eden Lake",
     "type": "movie",
     "genre": "",
@@ -3113,11 +2879,11 @@
     "year": "2008",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/tOg6ElTe1mJwaCFN0172U4oso22.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "raanjhanaa",
-    "tags": "",
     "title": "Raanjhanaa",
     "type": "movie",
     "genre": "",
@@ -3129,7 +2895,6 @@
   },
   {
     "id": "no-other-choice-2025",
-    "tags": "in collection",
     "title": "No Other Choice",
     "type": "movie",
     "genre": "",
@@ -3137,11 +2902,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/vc2S0dvgpsM0XfSiXZDMVkRCSSU.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "decision-to-leave",
-    "tags": "",
     "title": "Decision to Leave",
     "type": "movie",
     "genre": "",
@@ -3153,7 +2918,6 @@
   },
   {
     "id": "gilmore-girls",
-    "tags": "",
     "title": "Gilmore Girls",
     "type": "series",
     "genre": "",
@@ -3165,7 +2929,6 @@
   },
   {
     "id": "one-battle-after-another",
-    "tags": "",
     "title": "One Battle After Another",
     "type": "movie",
     "genre": "",
@@ -3177,7 +2940,6 @@
   },
   {
     "id": "spectre",
-    "tags": "",
     "title": "Spectre",
     "type": "movie",
     "genre": "",
@@ -3189,7 +2951,6 @@
   },
   {
     "id": "start-up-2020",
-    "tags": "",
     "title": "Start-Up",
     "type": "series",
     "genre": "",
@@ -3201,7 +2962,6 @@
   },
   {
     "id": "memories-of-murder",
-    "tags": "",
     "title": "Memories of Murder",
     "type": "movie",
     "genre": "",
@@ -3213,7 +2973,6 @@
   },
   {
     "id": "raayan",
-    "tags": "",
     "title": "Raayan",
     "type": "movie",
     "genre": "",
@@ -3225,7 +2984,6 @@
   },
   {
     "id": "terrified-2017",
-    "tags": "",
     "title": "Terrified",
     "type": "movie",
     "genre": "",
@@ -3237,7 +2995,6 @@
   },
   {
     "id": "aamis",
-    "tags": "",
     "title": "Aamis",
     "type": "movie",
     "genre": "",
@@ -3249,7 +3006,6 @@
   },
   {
     "id": "vikram-2022",
-    "tags": "",
     "title": "Vikram",
     "type": "movie",
     "genre": "",
@@ -3262,7 +3018,6 @@
   {
     "id": "banshee",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "Banshee",
     "type": "series",
     "genre": "",
@@ -3270,11 +3025,11 @@
     "year": "2013",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/5nXFiz8Rn8eezVjSTZBd7HmnF1G.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "laal-rang",
-    "tags": "",
     "title": "Laal Rang",
     "type": "movie",
     "genre": "",
@@ -3286,7 +3041,6 @@
   },
   {
     "id": "babygirl-2024",
-    "tags": "",
     "title": "Babygirl",
     "type": "movie",
     "genre": "",
@@ -3298,7 +3052,6 @@
   },
   {
     "id": "training-day",
-    "tags": "",
     "title": "Training Day",
     "type": "movie",
     "genre": "",
@@ -3310,7 +3063,6 @@
   },
   {
     "id": "borderline-2025",
-    "tags": "",
     "title": "Borderline",
     "type": "movie",
     "genre": "",
@@ -3323,7 +3075,6 @@
   {
     "id": "the-girlfriend-2025",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "The Girlfriend",
     "type": "series",
     "genre": "",
@@ -3331,11 +3082,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ktrp3tdZ5IQpFux4nLy8z70bt3n.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "katie-says-goodbye",
-    "tags": "",
     "title": "Katie Says Goodbye",
     "type": "movie",
     "genre": "",
@@ -3347,7 +3098,6 @@
   },
   {
     "id": "life-as-we-know-it",
-    "tags": "",
     "title": "Life as We Know It",
     "type": "movie",
     "genre": "",
@@ -3359,7 +3109,6 @@
   },
   {
     "id": "collide-2016",
-    "tags": "",
     "title": "Collide",
     "type": "movie",
     "genre": "",
@@ -3371,7 +3120,6 @@
   },
   {
     "id": "the-ides-of-march",
-    "tags": "",
     "title": "The Ides of March",
     "type": "movie",
     "genre": "",
@@ -3383,7 +3131,6 @@
   },
   {
     "id": "the-clean-up-crew",
-    "tags": "",
     "title": "The Clean Up Crew",
     "type": "movie",
     "genre": "",
@@ -3395,7 +3142,6 @@
   },
   {
     "id": "outlander",
-    "tags": "",
     "title": "Outlander",
     "type": "series",
     "genre": "",
@@ -3407,7 +3153,6 @@
   },
   {
     "id": "the-last-man-in-tower",
-    "tags": "",
     "title": "Last Man in Tower",
     "type": "movie",
     "genre": "",
@@ -3419,7 +3164,6 @@
   },
   {
     "id": "carolina-caroline",
-    "tags": "",
     "title": "Carolina Caroline",
     "type": "movie",
     "genre": "",
@@ -3431,7 +3175,6 @@
   },
   {
     "id": "pluribus",
-    "tags": "",
     "title": "Pluribus",
     "type": "series",
     "genre": "",
@@ -3443,7 +3186,6 @@
   },
   {
     "id": "wuthering-heights-2026",
-    "tags": "",
     "title": "Wuthering Heights",
     "type": "movie",
     "genre": "",
@@ -3456,7 +3198,6 @@
   {
     "id": "fracture-2007",
     "hallOfFame": true,
-    "tags": "",
     "title": "Fracture",
     "type": "movie",
     "genre": "",
@@ -3468,7 +3209,6 @@
   },
   {
     "id": "vibe-2026",
-    "tags": "",
     "title": "Vibe",
     "type": "movie",
     "genre": "",
@@ -3481,7 +3221,6 @@
   {
     "id": "single-papa",
     "hallOfFame": true,
-    "tags": "",
     "title": "Single Papa",
     "type": "series",
     "genre": "",
@@ -3493,7 +3232,6 @@
   },
   {
     "id": "the-watcher-2022",
-    "tags": "",
     "title": "The Watcher",
     "type": "series",
     "genre": "",
@@ -3505,7 +3243,6 @@
   },
   {
     "id": "sense-and-sensibility",
-    "tags": "",
     "title": "Sense and Sensibility",
     "type": "movie",
     "genre": "",
@@ -3517,7 +3254,6 @@
   },
   {
     "id": "person-of-interest-2024",
-    "tags": "",
     "title": "Person of Interest",
     "type": "movie",
     "genre": "",
@@ -3529,7 +3265,6 @@
   },
   {
     "id": "teacup",
-    "tags": "in collection",
     "title": "Teacup",
     "type": "series",
     "genre": "",
@@ -3537,11 +3272,11 @@
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/cP5zuQvWAFrgWptS0iXvDI3iND.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-white-lotus",
-    "tags": "",
     "title": "The White Lotus",
     "type": "series",
     "genre": "",
@@ -3553,7 +3288,6 @@
   },
   {
     "id": "the-silent-patient",
-    "tags": "",
     "title": "The Silent Patient",
     "type": "movie",
     "genre": "",
@@ -3566,7 +3300,6 @@
   {
     "id": "life-like-2019",
     "hallOfFame": true,
-    "tags": "",
     "title": "Life Like",
     "type": "movie",
     "genre": "",
@@ -3578,7 +3311,6 @@
   },
   {
     "id": "adkitta",
-    "tags": "",
     "title": "Adkitta",
     "type": "movie",
     "genre": "",
@@ -3590,7 +3322,6 @@
   },
   {
     "id": "the-hunger-games",
-    "tags": "in collection",
     "title": "The Hunger Games",
     "type": "movie",
     "genre": "",
@@ -3598,11 +3329,11 @@
     "year": "2012",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/apa5G43Hha7kH7wJG0gkkHT7FA9.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-hunger-games-catching-fire",
-    "tags": "in collection",
     "title": "The Hunger Games: Catching Fire",
     "type": "movie",
     "genre": "",
@@ -3610,11 +3341,11 @@
     "year": "2013",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/vrQHDXjVmbYzadOXQ0UaObunoy2.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-hunger-games-mockingjay-part-1",
-    "tags": "in collection",
     "title": "The Hunger Games: Mockingjay - Part 1",
     "type": "movie",
     "genre": "",
@@ -3622,11 +3353,11 @@
     "year": "2014",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/4FAA18ZIja70d1Tu5hr5cj2q1sB.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-hunger-games-mockingjay-part-2",
-    "tags": "in collection",
     "title": "The Hunger Games: Mockingjay - Part 2",
     "type": "movie",
     "genre": "",
@@ -3634,11 +3365,11 @@
     "year": "2015",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/lImKHDfExAulp16grYm8zD5eONE.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-hunger-games-ballad-of-songbirds-and-snakes",
-    "tags": "",
     "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
     "type": "movie",
     "genre": "",
@@ -3650,7 +3381,6 @@
   },
   {
     "id": "pechi-2024",
-    "tags": "",
     "title": "Pechi",
     "type": "movie",
     "genre": "",
@@ -3662,7 +3392,6 @@
   },
   {
     "id": "carrie-2026",
-    "tags": "",
     "title": "Carrie",
     "type": "series",
     "genre": "",
@@ -3674,7 +3403,6 @@
   },
   {
     "id": "hey-sinamika",
-    "tags": "",
     "title": "Hey! Sinamika",
     "type": "movie",
     "genre": "",
@@ -3686,7 +3414,6 @@
   },
   {
     "id": "last-flag-flying",
-    "tags": "",
     "title": "Last Flag Flying",
     "type": "movie",
     "genre": "",
@@ -3698,7 +3425,6 @@
   },
   {
     "id": "ted-lasso",
-    "tags": "",
     "title": "Ted Lasso",
     "type": "series",
     "genre": "",
@@ -3710,7 +3436,6 @@
   },
   {
     "id": "kumari-2022",
-    "tags": "",
     "title": "Kumari",
     "type": "movie",
     "genre": "",
@@ -3722,7 +3447,6 @@
   },
   {
     "id": "homestead-2024",
-    "tags": "",
     "title": "Homestead",
     "type": "movie",
     "genre": "",
@@ -3734,7 +3458,6 @@
   },
   {
     "id": "remain-2026",
-    "tags": "",
     "title": "Remain",
     "type": "movie",
     "genre": "",
@@ -3746,7 +3469,6 @@
   },
   {
     "id": "thunivu",
-    "tags": "",
     "title": "Thunivu",
     "type": "movie",
     "genre": "",
@@ -3758,7 +3480,6 @@
   },
   {
     "id": "white-nights-1985",
-    "tags": "",
     "title": "White Nights",
     "type": "movie",
     "genre": "",
@@ -3770,7 +3491,6 @@
   },
   {
     "id": "a-talent-for-murder-2026",
-    "tags": "",
     "title": "A Talent for Murder",
     "type": "movie",
     "genre": "",
@@ -3782,7 +3502,6 @@
   },
   {
     "id": "pop-kaun",
-    "tags": "",
     "title": "Pop Kaun?",
     "type": "series",
     "genre": "",
@@ -3794,7 +3513,6 @@
   },
   {
     "id": "anniversary-2025",
-    "tags": "",
     "title": "Anniversary",
     "type": "movie",
     "genre": "",
@@ -3806,7 +3524,6 @@
   },
   {
     "id": "what-the-nanny-saw",
-    "tags": "",
     "title": "What the Nanny Saw",
     "type": "movie",
     "genre": "",
@@ -3819,7 +3536,6 @@
   {
     "id": "the-kashmir-files",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Kashmir Files",
     "type": "movie",
     "genre": "",
@@ -3831,7 +3547,6 @@
   },
   {
     "id": "the-bengal-files",
-    "tags": "",
     "title": "The Bengal Files",
     "type": "movie",
     "genre": "",
@@ -3843,7 +3558,6 @@
   },
   {
     "id": "blood-money-2017",
-    "tags": "",
     "title": "Blood Money",
     "type": "movie",
     "genre": "",
@@ -3855,7 +3569,6 @@
   },
   {
     "id": "the-silence-of-the-lambs",
-    "tags": "",
     "title": "The Silence of the Lambs",
     "type": "movie",
     "genre": "",
@@ -3868,7 +3581,6 @@
   {
     "id": "hachi-a-dogs-tale",
     "hallOfFame": true,
-    "tags": "",
     "title": "Hachi: A Dog's Tale",
     "type": "movie",
     "genre": "",
@@ -3880,7 +3592,6 @@
   },
   {
     "id": "the-day-of-the-jackal-2024",
-    "tags": "",
     "title": "The Day of the Jackal",
     "type": "series",
     "genre": "",
@@ -3892,7 +3603,6 @@
   },
   {
     "id": "bokshi",
-    "tags": "",
     "title": "Bokshi",
     "type": "movie",
     "genre": "",
@@ -3904,7 +3614,6 @@
   },
   {
     "id": "serpico",
-    "tags": "",
     "title": "Serpico",
     "type": "movie",
     "genre": "",
@@ -3916,7 +3625,6 @@
   },
   {
     "id": "balan-the-boy",
-    "tags": "",
     "title": "Balan - The Boy",
     "type": "movie",
     "genre": "",
@@ -3928,7 +3636,6 @@
   },
   {
     "id": "furious-2026",
-    "tags": "",
     "title": "Furious",
     "type": "series",
     "genre": "",
@@ -3940,7 +3647,6 @@
   },
   {
     "id": "marcella",
-    "tags": "",
     "title": "Marcella",
     "type": "series",
     "genre": "",
@@ -3952,7 +3658,6 @@
   },
   {
     "id": "play-dead-2026",
-    "tags": "",
     "title": "Play Dead",
     "type": "movie",
     "genre": "",
@@ -3964,7 +3669,6 @@
   },
   {
     "id": "the-fix-2026",
-    "tags": "",
     "title": "The Fix",
     "type": "movie",
     "genre": "",
@@ -3976,7 +3680,6 @@
   },
   {
     "id": "east-of-eden-2026",
-    "tags": "",
     "title": "East of Eden",
     "type": "series",
     "genre": "",
@@ -3989,7 +3692,6 @@
   {
     "id": "the-time-travelers-wife",
     "hallOfFame": true,
-    "tags": "in collection",
     "title": "The Time Traveler's Wife",
     "type": "movie",
     "genre": "",
@@ -3997,11 +3699,11 @@
     "year": "2009",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/J3ewuzQwhFro0pDpdcbZ4j7MYy.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "late-night-with-the-devil",
-    "tags": "",
     "title": "Late Night with the Devil",
     "type": "movie",
     "genre": "",
@@ -4013,7 +3715,6 @@
   },
   {
     "id": "american-gods",
-    "tags": "",
     "title": "American Gods",
     "type": "series",
     "genre": "",
@@ -4025,7 +3726,6 @@
   },
   {
     "id": "mobland",
-    "tags": "",
     "title": "MobLand",
     "type": "series",
     "genre": "",
@@ -4037,7 +3737,6 @@
   },
   {
     "id": "slow-horses",
-    "tags": "",
     "title": "Slow Horses",
     "type": "series",
     "genre": "",
@@ -4049,7 +3748,6 @@
   },
   {
     "id": "yahaan",
-    "tags": "",
     "title": "Yahaan",
     "type": "movie",
     "genre": "",
@@ -4062,7 +3760,6 @@
   {
     "id": "shall-we-dance-2004",
     "hallOfFame": true,
-    "tags": "",
     "title": "Shall We Dance?",
     "type": "movie",
     "genre": "",
@@ -4074,7 +3771,6 @@
   },
   {
     "id": "inglourious-basterds",
-    "tags": "",
     "title": "Inglourious Basterds",
     "type": "movie",
     "genre": "",
@@ -4086,7 +3782,6 @@
   },
   {
     "id": "fury-2014",
-    "tags": "",
     "title": "Fury",
     "type": "movie",
     "genre": "",
@@ -4098,7 +3793,6 @@
   },
   {
     "id": "kaalakaandi",
-    "tags": "",
     "title": "Kaalakaandi",
     "type": "movie",
     "genre": "",
@@ -4110,7 +3804,6 @@
   },
   {
     "id": "chernobyl",
-    "tags": "",
     "title": "Chernobyl",
     "type": "series",
     "genre": "",
@@ -4122,7 +3815,6 @@
   },
   {
     "id": "aindham-vedham",
-    "tags": "",
     "title": "Aindham Vedham",
     "type": "series",
     "genre": "",
@@ -4134,7 +3826,6 @@
   },
   {
     "id": "bhoothakaalam",
-    "tags": "",
     "title": "Bhoothakaalam",
     "type": "movie",
     "genre": "",
@@ -4146,7 +3837,6 @@
   },
   {
     "id": "detachment-2011",
-    "tags": "",
     "title": "Detachment",
     "type": "movie",
     "genre": "",
@@ -4158,7 +3848,6 @@
   },
   {
     "id": "good-boy-2025",
-    "tags": "",
     "title": "Good Boy",
     "type": "movie",
     "genre": "",
@@ -4170,7 +3859,6 @@
   },
   {
     "id": "killing-eve",
-    "tags": "",
     "title": "Killing Eve",
     "type": "series",
     "genre": "",
@@ -4182,7 +3870,6 @@
   },
   {
     "id": "homeland",
-    "tags": "",
     "title": "Homeland",
     "type": "series",
     "genre": "",
@@ -4194,7 +3881,6 @@
   },
   {
     "id": "in-the-grey-2026",
-    "tags": "",
     "title": "In the Grey",
     "type": "movie",
     "genre": "",
@@ -4207,7 +3893,6 @@
   {
     "id": "the-sum-of-all-fears",
     "hallOfFame": true,
-    "tags": "",
     "title": "The Sum of All Fears",
     "type": "movie",
     "genre": "",
@@ -4219,7 +3904,6 @@
   },
   {
     "id": "manifest",
-    "tags": "",
     "title": "Manifest",
     "type": "series",
     "genre": "",
@@ -4231,7 +3915,6 @@
   },
   {
     "id": "after-life",
-    "tags": "",
     "title": "After Life",
     "type": "series",
     "genre": "",
@@ -4243,7 +3926,6 @@
   },
   {
     "id": "a-man-called-otto",
-    "tags": "",
     "title": "A Man Called Otto",
     "type": "movie",
     "genre": "",
@@ -4255,7 +3937,6 @@
   },
   {
     "id": "this-is-how-you-die",
-    "tags": "",
     "title": "This Is How You Die",
     "type": "movie",
     "genre": "",
@@ -4267,7 +3948,6 @@
   },
   {
     "id": "citizen-vigilante",
-    "tags": "",
     "title": "Citizen Vigilante",
     "type": "movie",
     "genre": "",
@@ -4279,7 +3959,6 @@
   },
   {
     "id": "the-intern-2015",
-    "tags": "",
     "title": "The Intern",
     "type": "movie",
     "genre": "",
@@ -4291,7 +3970,6 @@
   },
   {
     "id": "munich-2005",
-    "tags": "",
     "title": "Munich",
     "type": "movie",
     "genre": "",
@@ -4303,7 +3981,6 @@
   },
   {
     "id": "margin-call",
-    "tags": "",
     "title": "Margin Call",
     "type": "movie",
     "genre": "",
@@ -4315,7 +3992,6 @@
   },
   {
     "id": "subedaar-2026",
-    "tags": "",
     "title": "Subedaar",
     "type": "movie",
     "genre": "",
@@ -4327,7 +4003,6 @@
   },
   {
     "id": "the-blacklist",
-    "tags": "",
     "title": "The Blacklist",
     "type": "series",
     "genre": "",
@@ -4339,7 +4014,6 @@
   },
   {
     "id": "shes-out-of-my-league",
-    "tags": "",
     "title": "She's Out of My League",
     "type": "movie",
     "genre": "",
@@ -4351,7 +4025,6 @@
   },
   {
     "id": "you-2018",
-    "tags": "",
     "title": "You",
     "type": "series",
     "genre": "",
@@ -4363,7 +4036,6 @@
   },
   {
     "id": "five-feet-apart",
-    "tags": "",
     "title": "Five Feet Apart",
     "type": "movie",
     "genre": "",
@@ -4375,7 +4047,6 @@
   },
   {
     "id": "the-piper-2023",
-    "tags": "",
     "title": "The Piper",
     "type": "movie",
     "genre": "",
@@ -4387,7 +4058,6 @@
   },
   {
     "id": "a-tale-of-two-sisters",
-    "tags": "",
     "title": "A Tale of Two Sisters",
     "type": "movie",
     "genre": "",
@@ -4399,7 +4069,6 @@
   },
   {
     "id": "the-wailing-2016",
-    "tags": "in collection",
     "title": "The Wailing",
     "type": "movie",
     "genre": "",
@@ -4407,11 +4076,11 @@
     "year": "2016",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/lWE9ih9qgjx8HatYboP7fG0nri.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "billions",
-    "tags": "in collection",
     "title": "Billions",
     "type": "series",
     "genre": "",
@@ -4419,11 +4088,11 @@
     "year": "2016",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/edwYPQdZE998d748AdwWLsfy0rl.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "wandavision",
-    "tags": "",
     "title": "WandaVision",
     "type": "series",
     "genre": "",
@@ -4435,7 +4104,6 @@
   },
   {
     "id": "seoul-busters",
-    "tags": "",
     "title": "Seoul Busters",
     "type": "series",
     "genre": "",
@@ -4447,7 +4115,6 @@
   },
   {
     "id": "pulp-fiction",
-    "tags": "in collection",
     "title": "Pulp Fiction",
     "type": "movie",
     "genre": "",
@@ -4455,11 +4122,11 @@
     "year": "1994",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "eternally-yours-2026",
-    "tags": "",
     "title": "Eternally Yours",
     "type": "series",
     "genre": "",
@@ -4471,7 +4138,6 @@
   },
   {
     "id": "maximum-pleasure-guaranteed",
-    "tags": "",
     "title": "Maximum Pleasure Guaranteed",
     "type": "series",
     "genre": "",
@@ -4483,7 +4149,6 @@
   },
   {
     "id": "supernatural",
-    "tags": "",
     "title": "Supernatural",
     "type": "series",
     "genre": "",
@@ -4495,7 +4160,6 @@
   },
   {
     "id": "blood-sacrifice-2026",
-    "tags": "",
     "title": "Blood Sacrifice",
     "type": "series",
     "genre": "",
@@ -4507,7 +4171,6 @@
   },
   {
     "id": "do-you-know-me",
-    "tags": "",
     "title": "Do You Know Me?",
     "type": "movie",
     "genre": "",
@@ -4519,7 +4182,6 @@
   },
   {
     "id": "blue-lights",
-    "tags": "",
     "title": "Blue Lights",
     "type": "series",
     "genre": "",
@@ -4531,7 +4193,6 @@
   },
   {
     "id": "normal-people",
-    "tags": "",
     "title": "Normal People",
     "type": "series",
     "genre": "",
@@ -4543,7 +4204,6 @@
   },
   {
     "id": "the-exorcist-martyrs",
-    "tags": "",
     "title": "The Exorcist: Martyrs",
     "type": "movie",
     "genre": "",
@@ -4555,7 +4215,6 @@
   },
   {
     "id": "the-haunting-of-bly-manor",
-    "tags": "",
     "title": "The Haunting of Bly Manor",
     "type": "series",
     "genre": "",
@@ -4567,7 +4226,6 @@
   },
   {
     "id": "the-haunting-of-hill-house",
-    "tags": "",
     "title": "The Haunting of Hill House",
     "type": "series",
     "genre": "",
@@ -4579,7 +4237,6 @@
   },
   {
     "id": "hush-2016",
-    "tags": "",
     "title": "Hush",
     "type": "movie",
     "genre": "",
@@ -4591,7 +4248,6 @@
   },
   {
     "id": "hush-1998",
-    "tags": "",
     "title": "Hush",
     "type": "movie",
     "genre": "",
@@ -4604,7 +4260,6 @@
   },
   {
     "id": "all-the-bright-places",
-    "tags": "in collection",
     "title": "All the Bright Places",
     "type": "movie",
     "genre": "Drama",
@@ -4612,11 +4267,11 @@
     "year": "2020",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/4SafxuMKQiw4reBiWKVZJpJn80I.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "august-osage-county",
-    "tags": "in collection",
     "title": "August: Osage County",
     "type": "movie",
     "genre": "Comedy",
@@ -4624,11 +4279,11 @@
     "year": "2013",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/fvjxr77dfxdIOY3lvj0bHP4B5xT.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "blink-twice",
-    "tags": "in collection",
     "title": "Blink Twice",
     "type": "movie",
     "genre": "Thriller",
@@ -4636,11 +4291,11 @@
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/lZGOK0I2DJSRlEPNOAFTSNxSjDD.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "breakfast-at-tiffany-s",
-    "tags": "in collection",
     "title": "Breakfast at Tiffany's",
     "type": "movie",
     "genre": "Comedy",
@@ -4648,11 +4303,11 @@
     "year": "1961",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "children-of-men",
-    "tags": "in collection",
     "title": "Children of Men",
     "type": "movie",
     "genre": "Drama",
@@ -4660,11 +4315,11 @@
     "year": "2006",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/k9IAS4TehZFcKi4HVByxZNPfqex.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "cure",
-    "tags": "in collection",
     "title": "Cure",
     "type": "movie",
     "genre": "Horror",
@@ -4672,11 +4327,11 @@
     "year": "1997",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/6hL8VFE4r0lX7fQKBBNqLNBKhcK.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "dangerous-animals",
-    "tags": "in collection",
     "title": "Dangerous Animals",
     "type": "movie",
     "genre": "Horror",
@@ -4684,11 +4339,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/9tk3Si960hg4E49eMt81dS7Qe9Z.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "demolition-man",
-    "tags": "in collection",
     "title": "Demolition Man",
     "type": "movie",
     "genre": "Action",
@@ -4696,11 +4351,11 @@
     "year": "1993",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/dq6AmlVFo92PRuoLCcIyFdoRuxf.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "door-lock",
-    "tags": "in collection",
     "title": "Door Lock",
     "type": "movie",
     "genre": "Horror",
@@ -4708,11 +4363,11 @@
     "year": "2018",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/aEz4ICXxflkqHodgsqjNpnTI7qf.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "dungeons-dragons-honour-among-thieves",
-    "tags": "in collection",
     "title": "Dungeons & Dragons: Honour Among Thieves",
     "type": "movie",
     "genre": "Action",
@@ -4720,11 +4375,11 @@
     "year": "2023",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/v7UF7ypAqjsFZFdjksjQ7IUpXdn.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-eye",
-    "tags": "in collection",
     "title": "The Eye",
     "type": "movie",
     "genre": "Horror",
@@ -4733,11 +4388,11 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/eW39LaILpKGLthbnC4KgUJErslK.jpg",
     "review": "",
-    "hallOfFame": true
+    "hallOfFame": true,
+    "inCollection": true
   },
   {
     "id": "first-daughter",
-    "tags": "in collection",
     "title": "First Daughter",
     "type": "movie",
     "genre": "Comedy",
@@ -4745,11 +4400,11 @@
     "year": "2004",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/iUZ3hDMo8SGY2IoujCKwVt8ukm9.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-goldfinch",
-    "tags": "in collection",
     "title": "The Goldfinch",
     "type": "movie",
     "genre": "Drama",
@@ -4757,11 +4412,11 @@
     "year": "2019",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/5Jx9VyVPiK9GQ7ouKLkTUYnZSQ4.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "hamlet",
-    "tags": "in collection",
     "title": "Hamlet",
     "type": "movie",
     "genre": "Drama",
@@ -4769,11 +4424,11 @@
     "year": "1996",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ilurgUOp6SCl4cuhfjctj1qxlfZ.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "hanu-man",
-    "tags": "in collection",
     "title": "Hanu Man",
     "type": "movie",
     "genre": "Action",
@@ -4781,11 +4436,11 @@
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/m1zq48rWSXxplzoJR8YtbXWnnHM.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "hive",
-    "tags": "in collection",
     "title": "Hive",
     "type": "movie",
     "genre": "Horror",
@@ -4793,11 +4448,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/aFGoHyaTPERCyuAhEvonS8xlk9Y.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "hope-gap",
-    "tags": "in collection",
     "title": "Hope Gap",
     "type": "movie",
     "genre": "Drama",
@@ -4805,11 +4460,11 @@
     "year": "2019",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/sheXBJxhOGNCb6zeDxPEIpfjztY.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "i-tonya",
-    "tags": "in collection",
     "title": "I, Tonya",
     "type": "movie",
     "genre": "Biography",
@@ -4817,11 +4472,11 @@
     "year": "2017",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "incendies",
-    "tags": "in collection",
     "title": "Incendies",
     "type": "movie",
     "genre": "Drama",
@@ -4829,11 +4484,11 @@
     "year": "2010",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/yH6DAQVgbyj72S66gN4WWVoTjuf.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "king-of-new-york",
-    "tags": "in collection",
     "title": "King of New York",
     "type": "movie",
     "genre": "Thriller",
@@ -4841,11 +4496,11 @@
     "year": "1990",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/1MyH4MJAJZJbb6wDVeOc2bTECtK.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-last-house-on-the-left",
-    "tags": "in collection",
     "title": "The Last House on the Left",
     "type": "movie",
     "genre": "Horror",
@@ -4853,50 +4508,50 @@
     "year": "2009",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/2Y35XCUS8U8vC8vs0HDEVkPu1BM.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-lord-of-the-rings-the-fellowship-of-the-ring",
-    "tags": "in collection",
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "type": "movie",
     "genre": "Adventure",
-    "status": "watched",
+    "status": "to-watch",
     "year": "2001",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
     "review": "",
-    "hallOfFame": true
+    "hallOfFame": true,
+    "inCollection": true
   },
   {
     "id": "the-lord-of-the-rings-the-return-of-the-king",
-    "tags": "in collection",
     "title": "The Lord of the Rings: The Return of the King",
     "type": "movie",
     "genre": "Adventure",
-    "status": "watched",
+    "status": "to-watch",
     "year": "2003",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     "review": "",
-    "hallOfFame": true
+    "hallOfFame": true,
+    "inCollection": true
   },
   {
     "id": "the-lord-of-the-rings-the-two-towers",
-    "tags": "in collection",
     "title": "The Lord of the Rings: The Two Towers",
     "type": "movie",
     "genre": "Adventure",
-    "status": "watched",
+    "status": "to-watch",
     "year": "2002",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     "review": "",
-    "hallOfFame": true
+    "hallOfFame": true,
+    "inCollection": true
   },
   {
     "id": "me-and-earl-and-the-dying-girl",
-    "tags": "in collection",
     "title": "Me and Earl and the Dying Girl",
     "type": "movie",
     "genre": "Drama",
@@ -4904,11 +4559,11 @@
     "year": "2015",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/eLjS2bLMjln2n2I73Xu6TaANPDZ.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "me-before-you",
-    "tags": "in collection",
     "title": "Me Before You",
     "type": "movie",
     "genre": "Drama",
@@ -4916,11 +4571,11 @@
     "year": "2016",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/oo2Q3T8juOYFh2G1YJ3oSMAfUyq.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "midnight-sun",
-    "tags": "in collection",
     "title": "Midnight Sun",
     "type": "movie",
     "genre": "Romance",
@@ -4928,11 +4583,11 @@
     "year": "2018",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/vPG2zEKPXhovPW9S91SRnwr5JM1.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "miracle-in-cell-no-7",
-    "tags": "in collection",
     "title": "Miracle in Cell No. 7",
     "type": "movie",
     "genre": "Drama",
@@ -4940,11 +4595,11 @@
     "year": "2019",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/bOth4QmNyEkalwahfPCfiXjNh1r.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "murder-report",
-    "tags": "in collection",
     "title": "Murder Report",
     "type": "movie",
     "genre": "Drama",
@@ -4952,11 +4607,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/dl0sMMjMkdkziSGeSwiQ1DAb6Ci.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "mystic-river",
-    "tags": "in collection",
     "title": "Mystic River",
     "type": "movie",
     "genre": "Drama",
@@ -4964,11 +4619,11 @@
     "year": "2003",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/hCHVDbo6XJGj3r2i4hVjKhE0GKF.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "a-new-york-winter-s-tale",
-    "tags": "in collection",
     "title": "A New York Winter's Tale",
     "type": "movie",
     "genre": "Drama",
@@ -4976,11 +4631,11 @@
     "year": "2014",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/sdmHGy9c92SjAhz1h05TSLfnnAj.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "noroi",
-    "tags": "in collection",
     "title": "Noroi",
     "type": "movie",
     "genre": "Horror",
@@ -4988,11 +4643,11 @@
     "year": "2005",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/vA7uZSMx8VL6LIuNFPnymwkRPBV.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "one-mile-chapter-one",
-    "tags": "in collection",
     "title": "One Mile: Chapter One",
     "type": "movie",
     "genre": "Drama",
@@ -5000,11 +4655,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/1GZaoYe0mQy211DgDSAxAXr30ul.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "one-mile-chapter-two",
-    "tags": "in collection",
     "title": "One Mile: Chapter Two",
     "type": "movie",
     "genre": "Drama",
@@ -5012,11 +4667,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/3sjc9qXXmQoUWKQ3qIjS1nZaUJy.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "parasite",
-    "tags": "in collection",
     "title": "Parasite",
     "type": "movie",
     "genre": "Drama",
@@ -5024,11 +4679,11 @@
     "year": "2019",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "people-we-meet-on-vacation",
-    "tags": "in collection",
     "title": "People We Meet on Vacation",
     "type": "movie",
     "genre": "Romance",
@@ -5036,11 +4691,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/peG6482ALJQ9Tbvv2P38BquVk0f.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "pretty-lethal",
-    "tags": "in collection",
     "title": "Pretty Lethal",
     "type": "movie",
     "genre": "Action",
@@ -5048,11 +4703,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/znTPnXCK3lEQJgqXCvP7e5FUz6f.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "red-rooms",
-    "tags": "in collection",
     "title": "Red Rooms",
     "type": "movie",
     "genre": "Horror",
@@ -5060,11 +4715,11 @@
     "year": "2023",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/uBJvbf0g9rcsYElcwZCMYU0Vrj8.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "return-to-sender",
-    "tags": "in collection",
     "title": "Return to Sender",
     "type": "movie",
     "genre": "Drama",
@@ -5072,11 +4727,11 @@
     "year": "2015",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/mBIRSvt2ebgdztuX7F7GwR0iPM0.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "santosh",
-    "tags": "in collection",
     "title": "Santosh",
     "type": "movie",
     "genre": "Thriller",
@@ -5084,11 +4739,11 @@
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/qkqRCBU4JmOlGdPTxFxlSPCPrfp.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "scream-7",
-    "tags": "in collection",
     "title": "Scream 7",
     "type": "movie",
     "genre": "Horror",
@@ -5096,11 +4751,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-secret-of-marrowbone",
-    "tags": "in collection",
     "title": "The Secret of Marrowbone",
     "type": "movie",
     "genre": "Drama",
@@ -5108,11 +4763,11 @@
     "year": "2017",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/iX77zMSqUv2Qt7ToEnN2mmEudEf.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "send-help",
-    "tags": "in collection",
     "title": "Send Help",
     "type": "movie",
     "genre": "Horror",
@@ -5120,11 +4775,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/zbJWVHOtj3ljBzWgL1P8pxP03Up.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-shadow-s-edge",
-    "tags": "in collection",
     "title": "The Shadow's Edge",
     "type": "movie",
     "genre": "Drama",
@@ -5132,11 +4787,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/cHKo3m8N1fwvEy2ZEr0xGmmMODV.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "shame",
-    "tags": "in collection",
     "title": "Shame",
     "type": "movie",
     "genre": "Drama",
@@ -5144,11 +4799,11 @@
     "year": "2011",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/cAWLz9kFv4xc6IsEXTj2DrcqD55.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "thelma",
-    "tags": "in collection",
     "title": "Thelma",
     "type": "movie",
     "genre": "Action",
@@ -5156,11 +4811,11 @@
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/rUcuageYgv9SsJoWuc0seRWG6JC.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "tomorrowland-a-world-beyond",
-    "tags": "in collection",
     "title": "Tomorrowland: A World Beyond",
     "type": "movie",
     "genre": "Action",
@@ -5168,11 +4823,11 @@
     "year": "2015",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/kziYpr5Nfw60P0My8aj1sgCEqed.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "undertone",
-    "tags": "in collection",
     "title": "Undertone",
     "type": "movie",
     "genre": "Horror",
@@ -5180,11 +4835,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/2PFgFMnrdCPXWiZl1PUvky7Mo9D.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "vadh-2",
-    "tags": "in collection",
     "title": "Vadh 2",
     "type": "movie",
     "genre": "Crime",
@@ -5192,11 +4847,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/Aj1Q7QPpt1kTrbNBRENPh0rwEot.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "walk-of-shame",
-    "tags": "in collection",
     "title": "Walk of Shame",
     "type": "movie",
     "genre": "Comedy",
@@ -5204,11 +4859,11 @@
     "year": "2014",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/6TwsZf1tzY0ILHiGoUeS5uZNlwR.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "warm-bodies",
-    "tags": "in collection",
     "title": "Warm Bodies",
     "type": "movie",
     "genre": "Horror",
@@ -5216,11 +4871,11 @@
     "year": "2013",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/i8vCO3uszvlfBJVEyuIZVUDlt60.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "warrior",
-    "tags": "in collection",
     "title": "Warrior",
     "type": "movie",
     "genre": "Action",
@@ -5228,11 +4883,11 @@
     "year": "2011",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/zeGvf99lr63RcvFXa6Woyq3iPs1.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-art-of-sarah",
-    "tags": "in collection",
     "title": "The Art of Sarah",
     "type": "series",
     "genre": "Drama",
@@ -5240,11 +4895,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/3bYSwRqLy2qfx5gqVJdOhibxeML.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "bhay-the-gaurav-tiwari-mystery",
-    "tags": "in collection",
     "title": "Bhay: The Gaurav Tiwari Mystery",
     "type": "series",
     "genre": "Drama",
@@ -5252,11 +4907,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/lxUdVSoLVaPJ9HINBeOfAZARgSb.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-borderline",
-    "tags": "in collection",
     "title": "The Borderline",
     "type": "series",
     "genre": "Crime",
@@ -5264,11 +4919,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/71Mk7BrFmJp9JoGMYpiygpoNPXH.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-girlfriend-experience",
-    "tags": "in collection",
     "title": "The Girlfriend Experience",
     "type": "series",
     "genre": "Drama",
@@ -5276,11 +4931,11 @@
     "year": "2016",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/7SPD3GfNFP7G9XdenG4GXNcsvHm.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "halt-and-catch-fire",
-    "tags": "in collection",
     "title": "Halt and Catch Fire",
     "type": "series",
     "genre": "Drama",
@@ -5288,11 +4943,11 @@
     "year": "2014",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/iABJ86eaNPUSnivk89Y0Cnxmsvy.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "it-welcome-to-derry",
-    "tags": "in collection",
     "title": "It: Welcome to Derry",
     "type": "series",
     "genre": "Mystery",
@@ -5300,11 +4955,11 @@
     "year": "2025",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/sa26OBVEYzYRButAGkMlwr3rTkB.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "lincoln-rhyme-hunt-for-the-bone-collector",
-    "tags": "in collection",
     "title": "Lincoln Rhyme: Hunt for the Bone Collector",
     "type": "series",
     "genre": "Mystery",
@@ -5312,11 +4967,11 @@
     "year": "2020",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/kecfuNcEnBjuIu2xGSgNinIWkaS.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "mare-of-easttown",
-    "tags": "in collection",
     "title": "Mare of Easttown",
     "type": "series",
     "genre": "Drama",
@@ -5325,11 +4980,11 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/fqWdhp7PD8jyZdEszuoUg6mTIPQ.jpg",
     "review": "",
-    "hallOfFame": true
+    "hallOfFame": true,
+    "inCollection": true
   },
   {
     "id": "memory-of-a-killer",
-    "tags": "in collection",
     "title": "Memory of a Killer",
     "type": "series",
     "genre": "Crime",
@@ -5337,11 +4992,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/cRc12huivF0g42K7NOEhZODc9X6.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-outsider",
-    "tags": "in collection",
     "title": "The Outsider",
     "type": "series",
     "genre": "Mystery",
@@ -5349,11 +5004,11 @@
     "year": "2020",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/9Bp7D4JxhsckRtZp733w2IacaQI.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "rooster",
-    "tags": "in collection",
     "title": "Rooster",
     "type": "series",
     "genre": "Comedy",
@@ -5361,11 +5016,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/bJ1IfDyDCLLTVxcp59T3rVTsp8H.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "sacred-lies",
-    "tags": "in collection",
     "title": "Sacred Lies",
     "type": "series",
     "genre": "Drama",
@@ -5373,11 +5028,11 @@
     "year": "2018",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ecdmiokFSOE5erqqcwDG2iEkIIW.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "secret-service",
-    "tags": "in collection",
     "title": "Secret Service",
     "type": "series",
     "genre": "Drama",
@@ -5385,11 +5040,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/oRljr2Bsvp3lZXPfL8wB8UD9IDm.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "shining-girls",
-    "tags": "in collection",
     "title": "Shining Girls",
     "type": "series",
     "genre": "Drama",
@@ -5397,11 +5052,11 @@
     "year": "2022",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/gqfUH4SYQEMynzmZaRI4qn5azV4.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "siren-s-kiss",
-    "tags": "in collection",
     "title": "Siren's Kiss",
     "type": "series",
     "genre": "Mystery",
@@ -5409,11 +5064,11 @@
     "year": "2026",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/4jymZ1loXjtQoiaW8JuZifQKFU3.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-tudors",
-    "tags": "in collection",
     "title": "The Tudors",
     "type": "series",
     "genre": "Drama",
@@ -5421,11 +5076,11 @@
     "year": "2007",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ygp7YgolZev7fSgD08DOQdSKhrF.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "westworld",
-    "tags": "in collection",
     "title": "Westworld",
     "type": "series",
     "genre": "Drama",
@@ -5433,11 +5088,11 @@
     "year": "2016",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ALlSU9du9iRiKIIoY1sREGNqQ5.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-x-files",
-    "tags": "in collection",
     "title": "The X-Files",
     "type": "series",
     "genre": "Mystery",
@@ -5445,11 +5100,11 @@
     "year": "1993",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/9fIJ6Kwo0HZOnptogq1am2M9LjD.jpg",
-    "review": ""
+    "review": "",
+    "inCollection": true
   },
   {
     "id": "the-young-pope",
-    "tags": "in collection",
     "title": "The Young Pope",
     "type": "series",
     "genre": "Drama",
@@ -5457,6 +5112,623 @@
     "year": "2016",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/pH3u38DXGoeGUU86ZwJrFGBEPiQ.jpg",
+    "review": "",
+    "inCollection": true
+  },
+  {
+    "id": "nocturne",
+    "title": "Nocturne",
+    "type": "series",
+    "genre": "Crime",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/nyvXVcPnHEwVmqCdzjjCsu1jqhm.jpg",
+    "review": ""
+  },
+  {
+    "id": "remember-me",
+    "title": "Remember Me",
+    "type": "movie",
+    "genre": "Romance",
+    "status": "to-watch",
+    "year": "2010",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/j7umuMiLCHvWT7wYhFKJOTFSokF.jpg",
+    "review": ""
+  },
+  {
+    "id": "mama-bear",
+    "title": "Mama Bear",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/pZ5ISUavq6wMswMWeYSTHlDktjm.jpg",
+    "review": ""
+  },
+  {
+    "id": "way-of-the-warrior-kid",
+    "title": "Way of the Warrior Kid",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/atI81xXKNVah7PJFBo3aXqQKtnG.jpg",
+    "review": ""
+  },
+  {
+    "id": "about-an-intimate-matter",
+    "title": "About an Intimate Matter",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/jBtWp9DcyF43KHhwh4estQpo0gf.jpg",
+    "review": ""
+  },
+  {
+    "id": "never-after-dark",
+    "title": "Never After Dark",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/mkqCzIeHgnTSyF1fW6Pkq8kfdJE.jpg",
+    "review": ""
+  },
+  {
+    "id": "intruders",
+    "title": "Intruders",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2015",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/erGjRCwzKOGHxJ32fR5ObGYtBBK.jpg",
+    "review": ""
+  },
+  {
+    "id": "baththa",
+    "title": "Baththa",
+    "type": "movie",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/7wHBYs8HHmTGe4nXLpMEAoDSK2o.jpg",
+    "review": ""
+  },
+  {
+    "id": "run-hide-fight-infidels",
+    "title": "Run Hide Fight: Infidels",
+    "type": "movie",
+    "genre": "Action",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/gkVq1Pd46NF7AP5XQZfRHjQfCXX.jpg",
+    "review": ""
+  },
+  {
+    "id": "drop",
+    "title": "Drop",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/hSQPSW8aLjsMBfwqGjgJ6HozTkp.jpg",
+    "review": ""
+  },
+  {
+    "id": "uri-the-surgical-strike",
+    "title": "Uri: The Surgical Strike",
+    "type": "movie",
+    "genre": "Action",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/yNySAgpAnWmPpYinim9E0tUzJWG.jpg",
+    "review": ""
+  },
+  {
+    "id": "spill",
+    "title": "Spill",
+    "type": "movie",
+    "genre": "Action",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/hJa9gxVkxTgLigQf5uutRoLIWuo.jpg",
+    "review": ""
+  },
+  {
+    "id": "a-good-day-to-die-hard",
+    "title": "A Good Day to Die Hard",
+    "type": "movie",
+    "genre": "Action",
+    "status": "to-watch",
+    "year": "2013",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/qJ0csDXAVFMsNn0cRcjy6W6PxAK.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-curse-of-la-llorona",
+    "title": "The Curse of La Llorona",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/hETrPpoKs6BwoilK64YJ7Z5GcRT.jpg",
+    "review": ""
+  },
+  {
+    "id": "love-of-your-life",
+    "title": "Love of Your Life",
+    "type": "movie",
+    "genre": "Romance",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
+    "review": ""
+  },
+  {
+    "id": "tell-me-a-story",
+    "title": "Tell Me a Story",
+    "type": "series",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2018",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/56aw0q12N8ujbcEdCXaLZMfAYXd.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-wailing",
+    "title": "The Wailing",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2024",
+    "rating": null,
+    "poster": "",
+    "review": ""
+  },
+  {
+    "id": "the-assessment",
+    "title": "The Assessment",
+    "type": "movie",
+    "genre": "Science Fiction",
+    "status": "to-watch",
+    "year": "2024",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/o1K7be85FAauSbVPzCQ0GjOXUqu.jpg",
+    "review": ""
+  },
+  {
+    "id": "city-of-angels",
+    "title": "City of Angels",
+    "type": "movie",
+    "genre": "Romance",
+    "status": "to-watch",
+    "year": "1998",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/iuzxpUjHsbQJXV3kB9ZAdCimM60.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-cycle",
+    "title": "The Cycle",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/n5gSNf55KWfDc9hqP4H1KCCSutE.jpg",
+    "review": ""
+  },
+  {
+    "id": "prime",
+    "title": "Prime",
+    "type": "movie",
+    "genre": "Romance",
+    "status": "to-watch",
+    "year": "2005",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/gz17H1jiLI9OrTo8ruS31WkP9Am.jpg",
+    "review": ""
+  },
+  {
+    "id": "ponette",
+    "title": "Ponette",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "1996",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/p6ZlnYATJvYZtcQr6RDmzplq3hX.jpg",
+    "review": ""
+  },
+  {
+    "id": "sorry-baby",
+    "title": "Sorry, Baby",
+    "type": "movie",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/n8wZEQen5hDNRGzm4fY4sxWe5xe.jpg",
+    "review": ""
+  },
+  {
+    "id": "eden",
+    "title": "Eden",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/mu0uY65IaNCW9z5AydAUFBAGrcP.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-hunting-wives",
+    "title": "The Hunting Wives",
+    "type": "series",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/knR0tDKgFwsUMxe0MqZSWQYhwpL.jpg",
+    "review": ""
+  },
+  {
+    "id": "miracle-in-cell-no-7-2013",
+    "title": "Miracle in Cell No. 7",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2013",
+    "rating": null,
+    "poster": "",
+    "review": ""
+  },
+  {
+    "id": "follow-the-stars-home",
+    "title": "Follow the Stars Home",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2001",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/kLYjGX9EtbIjqpULKJP0Fw9B0AU.jpg",
+    "review": ""
+  },
+  {
+    "id": "nayak",
+    "title": "Nayak",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "1966",
+    "rating": null,
+    "poster": "",
+    "review": ""
+  },
+  {
+    "id": "the-glory",
+    "title": "The Glory",
+    "type": "series",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2022",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/uUM4LVlPgIrww07OoEKrGWlS1Ej.jpg",
+    "review": ""
+  },
+  {
+    "id": "bombshell",
+    "title": "Bombshell",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/gbPfvwBqbiHpQkYZQvVwB6MVauV.jpg",
+    "review": ""
+  },
+  {
+    "id": "into-the-labyrinth",
+    "title": "Into the Labyrinth",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/tWcN7ZjeOBzuwNtx7viKb1w2UOj.jpg",
+    "review": ""
+  },
+  {
+    "id": "birth",
+    "title": "Birth",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2004",
+    "rating": null,
+    "poster": "",
+    "review": ""
+  },
+  {
+    "id": "truth-or-dare",
+    "title": "Truth or Dare",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2018",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ei2waWQAG8NP244WShIFgGu9IOu.jpg",
+    "review": ""
+  },
+  {
+    "id": "play-dead",
+    "title": "Play Dead",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2022",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/ixWeYfvXT9AbfM0QPb9kwbVLbLV.jpg",
+    "review": ""
+  },
+  {
+    "id": "evil",
+    "title": "Evil",
+    "type": "series",
+    "genre": "Mystery",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/auRAAVxlyT6YACql96UdtnpFHy3.jpg",
+    "review": ""
+  },
+  {
+    "id": "brightburn",
+    "title": "Brightburn",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/sJWwkYc9ajwnPRSkqj8Aue5JbKz.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-crowded-room",
+    "title": "The Crowded Room",
+    "type": "series",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2023",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/vRmopCFp0j1eJGbILLsYsYzxmL8.jpg",
+    "review": ""
+  },
+  {
+    "id": "where-the-crawdads-sing",
+    "title": "Where the Crawdads Sing",
+    "type": "movie",
+    "genre": "Mystery",
+    "status": "to-watch",
+    "year": "2022",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/n1el846gLDXfhOvrRCsyvaAOQWv.jpg",
+    "review": ""
+  },
+  {
+    "id": "what-women-want",
+    "title": "What Women Want",
+    "type": "movie",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2000",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/eqkBEMDk1316Yx5wVoabWY07JAi.jpg",
+    "review": ""
+  },
+  {
+    "id": "insidious-out-of-the-further",
+    "title": "Insidious: Out of the Further",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+    "review": ""
+  },
+  {
+    "id": "mission-impossible-the-final-reckoning",
+    "title": "Mission: Impossible – The Final Reckoning",
+    "type": "movie",
+    "genre": "Action",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/iKPsC9EFUafRP9SrUznI61getVP.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-killing",
+    "title": "The Killing",
+    "type": "series",
+    "genre": "Crime",
+    "status": "to-watch",
+    "year": "2011",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/3yiwAUNGn1rsPSVmFgVwPVJFtYf.jpg",
+    "review": ""
+  },
+  {
+    "id": "ready-or-not",
+    "title": "Ready or Not",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2019",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/oJD9KQFoObZmxAS1je56SIFVNJt.jpg",
+    "review": ""
+  },
+  {
+    "id": "river",
+    "title": "River",
+    "type": "series",
+    "genre": "Crime",
+    "status": "to-watch",
+    "year": "2015",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/fhiVcu9RA3MEVQtMowwQUsHJfJR.jpg",
+    "review": ""
+  },
+  {
+    "id": "lie-to-me",
+    "title": "Lie to Me",
+    "type": "series",
+    "genre": "Crime",
+    "status": "to-watch",
+    "year": "2009",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/2xpQxwsGYtdGDrmLvCosTZ0I54R.jpg",
+    "review": ""
+  },
+  {
+    "id": "strays",
+    "title": "Strays",
+    "type": "movie",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2023",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/n1hqbSCtyBAxaXEl1Dj3ipXJAJG.jpg",
+    "review": ""
+  },
+  {
+    "id": "oppenheimer",
+    "title": "Oppenheimer",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2023",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    "review": ""
+  },
+  {
+    "id": "life-as-we-know-it-2004",
+    "title": "Life As We Know It",
+    "type": "series",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2004",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/zAcvZvHXlvJabsrzkBPR2drp7iL.jpg",
+    "review": ""
+  },
+  {
+    "id": "khauf",
+    "title": "Khauf",
+    "type": "series",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/8a33EagF55P206ynW3gwnYyqPdL.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-ramen-girl",
+    "title": "The Ramen Girl",
+    "type": "movie",
+    "genre": "Comedy",
+    "status": "to-watch",
+    "year": "2008",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/sK7hW0quKwlYxP2urLirsDFPabD.jpg",
+    "review": ""
+  },
+  {
+    "id": "the-last-boy-scout",
+    "title": "The Last Boy Scout",
+    "type": "movie",
+    "genre": "Action",
+    "status": "to-watch",
+    "year": "1991",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/glPswihcZYoAQ4YM2uJF4UACy8T.jpg",
+    "review": ""
+  },
+  {
+    "id": "serendipity",
+    "title": "Serendipity",
+    "type": "movie",
+    "genre": "Romance",
+    "status": "to-watch",
+    "year": "2001",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/4jS66Qmq2Ru5S2YzHVknGd4xJyT.jpg",
+    "review": ""
+  },
+  {
+    "id": "missing",
+    "title": "Missing",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2023",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/wEOUYSU5Uf8J7152PT6jdb5233Y.jpg",
+    "review": ""
+  },
+  {
+    "id": "steal",
+    "title": "Steal",
+    "type": "series",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "",
+    "review": ""
+  },
+  {
+    "id": "nocturnal-animals",
+    "title": "Nocturnal Animals",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2016",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/mdLDgQBD0va09npSQX5Zgo2evXM.jpg",
+    "review": ""
+  },
+  {
+    "id": "gerald-s-game",
+    "title": "Gerald's Game",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2017",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/32dippiypDdaKv7XFEfUlQ7kPup.jpg",
     "review": ""
   }
 ]

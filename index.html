@@ -704,18 +704,35 @@
       .movie-grid { gap: 15px 10px; }
       .movie-card { padding: 7px; }
     }
-    .filters { grid-template-columns: minmax(170px, 1fr) auto minmax(110px, auto) minmax(110px, auto) auto auto; }
+    .filters { grid-template-columns: minmax(170px, 1fr) auto minmax(110px, auto) auto auto auto; }
     @media (max-width: 1100px) {
       .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .search-wrap { grid-column: 1 / -1; }
       .filters > .filter-group[aria-label="Filter by format"] { grid-column: 1; grid-row: 2; }
       .filters > .filter-group[aria-label="Filter by watch status"] { grid-column: 2; grid-row: 2; }
-      .filters > .filter-group[aria-label="Filter by Hall of Fame"] { grid-column: 1 / -1; grid-row: 3; }
+      .filters > .genre-select { grid-column: 1; grid-row: 3; }
+      .filters > .filter-group[aria-label="Filter by collection"] { grid-column: 2; grid-row: 3; }
+      .filters > .filter-group[aria-label="Filter by Hall of Fame"] { grid-column: 1 / -1; grid-row: 4; }
       .genre-select { min-width: 0; }
     }
-    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-    .tag-list .detail-chip { overflow-wrap: anywhere; }
-    @media (max-width: 560px) { .tag-list { grid-column: 1 / -1; } }
+    @media (max-width: 560px) {
+      .filters > .genre-select, .filters > .filter-group[aria-label="Filter by collection"] { grid-column: 1 / -1; }
+      .filters > .filter-group[aria-label="Filter by collection"] { grid-row: 4; }
+      .filters > .filter-group[aria-label="Filter by Hall of Fame"] { grid-row: 5; }
+    }
+    /* Hall of Fame spotlight: a calm, softly blurred wall of posters behind the glass card. */
+    .intro { overflow: hidden; }
+    .intro .spotlight-backdrop { display: block; z-index: -2; }
+    .poster-wall { position: absolute; inset: -40px; display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; transform: rotate(-4deg) scale(1.08); filter: blur(22px) saturate(.7); opacity: .55; }
+    .poster-wall img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 6px; }
+    .intro::before { z-index: -1; background:
+      linear-gradient(100deg, rgba(240,244,247,.9) 0%, rgba(236,241,245,.78) 45%, rgba(228,236,242,.55) 100%),
+      linear-gradient(160deg, rgba(122,146,164,.18), rgba(196,170,138,.14)); }
+    .spotlight-poster { position: relative; z-index: 1; display: none; width: 112px; aspect-ratio: 2 / 3; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 34px rgba(40,55,68,.22), 0 0 0 1px rgba(255,255,255,.7); cursor: pointer; transition: opacity .25s ease; }
+    .spotlight-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (min-width: 640px) { .intro { grid-template-columns: minmax(0, 1fr) auto; } .spotlight-poster { display: block; } }
+    .spotlight-poster[hidden] { display: none !important; }
+    @media (min-width: 1000px) { .spotlight-poster { width: 128px; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
   </style>
 </head>
@@ -734,9 +751,9 @@
     </header>
 
     <section class="intro" aria-labelledby="page-title">
-      <div class="spotlight-backdrop" aria-hidden="true"><img id="spotlight-backdrop-image" src="" alt=""></div>
+      <div class="spotlight-backdrop" aria-hidden="true"><div class="poster-wall" id="poster-wall"></div></div>
       <div class="intro-copy">
-        <p class="eyebrow" id="spotlight-kicker">Watched spotlight</p>
+        <p class="eyebrow" id="spotlight-kicker">Hall of Fame</p>
         <h1 id="page-title">Your screen.<br> Your stories.</h1>
         <div class="spotlight-meta" id="spotlight-meta"></div>
         <div class="spotlight-actions">
@@ -747,13 +764,14 @@
           </div>
         </div>
       </div>
+      <button class="spotlight-poster" id="spotlight-poster" type="button" aria-label="View featured title"><img id="spotlight-poster-image" src="" alt=""></button>
       <nav class="spotlight-picks" id="spotlight-picks" aria-label="Choose a featured title"></nav>
     </section>
 
     <section class="filters" aria-label="Filter your collection">
       <label class="search-wrap">
         <svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.8" cy="8.8" r="5.7" stroke="currentColor" stroke-width="1.5"/><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <input id="search" class="search-input" type="search" placeholder="Search titles or tags" aria-label="Search titles or tags" aria-describedby="search-help">
+        <input id="search" class="search-input" type="search" placeholder="Search titles" aria-label="Search titles" aria-describedby="search-help">
       </label>
       <div class="filter-group" aria-label="Filter by format">
         <button class="filter-button" type="button" data-type="all" aria-pressed="true">All</button>
@@ -763,9 +781,11 @@
       <select id="genre-filter" class="genre-select" aria-label="Filter by genre">
         <option value="all">All genres</option>
       </select>
-      <select id="tag-filter" class="genre-select" aria-label="Filter by tag">
-        <option value="">All tags</option>
-      </select>
+      <div class="filter-group" aria-label="Filter by collection">
+        <button class="filter-button" type="button" data-owned="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-owned="yes" aria-pressed="false">In collection</button>
+        <button class="filter-button" type="button" data-owned="no" aria-pressed="false">Not in collection</button>
+      </div>
       <div class="filter-group" aria-label="Filter by watch status">
         <button class="filter-button" type="button" data-status="all" aria-pressed="true">All</button>
         <button class="filter-button" type="button" data-status="to-watch" aria-pressed="false">To check out</button>
@@ -781,7 +801,7 @@
 
     <main>
       <div class="filter-row">
-        <div><h2 id="collection-heading">Your collection</h2><p id="search-help">Search a tag, or separate terms with commas to match all of them.</p></div>
+        <div><h2 id="collection-heading">Your collection</h2><p id="search-help">Separate search terms with commas to match all of them.</p></div>
         <span id="results-count" class="results-count">0 titles</span>
       </div>
       <section id="movie-grid" class="movie-grid" aria-label="Movies and series"></section>
@@ -801,7 +821,7 @@
   <script>
     (() => {
       // Movie and series records live in movies.json for easy offline editing.
-      const state = { items: [], type: 'all', status: 'all', genre: 'all', tag: '', query: '', hallOfFameOnly: false, likedOnly: false, sceneLikedOnly: false };
+      const state = { items: [], type: 'all', status: 'all', genre: 'all', owned: 'all', query: '', hallOfFameOnly: false, likedOnly: false, sceneLikedOnly: false };
       const statusLabels = { 'to-watch': 'To check out', 'in-progress': 'Yet to finish', watched: 'Watched' };
       const $ = (selector, root = document) => root.querySelector(selector);
       const grid = $('#movie-grid');
@@ -810,17 +830,6 @@
       let spotlightIndex = 0;
       let lastFocusedElement = null;
       let spotlightFadeTimeout = null;
-
-      function parseTags(value) {
-        const seen = new Set();
-        const values = Array.isArray(value) ? value : typeof value === 'string' ? value.split(',') : [];
-        return values.filter(value => typeof value === 'string').map(tag => tag.trim()).filter(tag => {
-          const key = tag.toLocaleLowerCase();
-          if (!key || seen.has(key)) return false;
-          seen.add(key);
-          return true;
-        });
-      }
 
       function readStatusOverrides() {
         try {
@@ -861,7 +870,7 @@
 
       async function loadCollection() {
         try {
-          const response = await fetch('./movies.json');
+          const response = await fetch('./movies.json', { cache: 'no-cache' });
           if (!response.ok) throw new Error(`Could not load movies.json (${response.status})`);
           const collection = await response.json();
           if (!Array.isArray(collection)) throw new Error('movies.json must contain a JSON array');
@@ -873,13 +882,10 @@
             ...item,
             status: ['watched', 'to-watch', 'in-progress'].includes(statusOverrides[item.id]) ? statusOverrides[item.id] : item.status
           }));
-          state.items = state.items.map(item => ({
-            ...item,
-            tags: parseTags(item.tags).join(', ')
-          }));
-          renderTags();
-          spotlightItems = filteredItems().slice(0, 5);
+          spotlightItems = pickHallOfFame();
           spotlightIndex = 0;
+          renderPosterWall();
+          renderSpotlight();
           render();
         } catch (error) {
           console.error(error);
@@ -960,81 +966,79 @@
         state.genre = genreFilter.value;
       }
 
-      function renderTags() {
-        const tagFilter = $('#tag-filter');
-        const tags = new Map();
-        state.items.forEach(item => parseTags(item.tags).forEach(tag => {
-          const key = tag.toLocaleLowerCase();
-          if (!tags.has(key)) tags.set(key, tag);
-        }));
-        tagFilter.replaceChildren(new Option('All tags', ''));
-        [...tags].sort((a, b) => a[1].localeCompare(b[1])).forEach(([key, label]) => {
-          tagFilter.add(new Option(label, key));
-        });
-        tagFilter.value = tags.has(state.tag) ? state.tag : '';
-        state.tag = tagFilter.value;
-      }
-
       function filteredItems() {
         const terms = state.query.toLocaleLowerCase().split(',').map(term => term.trim()).filter(Boolean);
         return state.items.filter(item => {
           const matchesType = state.type === 'all' || item.type === state.type;
           const matchesStatus = state.status === 'all' || item.status === state.status;
           const matchesGenre = state.genre === 'all' || item.genre === state.genre;
-          const matchesTag = !state.tag || parseTags(item.tags).some(tag => tag.toLocaleLowerCase() === state.tag);
+          const matchesOwned = state.owned === 'all' || (state.owned === 'yes') === (item.inCollection === true);
           const matchesHallOfFame = !state.hallOfFameOnly || item.hallOfFame === true;
           const matchesLiked = !state.likedOnly || (item.status === 'watched' && item.hallOfFame !== true);
           const matchesSceneLiked = !state.sceneLikedOnly || item.sceneLiked === true;
-          const searchable = `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''} ${parseTags(item.tags).join(' ')}`.toLocaleLowerCase();
+          const searchable = `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''}`.toLocaleLowerCase();
           const matchesQuery = terms.every(term => searchable.includes(term));
-          return matchesType && matchesStatus && matchesGenre && matchesTag && matchesHallOfFame && matchesLiked && matchesSceneLiked && matchesQuery;
+          return matchesType && matchesStatus && matchesGenre && matchesOwned && matchesHallOfFame && matchesLiked && matchesSceneLiked && matchesQuery;
         });
       }
 
+      function pickHallOfFame() {
+        const pool = state.items.filter(item => item.hallOfFame === true);
+        for (let i = pool.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [pool[i], pool[j]] = [pool[j], pool[i]];
+        }
+        return pool.slice(0, 10);
+      }
+
+      function renderPosterWall() {
+        const wall = $('#poster-wall');
+        const posters = state.items.filter(item => item.hallOfFame === true && item.poster).map(item => item.poster);
+        wall.replaceChildren();
+        if (!posters.length) return;
+        for (let i = 0; i < 24; i += 1) {
+          const image = document.createElement('img');
+          image.src = posters[i % posters.length];
+          image.alt = '';
+          image.loading = 'lazy';
+          image.onerror = () => image.remove();
+          wall.append(image);
+        }
+      }
+
       function renderSpotlight() {
-        spotlightItems = filteredItems().slice(0, 5);
         const picks = $('#spotlight-picks');
         const hasItems = spotlightItems.length > 0;
         $('#spotlight-open').hidden = !hasItems;
         $('.spotlight-controls').hidden = !hasItems;
+        $('#spotlight-poster').hidden = !hasItems;
         picks.hidden = !hasItems;
         if (!hasItems) {
           $('#spotlight-kicker').textContent = 'Your collection';
-          $('#page-title').textContent = 'No titles in this view';
+          $('#page-title').textContent = 'Your screen. Your stories.';
           $('#spotlight-meta').replaceChildren();
-          $('#spotlight-backdrop-image').removeAttribute('src');
           picks.replaceChildren();
           return;
         }
 
         spotlightIndex = Number.isFinite(spotlightIndex) ? spotlightIndex % spotlightItems.length : 0;
         const item = spotlightItems[spotlightIndex];
-
-        const currentGenre = state.genre !== 'all' ? state.genre : '';
-        const currentStatus = state.status !== 'all' ? statusLabels[state.status] : '';
-        const currentType = state.type !== 'all' ? (state.type === 'series' ? 'Series' : 'Movies') : '';
-        const currentTag = state.tag ? $('#tag-filter').selectedOptions[0].textContent : '';
-        const currentHallOfFame = state.hallOfFameOnly ? 'Hall of Fame' : '';
-        const currentLiked = state.likedOnly ? 'I like these' : '';
-        const currentSceneLiked = state.sceneLikedOnly ? 'Like these for a scene' : '';
-        const filterLabel = [currentType, currentStatus, currentGenre, currentTag, currentHallOfFame, currentLiked, currentSceneLiked].filter(Boolean).join(' · ');
-        $('#spotlight-kicker').textContent = filterLabel || 'Featured from your collection';
+        $('#spotlight-kicker').textContent = 'Hall of Fame';
         const copy = $('.intro-copy');
         copy.classList.add('is-switching');
         window.clearTimeout(spotlightFadeTimeout);
         spotlightFadeTimeout = window.setTimeout(() => copy.classList.remove('is-switching'), 240);
         $('#page-title').textContent = item.title;
 
-        const backdrop = $('#spotlight-backdrop-image');
-        backdrop.style.opacity = '.08';
-        backdrop.onload = () => { backdrop.style.opacity = ''; };
-        backdrop.onerror = () => { backdrop.style.opacity = ''; };
-        backdrop.src = item.poster;
-        backdrop.alt = '';
+        const posterButton = $('#spotlight-poster');
+        const posterImage = $('#spotlight-poster-image');
+        posterButton.hidden = !item.poster;
+        if (item.poster) { posterImage.src = item.poster; posterImage.alt = `${item.title} poster`; }
+        posterButton.onclick = () => openDetails(item.id);
 
         const meta = $('#spotlight-meta');
         meta.replaceChildren();
-        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', statusLabels[item.status]].forEach(value => {
+        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', item.inCollection ? 'In your collection' : ''].filter(Boolean).forEach(value => {
           const chip = document.createElement('span');
           chip.className = 'spotlight-chip';
           chip.textContent = value;
@@ -1062,10 +1066,9 @@
       function render() {
         renderGenres();
         const visibleItems = filteredItems();
-        renderSpotlight();
         $('#top-count').textContent = `${state.items.length} ${state.items.length === 1 ? 'title' : 'titles'} in your library`;
         $('#results-count').textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'title' : 'titles'}`;
-        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.sceneLikedOnly ? 'Like these for a scene' : state.likedOnly ? 'I like these' : state.hallOfFameOnly ? 'Hall of Fame' : state.status !== 'all' ? statusLabels[state.status] : state.genre !== 'all' ? state.genre : 'Your collection';
+        $('#collection-heading').textContent = state.type === 'movie' ? 'Your movies' : state.type === 'series' ? 'Your series' : state.sceneLikedOnly ? 'Like these for a scene' : state.likedOnly ? 'I like these' : state.hallOfFameOnly ? 'Hall of Fame' : state.status !== 'all' ? statusLabels[state.status] : state.owned === 'yes' ? 'In your collection' : state.owned === 'no' ? 'Not in your collection' : state.genre !== 'all' ? state.genre : 'Your collection';
         grid.replaceChildren();
 
         if (!visibleItems.length) {
@@ -1150,7 +1153,7 @@
         info.className = 'detail-info';
         const chips = document.createElement('div');
         chips.className = 'detail-kinds';
-        [item.type === 'series' ? 'Series' : 'Movie', item.genre, item.year].filter(Boolean).forEach(value => {
+        [item.type === 'series' ? 'Series' : 'Movie', item.genre, item.year, item.inCollection ? 'In your collection' : ''].filter(Boolean).forEach(value => {
           const chip = document.createElement('span');
           chip.className = 'detail-chip';
           chip.textContent = value;
@@ -1180,17 +1183,7 @@
         review.textContent = item.review || 'No review added yet.';
         if (ratingBadge) reviewPanel.append(ratingBadge);
         reviewPanel.append(review);
-        const tagList = document.createElement('div');
-        tagList.className = 'tag-list';
-        tagList.setAttribute('aria-label', 'Tags');
-        parseTags(item.tags).forEach(tag => {
-          const chip = document.createElement('span');
-          chip.className = 'detail-chip';
-          chip.textContent = tag;
-          tagList.append(chip);
-        });
         info.append(chips, title, statusControl, statusHint, reviewPanel);
-        if (tagList.childElementCount) info.append(tagList);
         layout.append(poster, info);
         content.append(layout);
         openModal(detailModal);
@@ -1212,20 +1205,17 @@
 
       document.querySelectorAll('[data-type]').forEach(button => button.addEventListener('click', () => {
         state.type = button.dataset.type;
-        spotlightIndex = 0;
         document.querySelectorAll('[data-type]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
         render();
       }));
       document.querySelectorAll('[data-status]').forEach(button => button.addEventListener('click', () => {
         state.status = button.dataset.status;
-        spotlightIndex = 0;
         document.querySelectorAll('[data-status]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
         render();
       }));
       $('#hall-of-fame-filter').addEventListener('click', event => {
         state.hallOfFameOnly = !state.hallOfFameOnly;
         if (state.hallOfFameOnly) { state.likedOnly = false; state.sceneLikedOnly = false; }
-        spotlightIndex = 0;
         event.currentTarget.setAttribute('aria-pressed', String(state.hallOfFameOnly));
         $('#liked-filter').setAttribute('aria-pressed', String(state.likedOnly));
         $('#scene-liked-filter').setAttribute('aria-pressed', String(state.sceneLikedOnly));
@@ -1234,7 +1224,6 @@
       $('#liked-filter').addEventListener('click', event => {
         state.likedOnly = !state.likedOnly;
         if (state.likedOnly) { state.hallOfFameOnly = false; state.sceneLikedOnly = false; }
-        spotlightIndex = 0;
         event.currentTarget.setAttribute('aria-pressed', String(state.likedOnly));
         $('#hall-of-fame-filter').setAttribute('aria-pressed', String(state.hallOfFameOnly));
         $('#scene-liked-filter').setAttribute('aria-pressed', String(state.sceneLikedOnly));
@@ -1243,15 +1232,18 @@
       $('#scene-liked-filter').addEventListener('click', event => {
         state.sceneLikedOnly = !state.sceneLikedOnly;
         if (state.sceneLikedOnly) { state.hallOfFameOnly = false; state.likedOnly = false; }
-        spotlightIndex = 0;
         event.currentTarget.setAttribute('aria-pressed', String(state.sceneLikedOnly));
         $('#hall-of-fame-filter').setAttribute('aria-pressed', String(state.hallOfFameOnly));
         $('#liked-filter').setAttribute('aria-pressed', String(state.likedOnly));
         render();
       });
-      $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; spotlightIndex = 0; render(); });
-      $('#tag-filter').addEventListener('change', event => { state.tag = event.target.value; spotlightIndex = 0; render(); });
-      $('#search').addEventListener('input', event => { state.query = event.target.value; spotlightIndex = 0; render(); });
+      $('#genre-filter').addEventListener('change', event => { state.genre = event.target.value; render(); });
+      document.querySelectorAll('[data-owned]').forEach(button => button.addEventListener('click', () => {
+        state.owned = button.dataset.owned;
+        document.querySelectorAll('[data-owned]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+        render();
+      }));
+      $('#search').addEventListener('input', event => { state.query = event.target.value; render(); });
 
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         window.setInterval(() => {
