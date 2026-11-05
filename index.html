@@ -723,10 +723,10 @@
     /* Hall of Fame spotlight: a calm, softly blurred wall of posters behind the glass card. */
     .intro { overflow: hidden; }
     .intro .spotlight-backdrop { display: block; z-index: -2; }
-    .poster-wall { position: absolute; inset: -40px; display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; transform: rotate(-4deg) scale(1.08); filter: blur(22px) saturate(.7); opacity: .55; }
+    .poster-wall { position: absolute; inset: -40px; display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; transform: rotate(-4deg) scale(1.08); filter: blur(16px) saturate(.8); opacity: .85; }
     .poster-wall img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 6px; }
     .intro::before { z-index: -1; background:
-      linear-gradient(100deg, rgba(240,244,247,.9) 0%, rgba(236,241,245,.78) 45%, rgba(228,236,242,.55) 100%),
+      linear-gradient(100deg, rgba(240,244,247,.86) 0%, rgba(236,241,245,.62) 48%, rgba(228,236,242,.34) 100%),
       linear-gradient(160deg, rgba(122,146,164,.18), rgba(196,170,138,.14)); }
     .spotlight-poster { position: relative; z-index: 1; display: none; width: 112px; aspect-ratio: 2 / 3; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 34px rgba(40,55,68,.22), 0 0 0 1px rgba(255,255,255,.7); cursor: pointer; transition: opacity .25s ease; }
     .spotlight-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
