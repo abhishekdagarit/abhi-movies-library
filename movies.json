@@ -5829,5 +5829,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/8408RJvs3zRjA0e69I1zJTRxQye.jpg",
     "review": ""
+  },
+  {
+    "id": "hannibal",
+    "title": "Hannibal",
+    "type": "series",
+    "genre": "Crime",
+    "status": "to-watch",
+    "year": "2013",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/pbV2eLnKSIm1epSZt473UYfqaeZ.jpg",
+    "review": ""
   }
 ]
