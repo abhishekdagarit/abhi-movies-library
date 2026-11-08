@@ -5873,5 +5873,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/6c6q8m5PCiXv3TlxmM0vIcLylb0.jpg",
     "review": ""
+  },
+  {
+    "id": "mr-brooks",
+    "title": "Mr. Brooks",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2007",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/yYleq0qmb67Ig2ViY3hFmUOrH77.jpg",
+    "review": ""
   }
 ]
