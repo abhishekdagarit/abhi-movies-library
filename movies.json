@@ -5840,5 +5840,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/pbV2eLnKSIm1epSZt473UYfqaeZ.jpg",
     "review": ""
+  },
+  {
+    "id": "heart-of-the-beast",
+    "title": "Heart of the Beast",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
+    "review": ""
   }
 ]
