@@ -5906,5 +5906,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/eYHvcMeVjWPwATYI0VCdecMy2n3.jpg",
     "review": ""
+  },
+  {
+    "id": "shutter",
+    "title": "Shutter",
+    "type": "movie",
+    "genre": "Horror",
+    "status": "to-watch",
+    "year": "2008",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/t5AEelR6nS0ISwaSZCcUrF2GKZi.jpg",
+    "review": ""
   }
 ]
