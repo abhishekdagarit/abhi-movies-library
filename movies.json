@@ -5928,5 +5928,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/4Dd79cz5qxKNoKWg1xsfrpOchEr.jpg",
     "review": ""
+  },
+  {
+    "id": "the-hand-that-rocks-the-cradle-2025",
+    "title": "The Hand That Rocks the Cradle",
+    "type": "movie",
+    "genre": "Thriller",
+    "status": "to-watch",
+    "year": "2025",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/qnLwCl7HPprx3OQCPXHIRZXOfPw.jpg",
+    "review": ""
   }
 ]
