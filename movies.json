@@ -5939,5 +5939,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/qnLwCl7HPprx3OQCPXHIRZXOfPw.jpg",
     "review": ""
+  },
+  {
+    "id": "the-altruists",
+    "title": "The Altruists",
+    "type": "series",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/foTyGlJ1jJh8QID5KwjsMytsJTV.jpg",
+    "review": ""
   }
 ]
