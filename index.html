@@ -956,10 +956,15 @@
         return badge;
       }
 
+      function genresOf(item) {
+        if (Array.isArray(item.genres) && item.genres.length) return item.genres;
+        return item.genre ? [item.genre] : [];
+      }
+
       function renderGenres() {
         const genreFilter = $('#genre-filter');
         const current = state.genre;
-        const usedGenres = [...new Set(state.items.map(item => item.genre).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+        const usedGenres = [...new Set(state.items.flatMap(item => genresOf(item)).filter(Boolean))].sort((a, b) => a.localeCompare(b));
         genreFilter.replaceChildren(new Option('All genres', 'all'));
         usedGenres.forEach(genre => genreFilter.add(new Option(genre, genre)));
         genreFilter.value = usedGenres.includes(current) ? current : 'all';
@@ -971,12 +976,12 @@
         return state.items.filter(item => {
           const matchesType = state.type === 'all' || item.type === state.type;
           const matchesStatus = state.status === 'all' || item.status === state.status;
-          const matchesGenre = state.genre === 'all' || item.genre === state.genre;
+          const matchesGenre = state.genre === 'all' || genresOf(item).includes(state.genre);
           const matchesOwned = state.owned === 'all' || (state.owned === 'yes') === (item.inCollection === true);
           const matchesHallOfFame = !state.hallOfFameOnly || item.hallOfFame === true;
           const matchesLiked = !state.likedOnly || (item.status === 'watched' && item.hallOfFame !== true);
           const matchesSceneLiked = !state.sceneLikedOnly || item.sceneLiked === true;
-          const searchable = `${item.title} ${item.genre} ${item.year || ''} ${item.review || ''}`.toLocaleLowerCase();
+          const searchable = `${item.title} ${genresOf(item).join(' ')} ${item.year || ''} ${item.review || ''}`.toLocaleLowerCase();
           const matchesQuery = terms.every(term => searchable.includes(term));
           return matchesType && matchesStatus && matchesGenre && matchesOwned && matchesHallOfFame && matchesLiked && matchesSceneLiked && matchesQuery;
         });
@@ -1038,7 +1043,7 @@
 
         const meta = $('#spotlight-meta');
         meta.replaceChildren();
-        [item.year, item.genre, item.type === 'series' ? 'Series' : 'Movie', item.inCollection ? 'In your collection' : ''].filter(Boolean).forEach(value => {
+        [item.year, ...genresOf(item), item.type === 'series' ? 'Series' : 'Movie', item.inCollection ? 'In your collection' : ''].filter(Boolean).forEach(value => {
           const chip = document.createElement('span');
           chip.className = 'spotlight-chip';
           chip.textContent = value;
@@ -1106,7 +1111,7 @@
           title.textContent = item.title;
           const subtitle = document.createElement('p');
           subtitle.className = 'card-subtitle';
-          subtitle.textContent = [item.genre, item.year].filter(Boolean).join(' · ') || 'Genre not set';
+          subtitle.textContent = [genresOf(item).slice(0, 2).join(' / '), item.year].filter(Boolean).join(' · ') || 'Genre not set';
           text.append(title, subtitle);
           const ratingBadge = makeRatingBadge(item);
           if (ratingBadge) text.append(ratingBadge);
@@ -1153,7 +1158,7 @@
         info.className = 'detail-info';
         const chips = document.createElement('div');
         chips.className = 'detail-kinds';
-        [item.type === 'series' ? 'Series' : 'Movie', item.genre, item.year, item.inCollection ? 'In your collection' : ''].filter(Boolean).forEach(value => {
+        [item.type === 'series' ? 'Series' : 'Movie', ...genresOf(item), item.year, item.inCollection ? 'In your collection' : ''].filter(Boolean).forEach(value => {
           const chip = document.createElement('span');
           chip.className = 'detail-chip';
           chip.textContent = value;

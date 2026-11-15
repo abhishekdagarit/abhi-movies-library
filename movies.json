@@ -4,6 +4,11 @@
     "title": "Interstellar",
     "type": "movie",
     "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2014",
     "rating": 5,
@@ -16,6 +21,11 @@
     "title": "Inception",
     "type": "movie",
     "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2010",
     "rating": 5,
@@ -26,7 +36,12 @@
     "id": "the-dark-knight",
     "title": "The Dark Knight",
     "type": "movie",
-    "genre": "Crime",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2008",
     "rating": 5,
@@ -38,6 +53,11 @@
     "title": "Breaking Bad",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2008",
     "rating": 5,
@@ -49,6 +69,11 @@
     "title": "Stranger Things",
     "type": "series",
     "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Horror",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2016",
     "rating": 5,
@@ -60,6 +85,11 @@
     "title": "The Last of Us",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Action",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -71,6 +101,10 @@
     "title": "The Bear",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2022",
     "rating": null,
@@ -82,7 +116,12 @@
     "id": "sherlock",
     "title": "Sherlock",
     "type": "series",
-    "genre": "Mystery",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2010",
     "rating": 5,
@@ -94,6 +133,10 @@
     "title": "The Edge Of Seventeen",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -105,7 +148,12 @@
     "hallOfFame": true,
     "title": "No Reservations",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2007",
     "rating": null,
@@ -116,7 +164,10 @@
     "id": "tallulah",
     "title": "Tallulah",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -127,7 +178,10 @@
     "id": "monday-mornings",
     "title": "Monday Mornings",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -138,7 +192,12 @@
     "id": "vicky-cristina-barcelona",
     "title": "Vicky Cristina Barcelona",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2008",
     "rating": null,
@@ -149,7 +208,11 @@
     "id": "limitless",
     "title": "Limitless",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2011",
     "rating": null,
@@ -160,7 +223,12 @@
     "id": "dumb-money",
     "title": "Dumb Money",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Biography"
+    ],
     "status": "watched",
     "year": "2023",
     "rating": null,
@@ -171,7 +239,10 @@
     "id": "office-space",
     "title": "Office Space",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "watched",
     "year": "1999",
     "rating": null,
@@ -182,7 +253,11 @@
     "id": "the-words",
     "title": "The Words",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2012",
     "rating": null,
@@ -194,7 +269,11 @@
     "id": "we-live-in-time",
     "title": "We Live in Time",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -205,7 +284,12 @@
     "id": "twilight",
     "title": "Twilight",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2008",
     "rating": null,
@@ -216,7 +300,12 @@
     "id": "the-twilight-saga-new-moon",
     "title": "The Twilight Saga: New Moon",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2009",
     "rating": null,
@@ -227,7 +316,12 @@
     "id": "the-twilight-saga-eclipse",
     "title": "The Twilight Saga: Eclipse",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2010",
     "rating": null,
@@ -238,7 +332,12 @@
     "id": "the-twilight-saga-breaking-dawn-part-1",
     "title": "The Twilight Saga: Breaking Dawn - Part 1",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2011",
     "rating": null,
@@ -249,7 +348,12 @@
     "id": "the-twilight-saga-breaking-dawn-part-2",
     "title": "The Twilight Saga: Breaking Dawn - Part 2",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2012",
     "rating": null,
@@ -260,7 +364,12 @@
     "id": "gone-with-the-wind",
     "title": "Gone with the Wind",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
     "status": "to-watch",
     "year": "1939",
     "rating": null,
@@ -271,7 +380,12 @@
     "id": "the-sound-of-music",
     "title": "The Sound of Music",
     "type": "movie",
-    "genre": "",
+    "genre": "Music",
+    "genres": [
+      "Music",
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "1965",
     "rating": null,
@@ -283,7 +397,12 @@
     "hallOfFame": true,
     "title": "Meet Joe Black",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "1998",
     "rating": null,
@@ -294,7 +413,12 @@
     "id": "big",
     "title": "Big",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "1988",
     "rating": null,
@@ -306,7 +430,11 @@
     "hallOfFame": true,
     "title": "Notting Hill",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "1999",
     "rating": null,
@@ -317,7 +445,12 @@
     "id": "dark-matter-2024",
     "title": "Dark Matter",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2024",
     "rating": null,
@@ -328,7 +461,12 @@
     "id": "the-secret-life-of-walter-mitty",
     "title": "The Secret Life of Walter Mitty",
     "type": "movie",
-    "genre": "",
+    "genre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -339,7 +477,10 @@
     "id": "plank-face",
     "title": "Plank Face",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -350,7 +491,11 @@
     "id": "shattered-2022",
     "title": "Shattered",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -362,7 +507,12 @@
     "hallOfFame": true,
     "title": "Kate & Leopold",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Fantasy"
+    ],
     "status": "watched",
     "year": "2001",
     "rating": null,
@@ -373,7 +523,12 @@
     "id": "killers-of-the-flower-moon",
     "title": "Killers of the Flower Moon",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "History"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -384,7 +539,11 @@
     "id": "beautiful-boy",
     "title": "Beautiful Boy",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -395,7 +554,11 @@
     "id": "theres-something-wrong-with-the-children",
     "title": "There's Something Wrong with the Children",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2023",
     "rating": null,
@@ -406,7 +569,12 @@
     "id": "the-age-of-adaline",
     "title": "The Age of Adaline",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2015",
     "rating": null,
@@ -417,7 +585,12 @@
     "id": "no-country-for-old-men",
     "title": "No Country for Old Men",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2007",
     "rating": null,
@@ -428,7 +601,10 @@
     "id": "the-jester",
     "title": "The Jester",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -439,7 +615,10 @@
     "id": "prey-for-the-devil",
     "title": "Prey for the Devil",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -451,7 +630,11 @@
     "hallOfFame": true,
     "title": "October",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "watched",
     "year": "2018",
     "rating": null,
@@ -462,7 +645,11 @@
     "id": "munjya",
     "title": "Munjya",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2024",
     "rating": null,
@@ -473,7 +660,11 @@
     "id": "when-harry-met-sally",
     "title": "When Harry Met Sally...",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "1989",
     "rating": null,
@@ -484,7 +675,10 @@
     "id": "scent-of-a-woman",
     "title": "Scent of a Woman",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "watched",
     "year": "1992",
     "rating": null,
@@ -495,7 +689,12 @@
     "id": "rush-2013",
     "title": "Rush",
     "type": "movie",
-    "genre": "",
+    "genre": "Sport",
+    "genres": [
+      "Sport",
+      "Drama",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -506,7 +705,11 @@
     "id": "lion-2016",
     "title": "Lion",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "status": "in-progress",
     "year": "2016",
     "rating": null,
@@ -517,7 +720,12 @@
     "id": "eega",
     "title": "Eega (Makkhi)",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2012",
     "rating": null,
@@ -528,7 +736,11 @@
     "id": "before-sunrise",
     "title": "Before Sunrise",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "1995",
     "rating": null,
@@ -540,7 +752,11 @@
     "hallOfFame": true,
     "title": "Yes Man",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
     "status": "watched",
     "year": "2008",
     "rating": null,
@@ -551,7 +767,11 @@
     "id": "nerve",
     "title": "Nerve",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Adventure"
+    ],
     "status": "watched",
     "year": "2016",
     "rating": null,
@@ -562,7 +782,10 @@
     "id": "baghead-2023",
     "title": "Baghead",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "watched",
     "year": "2023",
     "rating": null,
@@ -573,7 +796,12 @@
     "id": "frankie-and-johnny-1991",
     "title": "Frankie and Johnny",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1991",
     "rating": null,
@@ -584,7 +812,11 @@
     "id": "speak-no-evil-2024",
     "title": "Speak No Evil",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -595,7 +827,11 @@
     "id": "in-the-mood-for-love",
     "title": "In the Mood for Love",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2000",
     "rating": null,
@@ -606,7 +842,10 @@
     "id": "mr-morgans-last-love",
     "title": "Mr. Morgan's Last Love",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -618,7 +857,11 @@
     "hallOfFame": true,
     "title": "Boston Legal",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2004",
     "rating": null,
@@ -631,7 +874,11 @@
     "hallOfFame": true,
     "title": "The Lucky One",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2012",
     "rating": null,
@@ -642,7 +889,13 @@
     "id": "the-princess-bride",
     "title": "The Princess Bride",
     "type": "movie",
-    "genre": "",
+    "genre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Comedy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "1987",
     "rating": null,
@@ -653,7 +906,11 @@
     "id": "extraordinary-2023",
     "title": "Extraordinary",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -664,7 +921,10 @@
     "id": "antrum",
     "title": "Antrum",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -676,7 +936,10 @@
     "hallOfFame": true,
     "title": "Dead Poets Society",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "watched",
     "year": "1989",
     "rating": null,
@@ -687,7 +950,11 @@
     "id": "destination-wedding-2018",
     "title": "Destination Wedding",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -698,7 +965,12 @@
     "id": "ramayana-the-legend-of-prince-rama",
     "title": "Ramayana: The Legend of Prince Rama",
     "type": "movie",
-    "genre": "",
+    "genre": "Animation",
+    "genres": [
+      "Animation",
+      "Fantasy",
+      "Adventure"
+    ],
     "status": "in-progress",
     "year": "1997",
     "rating": null,
@@ -710,7 +982,11 @@
     "hallOfFame": true,
     "title": "Qarib Qarib Singlle",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2017",
     "rating": null,
@@ -722,7 +998,12 @@
     "hallOfFame": true,
     "title": "Kantara",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2022",
     "rating": null,
@@ -733,7 +1014,10 @@
     "id": "gifted-2017",
     "title": "Gifted",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "watched",
     "year": "2017",
     "rating": null,
@@ -744,7 +1028,11 @@
     "id": "deep-water-2022",
     "title": "Deep Water",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2022",
     "rating": null,
@@ -755,7 +1043,12 @@
     "id": "following-1998",
     "title": "Following",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "1998",
     "rating": null,
@@ -766,7 +1059,11 @@
     "id": "a-beautiful-mind",
     "title": "A Beautiful Mind",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "status": "watched",
     "year": "2001",
     "rating": null,
@@ -777,7 +1074,11 @@
     "id": "burnt",
     "title": "Burnt",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2015",
     "rating": null,
@@ -789,7 +1090,12 @@
     "hallOfFame": true,
     "title": "Womb",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Romance"
+    ],
     "status": "watched",
     "year": "2010",
     "rating": null,
@@ -801,7 +1107,12 @@
     "id": "wind-river-2017",
     "title": "Wind River",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -812,7 +1123,11 @@
     "id": "exhuma",
     "title": "Exhuma",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -824,7 +1139,12 @@
     "id": "begin-again",
     "title": "Begin Again",
     "type": "movie",
-    "genre": "",
+    "genre": "Music",
+    "genres": [
+      "Music",
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -835,7 +1155,12 @@
     "id": "train-to-busan",
     "title": "Train to Busan",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Action",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2016",
     "rating": null,
@@ -846,7 +1171,11 @@
     "id": "once-upon-a-time-in-hollywood",
     "title": "Once Upon a Time... in Hollywood",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -858,7 +1187,11 @@
     "id": "scream-vi",
     "title": "Scream VI",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -870,7 +1203,10 @@
     "id": "perfect-days",
     "title": "Perfect Days",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -882,7 +1218,12 @@
     "hallOfFame": true,
     "title": "Phenomenon",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
     "status": "watched",
     "year": "1996",
     "rating": null,
@@ -894,7 +1235,11 @@
     "hallOfFame": true,
     "title": "Indecent Proposal",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "watched",
     "year": "1993",
     "rating": null,
@@ -905,7 +1250,11 @@
     "id": "anyone-but-you",
     "title": "Anyone but You",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2023",
     "rating": null,
@@ -916,7 +1265,11 @@
     "id": "the-prodigy-2019",
     "title": "The Prodigy",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -928,7 +1281,11 @@
     "hallOfFame": true,
     "title": "The Voyeurs",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2021",
     "rating": null,
@@ -940,7 +1297,11 @@
     "hallOfFame": true,
     "title": "The Housemaid",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -952,7 +1313,12 @@
     "id": "the-conductor-2018",
     "title": "The Conductor",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography",
+      "Music"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -963,7 +1329,11 @@
     "id": "california-dreaming-1979",
     "title": "California Dreaming",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1979",
     "rating": null,
@@ -974,7 +1344,12 @@
     "id": "the-big-short",
     "title": "The Big Short",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Biography"
+    ],
     "status": "watched",
     "year": "2015",
     "rating": null,
@@ -986,7 +1361,11 @@
     "id": "bicentennial-man",
     "title": "Bicentennial Man",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Drama"
+    ],
     "status": "watched",
     "year": "1999",
     "rating": null,
@@ -997,7 +1376,12 @@
     "id": "ghost-town-2008",
     "title": "Ghost Town",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2008",
     "rating": null,
@@ -1009,7 +1393,11 @@
     "hallOfFame": true,
     "title": "Fight Club",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "1999",
     "rating": null,
@@ -1021,7 +1409,11 @@
     "hallOfFame": true,
     "title": "Before We Go",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2015",
     "rating": null,
@@ -1033,7 +1425,11 @@
     "hallOfFame": true,
     "title": "Karwaan",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2018",
     "rating": null,
@@ -1044,7 +1440,10 @@
     "id": "the-thinking-game",
     "title": "The Thinking Game",
     "type": "movie",
-    "genre": "",
+    "genre": "Documentary",
+    "genres": [
+      "Documentary"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -1055,7 +1454,11 @@
     "id": "new-york-i-love-you",
     "title": "New York, I Love You",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2008",
     "rating": null,
@@ -1066,7 +1469,10 @@
     "id": "puzzle-2018",
     "title": "Puzzle",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -1078,7 +1484,10 @@
     "hallOfFame": true,
     "title": "Good Will Hunting",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "watched",
     "year": "1997",
     "rating": null,
@@ -1089,7 +1498,12 @@
     "id": "chaos-walking",
     "title": "Chaos Walking",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Action"
+    ],
     "status": "watched",
     "year": "2021",
     "rating": null,
@@ -1101,7 +1515,11 @@
     "hallOfFame": true,
     "title": "House M.D.",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2004",
     "rating": null,
@@ -1113,7 +1531,10 @@
     "id": "the-whale",
     "title": "The Whale",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -1125,7 +1546,11 @@
     "hallOfFame": true,
     "title": "Piku",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2015",
     "rating": null,
@@ -1137,7 +1562,11 @@
     "hallOfFame": true,
     "title": "Ankhon Dekhi",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2014",
     "rating": null,
@@ -1149,7 +1578,11 @@
     "hallOfFame": true,
     "title": "Fleabag",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2016",
     "rating": null,
@@ -1160,7 +1593,12 @@
     "id": "american-sniper",
     "title": "American Sniper",
     "type": "movie",
-    "genre": "",
+    "genre": "War",
+    "genres": [
+      "War",
+      "Action",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -1171,7 +1609,10 @@
     "id": "masaan",
     "title": "Masaan",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2015",
     "rating": null,
@@ -1183,7 +1624,12 @@
     "id": "under-the-dome",
     "title": "Under the Dome",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Mystery",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -1194,7 +1640,12 @@
     "id": "flipped",
     "title": "Flipped",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2010",
     "rating": null,
@@ -1205,7 +1656,12 @@
     "id": "legion",
     "title": "Legion",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -1217,7 +1673,12 @@
     "hallOfFame": true,
     "title": "True Detective",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2014",
     "rating": null,
@@ -1229,7 +1690,12 @@
     "id": "her",
     "title": "Her",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Sci-Fi",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -1240,7 +1706,12 @@
     "id": "black-mass",
     "title": "Black Mass",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -1251,7 +1722,12 @@
     "id": "caddo-lake",
     "title": "Caddo Lake",
     "type": "movie",
-    "genre": "",
+    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1262,7 +1738,12 @@
     "id": "the-skin-i-live-in",
     "title": "The Skin I Live In",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -1273,7 +1754,12 @@
     "id": "the-peanut-butter-falcon",
     "title": "The Peanut Butter Falcon",
     "type": "movie",
-    "genre": "",
+    "genre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -1285,7 +1771,11 @@
     "hallOfFame": true,
     "title": "The Notebook",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2004",
     "rating": null,
@@ -1296,7 +1786,12 @@
     "id": "bad-times-at-the-el-royale",
     "title": "Bad Times at the El Royale",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -1307,7 +1802,11 @@
     "id": "the-longest-ride",
     "title": "The Longest Ride",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -1319,7 +1818,10 @@
     "hallOfFame": true,
     "title": "Betrayal",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "watched",
     "year": "2003",
     "rating": null,
@@ -1330,7 +1832,12 @@
     "id": "the-gangster-the-cop-the-devil",
     "title": "The Gangster, the Cop, the Devil",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -1341,7 +1848,11 @@
     "id": "closer-2004",
     "title": "Closer",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2004",
     "rating": null,
@@ -1352,7 +1863,11 @@
     "id": "the-machinist",
     "title": "The Machinist",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2004",
     "rating": null,
@@ -1363,7 +1878,12 @@
     "id": "reacher",
     "title": "Reacher",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2022",
     "rating": null,
@@ -1375,7 +1895,11 @@
     "hallOfFame": true,
     "title": "Tom Clancy's Jack Ryan",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2018",
     "rating": null,
@@ -1387,7 +1911,12 @@
     "hallOfFame": true,
     "title": "Special Ops: Lioness",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2023",
     "rating": null,
@@ -1398,7 +1927,11 @@
     "id": "fallen-tv-2024",
     "title": "Fallen",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1409,7 +1942,11 @@
     "id": "the-godfather",
     "title": "The Godfather",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "1972",
     "rating": null,
@@ -1422,7 +1959,10 @@
     "hallOfFame": true,
     "title": "Project X",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2012",
     "rating": null,
@@ -1433,7 +1973,11 @@
     "id": "dream-lover-1994",
     "title": "Dream Lover",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1994",
     "rating": null,
@@ -1444,7 +1988,11 @@
     "id": "taxi-driver",
     "title": "Taxi Driver",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "1976",
     "rating": null,
@@ -1457,7 +2005,12 @@
     "hallOfFame": true,
     "title": "Mr. Robot",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2015",
     "rating": null,
@@ -1468,7 +2021,12 @@
     "id": "wild-cards",
     "title": "Wild Cards",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1479,7 +2037,12 @@
     "id": "megan-leavey",
     "title": "Megan Leavey",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "War",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -1490,7 +2053,11 @@
     "id": "exam",
     "title": "Exam",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2009",
     "rating": null,
@@ -1501,7 +2068,10 @@
     "id": "witchboard-remake",
     "title": "Witchboard",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -1512,7 +2082,12 @@
     "id": "the-devils-advocate",
     "title": "The Devil's Advocate",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Horror"
+    ],
     "status": "watched",
     "year": "1997",
     "rating": null,
@@ -1523,7 +2098,11 @@
     "id": "monkey-man",
     "title": "Monkey Man",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1535,7 +2114,11 @@
     "hallOfFame": true,
     "title": "Peaky Blinders",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2013",
     "rating": null,
@@ -1546,7 +2129,12 @@
     "id": "the-lovely-bones",
     "title": "The Lovely Bones",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2009",
     "rating": null,
@@ -1558,7 +2146,12 @@
     "hallOfFame": true,
     "title": "F1",
     "type": "movie",
-    "genre": "",
+    "genre": "Sport",
+    "genres": [
+      "Sport",
+      "Action",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -1569,7 +2162,11 @@
     "id": "the-extraordinary-journey-of-the-fakir",
     "title": "The Extraordinary Journey of the Fakir",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -1580,7 +2177,11 @@
     "id": "andhera",
     "title": "Andhera",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "in-progress",
     "year": "2025",
     "rating": null,
@@ -1591,7 +2192,11 @@
     "id": "weapons-2025",
     "title": "Weapons",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -1602,7 +2207,11 @@
     "id": "wall-street",
     "title": "Wall Street",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
     "status": "watched",
     "year": "1987",
     "rating": null,
@@ -1613,7 +2222,12 @@
     "id": "the-wolf-of-wall-street",
     "title": "The Wolf of Wall Street",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Comedy",
+      "Biography"
+    ],
     "status": "watched",
     "year": "2013",
     "rating": null,
@@ -1624,7 +2238,10 @@
     "id": "american-sweatshop",
     "title": "American Sweatshop",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -1635,7 +2252,11 @@
     "id": "mr-k-2025",
     "title": "Mr. K",
     "type": "movie",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -1646,7 +2267,11 @@
     "id": "too-big-to-fail",
     "title": "Too Big to Fail",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -1657,7 +2282,12 @@
     "id": "modern-love",
     "title": "Modern Love",
     "type": "series",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -1668,7 +2298,12 @@
     "id": "the-mentalist",
     "title": "The Mentalist",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2008",
     "rating": null,
@@ -1679,7 +2314,11 @@
     "id": "gulaal",
     "title": "Gulaal",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2009",
     "rating": null,
@@ -1690,7 +2329,12 @@
     "id": "revenge-2011",
     "title": "Revenge",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "in-progress",
     "year": "2011",
     "rating": null,
@@ -1701,7 +2345,10 @@
     "id": "relay-1970",
     "title": "Relay",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1970",
     "rating": null,
@@ -1712,7 +2359,12 @@
     "id": "the-handmaids-tale",
     "title": "The Handmaid's Tale",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2017",
     "rating": null,
@@ -1723,7 +2375,12 @@
     "id": "dept-q",
     "title": "Dept. Q",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -1734,7 +2391,12 @@
     "id": "american-psycho",
     "title": "American Psycho",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2000",
     "rating": null,
@@ -1745,7 +2407,12 @@
     "id": "3096-days",
     "title": "3096 Days",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -1756,7 +2423,12 @@
     "id": "a-big-bold-beautiful-journey",
     "title": "A Big Bold Beautiful Journey",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -1767,7 +2439,11 @@
     "id": "miss-sloane",
     "title": "Miss Sloane",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2016",
     "rating": null,
@@ -1778,7 +2454,11 @@
     "id": "flamin-hot",
     "title": "Flamin' Hot",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "status": "watched",
     "year": "2023",
     "rating": null,
@@ -1789,7 +2469,11 @@
     "id": "sirens-2025",
     "title": "Sirens",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -1800,7 +2484,10 @@
     "id": "dancing-village-the-curse-begins",
     "title": "Dancing Village: The Curse Begins",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1811,7 +2498,12 @@
     "id": "the-hunting-party-2025",
     "title": "The Hunting Party",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2025",
     "rating": null,
@@ -1822,7 +2514,12 @@
     "id": "atonement",
     "title": "Atonement",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
     "status": "to-watch",
     "year": "2007",
     "rating": null,
@@ -1834,7 +2531,12 @@
     "id": "girl-in-the-basement",
     "title": "Girl in the Basement",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2021",
     "rating": null,
@@ -1845,7 +2547,11 @@
     "id": "whiplash",
     "title": "Whiplash",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Music"
+    ],
     "status": "in-progress",
     "year": "2014",
     "rating": null,
@@ -1857,7 +2563,11 @@
     "id": "12-feet-deep",
     "title": "12 Feet Deep",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -1868,7 +2578,11 @@
     "id": "the-oc",
     "title": "The O.C.",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "in-progress",
     "year": "2003",
     "rating": null,
@@ -1879,7 +2593,12 @@
     "id": "dirty-dancing",
     "title": "Dirty Dancing",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Music"
+    ],
     "status": "in-progress",
     "year": "1987",
     "rating": null,
@@ -1890,7 +2609,12 @@
     "id": "tracker-2024",
     "title": "Tracker",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1901,7 +2625,12 @@
     "id": "game-of-thrones",
     "title": "Game of Thrones",
     "type": "series",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Action"
+    ],
     "status": "watched",
     "year": "2011",
     "rating": null,
@@ -1912,7 +2641,12 @@
     "id": "carlitos-way",
     "title": "Carlito's Way",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "1993",
     "rating": null,
@@ -1923,7 +2657,12 @@
     "id": "chungking-express",
     "title": "Chungking Express",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1994",
     "rating": null,
@@ -1934,7 +2673,12 @@
     "id": "the-girl-who-escaped-kara-robinson-story",
     "title": "The Girl Who Escaped: The Kara Robinson Story",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -1945,7 +2689,11 @@
     "id": "the-wire",
     "title": "The Wire",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2002",
     "rating": null,
@@ -1956,7 +2704,12 @@
     "id": "irreversible",
     "title": "Irreversible",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2002",
     "rating": null,
@@ -1967,7 +2720,12 @@
     "id": "presumed-innocent-2024",
     "title": "Presumed Innocent",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -1979,7 +2737,11 @@
     "hallOfFame": true,
     "title": "Rehnaa Hai Terre Dil Mein",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2001",
     "rating": null,
@@ -1990,7 +2752,11 @@
     "id": "scenes-from-a-marriage-2021",
     "title": "Scenes from a Marriage",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2021",
     "rating": null,
@@ -2001,7 +2767,11 @@
     "id": "amuck-1972",
     "title": "Amuck!",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "1972",
     "rating": null,
@@ -2013,7 +2783,12 @@
     "hallOfFame": true,
     "title": "Asur",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2020",
     "rating": null,
@@ -2024,7 +2799,12 @@
     "id": "liberal-arts",
     "title": "Liberal Arts",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2012",
     "rating": null,
@@ -2035,7 +2815,11 @@
     "id": "butterfly-2025",
     "title": "Butterfly",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -2046,7 +2830,11 @@
     "id": "hyper-knife",
     "title": "Hyper Knife",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -2057,7 +2845,11 @@
     "id": "it-chapter-two",
     "title": "It Chapter Two",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -2068,7 +2860,11 @@
     "id": "you-should-have-left",
     "title": "You Should Have Left",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -2080,7 +2876,12 @@
     "hallOfFame": true,
     "title": "Ex Machina",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2014",
     "rating": null,
@@ -2091,7 +2892,11 @@
     "id": "handsome-guys",
     "title": "Handsome Guys (핸섬가이즈)",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -2102,7 +2907,10 @@
     "id": "before-i-disappear",
     "title": "Before I Disappear",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -2113,7 +2921,11 @@
     "id": "love-reset",
     "title": "Love Reset",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -2124,7 +2936,12 @@
     "id": "the-hitchhikers-guide-to-the-galaxy",
     "title": "The Hitchhiker's Guide to the Galaxy",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Comedy",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2005",
     "rating": null,
@@ -2135,7 +2952,11 @@
     "id": "my-sisters-bones",
     "title": "My Sister's Bones",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2147,7 +2968,11 @@
     "hallOfFame": true,
     "title": "The Lunchbox",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2013",
     "rating": null,
@@ -2158,7 +2983,11 @@
     "id": "something-very-bad-is-going-to-happen",
     "title": "Something Very Bad Is Going to Happen",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2170,7 +2999,12 @@
     "id": "bring-it-on-ghost",
     "title": "Bring It On, Ghost",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -2181,7 +3015,11 @@
     "id": "looking-for-alaska",
     "title": "Looking for Alaska",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -2193,7 +3031,11 @@
     "hallOfFame": true,
     "title": "Main Vaapas Aaunga",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -2204,7 +3046,12 @@
     "id": "jana-gana-mana",
     "title": "Jana Gana Mana",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -2215,7 +3062,12 @@
     "id": "gyaarah-gyaarah",
     "title": "Gyaarah Gyaarah",
     "type": "series",
-    "genre": "",
+    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -2227,7 +3079,12 @@
     "hallOfFame": true,
     "title": "The WONDERfools",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Action"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -2238,7 +3095,11 @@
     "id": "haunted-heist",
     "title": "Haunted Heist",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2249,7 +3110,12 @@
     "id": "silo",
     "title": "Silo",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Mystery",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2023",
     "rating": null,
@@ -2261,7 +3127,12 @@
     "hallOfFame": true,
     "title": "Code of Silence",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2025",
     "rating": null,
@@ -2272,7 +3143,11 @@
     "id": "the-godfather-part-ii",
     "title": "The Godfather Part II",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "1974",
     "rating": null,
@@ -2284,7 +3159,11 @@
     "id": "the-godfather-part-iii",
     "title": "The Godfather Part III",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "1990",
     "rating": null,
@@ -2296,7 +3175,11 @@
     "id": "blast-2026",
     "title": "Blast",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2307,7 +3190,12 @@
     "id": "fresh-2022",
     "title": "Fresh",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -2318,7 +3206,11 @@
     "id": "burning-bright",
     "title": "Burning Bright",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2010",
     "rating": null,
@@ -2329,7 +3221,12 @@
     "id": "mansion-24",
     "title": "Mansion 24",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -2340,7 +3237,12 @@
     "id": "the-walking-dead",
     "title": "The Walking Dead",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2010",
     "rating": null,
@@ -2351,7 +3253,12 @@
     "id": "over-your-dead-body-2026",
     "title": "Over Your Dead Body",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Thriller",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2362,7 +3269,12 @@
     "id": "the-girl-on-the-train-2016",
     "title": "The Girl on the Train",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -2373,7 +3285,12 @@
     "id": "the-night-manager-2016",
     "title": "The Night Manager",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -2384,7 +3301,11 @@
     "id": "takshakudu",
     "title": "Takshakudu",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2395,7 +3316,12 @@
     "id": "the-punisher-2017",
     "title": "Marvel's The Punisher",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -2406,7 +3332,10 @@
     "id": "khanzab",
     "title": "Khanzab",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -2417,7 +3346,12 @@
     "id": "house-of-the-dragon",
     "title": "House of the Dragon",
     "type": "series",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -2428,7 +3362,10 @@
     "id": "satluj-2026",
     "title": "Satluj",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2439,7 +3376,12 @@
     "id": "abraham-ozler",
     "title": "Abraham Ozler",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -2450,7 +3392,12 @@
     "id": "barry",
     "title": "Barry",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -2462,7 +3409,11 @@
     "id": "better-call-saul",
     "title": "Better Call Saul",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2015",
     "rating": null,
@@ -2473,7 +3424,11 @@
     "id": "the-agency-2024",
     "title": "The Agency",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2024",
     "rating": null,
@@ -2484,7 +3439,11 @@
     "id": "chand-mera-dil",
     "title": "Chand Mera Dil",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2495,7 +3454,11 @@
     "id": "agent-kim-reactivated",
     "title": "Agent Kim Reactivated",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2026",
     "rating": null,
@@ -2506,7 +3469,10 @@
     "id": "silicon-valley",
     "title": "Silicon Valley",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -2517,7 +3483,11 @@
     "id": "my-cousin-vinny",
     "title": "My Cousin Vinny",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "1992",
     "rating": null,
@@ -2528,7 +3498,12 @@
     "id": "bloodhounds",
     "title": "Bloodhounds",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2023",
     "rating": null,
@@ -2541,7 +3516,12 @@
     "hallOfFame": true,
     "title": "The Wrath of Becky",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Horror"
+    ],
     "status": "watched",
     "year": "2023",
     "rating": null,
@@ -2552,7 +3532,11 @@
     "id": "obsession-2026",
     "title": "Obsession",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -2563,7 +3547,10 @@
     "id": "girl-on-the-third-floor",
     "title": "Girl on the Third Floor",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "in-progress",
     "year": "2019",
     "rating": null,
@@ -2574,7 +3561,11 @@
     "id": "study-group",
     "title": "Study Group",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -2585,7 +3576,11 @@
     "id": "midnight-2021",
     "title": "Midnight",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2021",
     "rating": null,
@@ -2596,7 +3591,10 @@
     "id": "tighee",
     "title": "Tighee",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2607,7 +3605,12 @@
     "id": "i-will-find-you",
     "title": "I Will Find You",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "in-progress",
     "year": "2026",
     "rating": null,
@@ -2618,7 +3621,12 @@
     "id": "the-price-of-confession",
     "title": "The Price of Confession",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "in-progress",
     "year": "2025",
     "rating": null,
@@ -2629,7 +3637,12 @@
     "id": "night-hunter-2019",
     "title": "Night Hunter",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -2640,7 +3653,11 @@
     "id": "honour-2026",
     "title": "Honour",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2651,7 +3668,11 @@
     "id": "sambhavam-adhyayam-onnu",
     "title": "Sambhavam Adhyayam Onnu",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2662,7 +3683,12 @@
     "id": "in-your-eyes-2014",
     "title": "In Your Eyes",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -2673,7 +3699,12 @@
     "id": "the-boys",
     "title": "The Boys",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2019",
     "rating": null,
@@ -2684,7 +3715,12 @@
     "id": "this-means-war",
     "title": "This Means War",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2012",
     "rating": null,
@@ -2695,7 +3731,11 @@
     "id": "widow's-bay",
     "title": "Widow's Bay",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -2706,7 +3746,10 @@
     "id": "lighting-up-the-stars",
     "title": "Lighting Up the Stars",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -2717,7 +3760,11 @@
     "id": "frankly-speaking",
     "title": "Frankly Speaking",
     "type": "series",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -2728,7 +3775,11 @@
     "id": "the-invite-2026",
     "title": "The Invite",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2026",
     "rating": null,
@@ -2740,7 +3791,12 @@
     "hallOfFame": true,
     "title": "Manorama Six Feet Under",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2007",
     "rating": null,
@@ -2751,7 +3807,11 @@
     "id": "kumbalangi-nights",
     "title": "Kumbalangi Nights",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -2762,7 +3822,11 @@
     "id": "aavesham",
     "title": "Aavesham",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2024",
     "rating": null,
@@ -2773,7 +3837,12 @@
     "id": "viduthalai-part-2",
     "title": "Viduthalai: Part II",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -2784,7 +3853,12 @@
     "id": "dtf-st-louis",
     "title": "DTF St. Louis",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Crime"
+    ],
     "status": "in-progress",
     "year": "2026",
     "rating": null,
@@ -2796,7 +3870,10 @@
     "hallOfFame": true,
     "title": "The Pitt",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2025",
     "rating": null,
@@ -2808,7 +3885,10 @@
     "id": "last-shift-2014",
     "title": "Last Shift",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -2819,7 +3899,10 @@
     "id": "hell-house-llc",
     "title": "Hell House LLC",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -2830,7 +3913,10 @@
     "id": "oculus",
     "title": "Oculus",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -2841,7 +3927,10 @@
     "id": "gonjiam-haunted-asylum",
     "title": "Gonjiam: Haunted Asylum",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -2852,7 +3941,11 @@
     "id": "what-you-wish-for",
     "title": "What You Wish For",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -2863,7 +3956,12 @@
     "id": "materialists",
     "title": "Materialists",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -2874,7 +3972,11 @@
     "id": "eden-lake",
     "title": "Eden Lake",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2008",
     "rating": null,
@@ -2886,7 +3988,11 @@
     "id": "raanjhanaa",
     "title": "Raanjhanaa",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2013",
     "rating": null,
@@ -2897,7 +4003,12 @@
     "id": "no-other-choice-2025",
     "title": "No Other Choice",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Comedy",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -2909,7 +4020,12 @@
     "id": "decision-to-leave",
     "title": "Decision to Leave",
     "type": "movie",
-    "genre": "",
+    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -2920,7 +4036,11 @@
     "id": "gilmore-girls",
     "title": "Gilmore Girls",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2000",
     "rating": null,
@@ -2931,7 +4051,12 @@
     "id": "one-battle-after-another",
     "title": "One Battle After Another",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -2942,7 +4067,12 @@
     "id": "spectre",
     "title": "Spectre",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Adventure"
+    ],
     "status": "watched",
     "year": "2015",
     "rating": null,
@@ -2953,7 +4083,12 @@
     "id": "start-up-2020",
     "title": "Start-Up",
     "type": "series",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -2964,7 +4099,12 @@
     "id": "memories-of-murder",
     "title": "Memories of Murder",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2003",
     "rating": null,
@@ -2975,7 +4115,12 @@
     "id": "raayan",
     "title": "Raayan",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -2986,7 +4131,10 @@
     "id": "terrified-2017",
     "title": "Terrified",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -2997,7 +4145,12 @@
     "id": "aamis",
     "title": "Aamis",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -3008,7 +4161,12 @@
     "id": "vikram-2022",
     "title": "Vikram",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -3020,7 +4178,12 @@
     "hallOfFame": true,
     "title": "Banshee",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2013",
     "rating": null,
@@ -3032,7 +4195,11 @@
     "id": "laal-rang",
     "title": "Laal Rang",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -3043,7 +4210,11 @@
     "id": "babygirl-2024",
     "title": "Babygirl",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3054,7 +4225,12 @@
     "id": "training-day",
     "title": "Training Day",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2001",
     "rating": null,
@@ -3065,7 +4241,11 @@
     "id": "borderline-2025",
     "title": "Borderline",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -3077,7 +4257,11 @@
     "hallOfFame": true,
     "title": "The Girlfriend",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -3089,7 +4273,10 @@
     "id": "katie-says-goodbye",
     "title": "Katie Says Goodbye",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -3100,7 +4287,12 @@
     "id": "life-as-we-know-it",
     "title": "Life as We Know It",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2010",
     "rating": null,
@@ -3111,7 +4303,12 @@
     "id": "collide-2016",
     "title": "Collide",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -3122,7 +4319,11 @@
     "id": "the-ides-of-march",
     "title": "The Ides of March",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -3133,7 +4334,12 @@
     "id": "the-clean-up-crew",
     "title": "The Clean Up Crew",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3144,7 +4350,12 @@
     "id": "outlander",
     "title": "Outlander",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -3155,7 +4366,10 @@
     "id": "the-last-man-in-tower",
     "title": "Last Man in Tower",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3166,7 +4380,11 @@
     "id": "carolina-caroline",
     "title": "Carolina Caroline",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3177,7 +4395,11 @@
     "id": "pluribus",
     "title": "Pluribus",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -3188,7 +4410,11 @@
     "id": "wuthering-heights-2026",
     "title": "Wuthering Heights",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3200,7 +4426,12 @@
     "hallOfFame": true,
     "title": "Fracture",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2007",
     "rating": null,
@@ -3211,7 +4442,10 @@
     "id": "vibe-2026",
     "title": "Vibe",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3223,7 +4457,11 @@
     "hallOfFame": true,
     "title": "Single Papa",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -3234,7 +4472,12 @@
     "id": "the-watcher-2022",
     "title": "The Watcher",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2022",
     "rating": null,
@@ -3245,7 +4488,11 @@
     "id": "sense-and-sensibility",
     "title": "Sense and Sensibility",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1995",
     "rating": null,
@@ -3256,7 +4503,10 @@
     "id": "person-of-interest-2024",
     "title": "Person of Interest",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3267,7 +4517,12 @@
     "id": "teacup",
     "title": "Teacup",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3279,7 +4534,12 @@
     "id": "the-white-lotus",
     "title": "The White Lotus",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Mystery"
+    ],
     "status": "in-progress",
     "year": "2021",
     "rating": null,
@@ -3290,7 +4550,11 @@
     "id": "the-silent-patient",
     "title": "The Silent Patient",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "",
     "rating": null,
@@ -3302,7 +4566,11 @@
     "hallOfFame": true,
     "title": "Life Like",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2019",
     "rating": null,
@@ -3313,7 +4581,10 @@
     "id": "adkitta",
     "title": "Adkitta",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3324,7 +4595,12 @@
     "id": "the-hunger-games",
     "title": "The Hunger Games",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2012",
     "rating": null,
@@ -3336,7 +4612,12 @@
     "id": "the-hunger-games-catching-fire",
     "title": "The Hunger Games: Catching Fire",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -3348,7 +4629,12 @@
     "id": "the-hunger-games-mockingjay-part-1",
     "title": "The Hunger Games: Mockingjay - Part 1",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -3360,7 +4646,12 @@
     "id": "the-hunger-games-mockingjay-part-2",
     "title": "The Hunger Games: Mockingjay - Part 2",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -3372,7 +4663,12 @@
     "id": "the-hunger-games-ballad-of-songbirds-and-snakes",
     "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
     "type": "movie",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -3383,7 +4679,10 @@
     "id": "pechi-2024",
     "title": "Pechi",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3394,7 +4693,11 @@
     "id": "carrie-2026",
     "title": "Carrie",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2026",
     "rating": null,
@@ -3405,7 +4708,11 @@
     "id": "hey-sinamika",
     "title": "Hey! Sinamika",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -3416,7 +4723,12 @@
     "id": "last-flag-flying",
     "title": "Last Flag Flying",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "War"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -3427,7 +4739,12 @@
     "id": "ted-lasso",
     "title": "Ted Lasso",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Sport"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -3438,7 +4755,11 @@
     "id": "kumari-2022",
     "title": "Kumari",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -3449,7 +4770,12 @@
     "id": "homestead-2024",
     "title": "Homestead",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3460,7 +4786,12 @@
     "id": "remain-2026",
     "title": "Remain",
     "type": "movie",
-    "genre": "",
+    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3471,7 +4802,12 @@
     "id": "thunivu",
     "title": "Thunivu",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -3482,7 +4818,12 @@
     "id": "white-nights-1985",
     "title": "White Nights",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Music"
+    ],
     "status": "to-watch",
     "year": "1985",
     "rating": null,
@@ -3493,7 +4834,11 @@
     "id": "a-talent-for-murder-2026",
     "title": "A Talent for Murder",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3504,7 +4849,10 @@
     "id": "pop-kaun",
     "title": "Pop Kaun?",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -3515,7 +4863,11 @@
     "id": "anniversary-2025",
     "title": "Anniversary",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -3526,7 +4878,10 @@
     "id": "what-the-nanny-saw",
     "title": "What the Nanny Saw",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -3538,7 +4893,11 @@
     "hallOfFame": true,
     "title": "The Kashmir Files",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History"
+    ],
     "status": "watched",
     "year": "2022",
     "rating": null,
@@ -3549,7 +4908,11 @@
     "id": "the-bengal-files",
     "title": "The Bengal Files",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History"
+    ],
     "status": "watched",
     "year": "2025",
     "rating": null,
@@ -3560,7 +4923,11 @@
     "id": "blood-money-2017",
     "title": "Blood Money",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -3571,7 +4938,12 @@
     "id": "the-silence-of-the-lambs",
     "title": "The Silence of the Lambs",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Horror"
+    ],
     "status": "watched",
     "year": "1991",
     "rating": null,
@@ -3583,7 +4955,11 @@
     "hallOfFame": true,
     "title": "Hachi: A Dog's Tale",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
     "status": "watched",
     "year": "2009",
     "rating": null,
@@ -3594,7 +4970,12 @@
     "id": "the-day-of-the-jackal-2024",
     "title": "The Day of the Jackal",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Action",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3605,7 +4986,10 @@
     "id": "bokshi",
     "title": "Bokshi",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -3616,7 +5000,12 @@
     "id": "serpico",
     "title": "Serpico",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "1973",
     "rating": null,
@@ -3627,7 +5016,10 @@
     "id": "balan-the-boy",
     "title": "Balan - The Boy",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3638,7 +5030,11 @@
     "id": "furious-2026",
     "title": "Furious",
     "type": "series",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3649,7 +5045,12 @@
     "id": "marcella",
     "title": "Marcella",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -3660,7 +5061,11 @@
     "id": "play-dead-2026",
     "title": "Play Dead",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3671,7 +5076,10 @@
     "id": "the-fix-2026",
     "title": "The Fix",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3682,7 +5090,10 @@
     "id": "east-of-eden-2026",
     "title": "East of Eden",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3694,7 +5105,12 @@
     "hallOfFame": true,
     "title": "The Time Traveler's Wife",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2009",
     "rating": null,
@@ -3706,7 +5122,10 @@
     "id": "late-night-with-the-devil",
     "title": "Late Night with the Devil",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3717,7 +5136,11 @@
     "id": "american-gods",
     "title": "American Gods",
     "type": "series",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -3728,7 +5151,12 @@
     "id": "mobland",
     "title": "MobLand",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -3739,7 +5167,12 @@
     "id": "slow-horses",
     "title": "Slow Horses",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Comedy"
+    ],
     "status": "in-progress",
     "year": "2022",
     "rating": null,
@@ -3750,7 +5183,11 @@
     "id": "yahaan",
     "title": "Yahaan",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2005",
     "rating": null,
@@ -3762,7 +5199,12 @@
     "hallOfFame": true,
     "title": "Shall We Dance?",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Music"
+    ],
     "status": "watched",
     "year": "2004",
     "rating": null,
@@ -3773,7 +5215,12 @@
     "id": "inglourious-basterds",
     "title": "Inglourious Basterds",
     "type": "movie",
-    "genre": "",
+    "genre": "War",
+    "genres": [
+      "War",
+      "Action",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2009",
     "rating": null,
@@ -3784,7 +5231,12 @@
     "id": "fury-2014",
     "title": "Fury",
     "type": "movie",
-    "genre": "",
+    "genre": "War",
+    "genres": [
+      "War",
+      "Action",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2014",
     "rating": null,
@@ -3795,7 +5247,11 @@
     "id": "kaalakaandi",
     "title": "Kaalakaandi",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -3806,7 +5262,12 @@
     "id": "chernobyl",
     "title": "Chernobyl",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
     "status": "in-progress",
     "year": "2019",
     "rating": null,
@@ -3817,7 +5278,12 @@
     "id": "aindham-vedham",
     "title": "Aindham Vedham",
     "type": "series",
-    "genre": "",
+    "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -3828,7 +5294,11 @@
     "id": "bhoothakaalam",
     "title": "Bhoothakaalam",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -3839,7 +5309,10 @@
     "id": "detachment-2011",
     "title": "Detachment",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -3850,7 +5323,12 @@
     "id": "good-boy-2025",
     "title": "Good Boy",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -3861,7 +5339,12 @@
     "id": "killing-eve",
     "title": "Killing Eve",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2018",
     "rating": null,
@@ -3872,7 +5355,12 @@
     "id": "homeland",
     "title": "Homeland",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
     "status": "watched",
     "year": "2011",
     "rating": null,
@@ -3883,7 +5371,11 @@
     "id": "in-the-grey-2026",
     "title": "In the Grey",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3895,7 +5387,11 @@
     "hallOfFame": true,
     "title": "The Sum of All Fears",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Action"
+    ],
     "status": "watched",
     "year": "2002",
     "rating": null,
@@ -3906,7 +5402,12 @@
     "id": "manifest",
     "title": "Manifest",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Mystery",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2018",
     "rating": null,
@@ -3917,7 +5418,11 @@
     "id": "after-life",
     "title": "After Life",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2019",
     "rating": null,
@@ -3928,7 +5433,11 @@
     "id": "a-man-called-otto",
     "title": "A Man Called Otto",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2022",
     "rating": null,
@@ -3939,7 +5448,10 @@
     "id": "this-is-how-you-die",
     "title": "This Is How You Die",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -3950,7 +5462,11 @@
     "id": "citizen-vigilante",
     "title": "Citizen Vigilante",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -3961,7 +5477,11 @@
     "id": "the-intern-2015",
     "title": "The Intern",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2015",
     "rating": null,
@@ -3972,7 +5492,12 @@
     "id": "munich-2005",
     "title": "Munich",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "History"
+    ],
     "status": "watched",
     "year": "2005",
     "rating": null,
@@ -3983,7 +5508,11 @@
     "id": "margin-call",
     "title": "Margin Call",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2011",
     "rating": null,
@@ -3994,7 +5523,11 @@
     "id": "subedaar-2026",
     "title": "Subedaar",
     "type": "movie",
-    "genre": "",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -4005,7 +5538,12 @@
     "id": "the-blacklist",
     "title": "The Blacklist",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2013",
     "rating": null,
@@ -4016,7 +5554,11 @@
     "id": "shes-out-of-my-league",
     "title": "She's Out of My League",
     "type": "movie",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
     "status": "watched",
     "year": "2010",
     "rating": null,
@@ -4027,7 +5569,12 @@
     "id": "you-2018",
     "title": "You",
     "type": "series",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
     "status": "in-progress",
     "year": "2018",
     "rating": null,
@@ -4038,7 +5585,11 @@
     "id": "five-feet-apart",
     "title": "Five Feet Apart",
     "type": "movie",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -4049,7 +5600,10 @@
     "id": "the-piper-2023",
     "title": "The Piper",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -4060,7 +5614,12 @@
     "id": "a-tale-of-two-sisters",
     "title": "A Tale of Two Sisters",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2003",
     "rating": null,
@@ -4071,7 +5630,12 @@
     "id": "the-wailing-2016",
     "title": "The Wailing",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -4083,7 +5647,10 @@
     "id": "billions",
     "title": "Billions",
     "type": "series",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -4095,7 +5662,12 @@
     "id": "wandavision",
     "title": "WandaVision",
     "type": "series",
-    "genre": "",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Comedy",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2021",
     "rating": null,
@@ -4106,7 +5678,11 @@
     "id": "seoul-busters",
     "title": "Seoul Busters",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -4117,7 +5693,11 @@
     "id": "pulp-fiction",
     "title": "Pulp Fiction",
     "type": "movie",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "1994",
     "rating": null,
@@ -4129,7 +5709,12 @@
     "id": "eternally-yours-2026",
     "title": "Eternally Yours",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4140,7 +5725,11 @@
     "id": "maximum-pleasure-guaranteed",
     "title": "Maximum Pleasure Guaranteed",
     "type": "series",
-    "genre": "",
+    "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4151,7 +5740,12 @@
     "id": "supernatural",
     "title": "Supernatural",
     "type": "series",
-    "genre": "",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2005",
     "rating": null,
@@ -4162,7 +5756,10 @@
     "id": "blood-sacrifice-2026",
     "title": "Blood Sacrifice",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4173,7 +5770,11 @@
     "id": "do-you-know-me",
     "title": "Do You Know Me?",
     "type": "movie",
-    "genre": "",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2009",
     "rating": null,
@@ -4184,7 +5785,11 @@
     "id": "blue-lights",
     "title": "Blue Lights",
     "type": "series",
-    "genre": "",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -4195,7 +5800,11 @@
     "id": "normal-people",
     "title": "Normal People",
     "type": "series",
-    "genre": "",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -4206,7 +5815,10 @@
     "id": "the-exorcist-martyrs",
     "title": "The Exorcist: Martyrs",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2027",
     "rating": null,
@@ -4217,7 +5829,12 @@
     "id": "the-haunting-of-bly-manor",
     "title": "The Haunting of Bly Manor",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -4228,7 +5845,12 @@
     "id": "the-haunting-of-hill-house",
     "title": "The Haunting of Hill House",
     "type": "series",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -4239,7 +5861,11 @@
     "id": "hush-2016",
     "title": "Hush",
     "type": "movie",
-    "genre": "",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2016",
     "rating": null,
@@ -4250,7 +5876,11 @@
     "id": "hush-1998",
     "title": "Hush",
     "type": "movie",
-    "genre": "",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "1998",
     "rating": null,
@@ -4263,6 +5893,10 @@
     "title": "All the Bright Places",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -4274,7 +5908,11 @@
     "id": "august-osage-county",
     "title": "August: Osage County",
     "type": "movie",
-    "genre": "Comedy",
+    "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -4287,6 +5925,10 @@
     "title": "Blink Twice",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -4298,7 +5940,12 @@
     "id": "breakfast-at-tiffany-s",
     "title": "Breakfast at Tiffany's",
     "type": "movie",
-    "genre": "Comedy",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1961",
     "rating": null,
@@ -4310,7 +5957,12 @@
     "id": "children-of-men",
     "title": "Children of Men",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2006",
     "rating": null,
@@ -4323,6 +5975,11 @@
     "title": "Cure",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Crime",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "1997",
     "rating": null,
@@ -4335,6 +5992,10 @@
     "title": "Dangerous Animals",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -4347,6 +6008,10 @@
     "title": "Demolition Man",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "1993",
     "rating": null,
@@ -4359,6 +6024,10 @@
     "title": "Door Lock",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -4370,7 +6039,13 @@
     "id": "dungeons-dragons-honour-among-thieves",
     "title": "Dungeons & Dragons: Honour Among Thieves",
     "type": "movie",
-    "genre": "Action",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -4383,6 +6058,10 @@
     "title": "The Eye",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2008",
     "rating": null,
@@ -4396,6 +6075,10 @@
     "title": "First Daughter",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2004",
     "rating": null,
@@ -4408,6 +6091,9 @@
     "title": "The Goldfinch",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -4420,6 +6106,9 @@
     "title": "Hamlet",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1996",
     "rating": null,
@@ -4432,6 +6121,10 @@
     "title": "Hanu Man",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -4444,6 +6137,9 @@
     "title": "Hive",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4456,6 +6152,9 @@
     "title": "Hope Gap",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -4468,6 +6167,11 @@
     "title": "I, Tonya",
     "type": "movie",
     "genre": "Biography",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Sport"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -4480,6 +6184,11 @@
     "title": "Incendies",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "War"
+    ],
     "status": "to-watch",
     "year": "2010",
     "rating": null,
@@ -4491,7 +6200,11 @@
     "id": "king-of-new-york",
     "title": "King of New York",
     "type": "movie",
-    "genre": "Thriller",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "1990",
     "rating": null,
@@ -4504,6 +6217,10 @@
     "title": "The Last House on the Left",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2009",
     "rating": null,
@@ -4515,7 +6232,11 @@
     "id": "the-lord-of-the-rings-the-fellowship-of-the-ring",
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "type": "movie",
-    "genre": "Adventure",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2001",
     "rating": null,
@@ -4528,7 +6249,11 @@
     "id": "the-lord-of-the-rings-the-return-of-the-king",
     "title": "The Lord of the Rings: The Return of the King",
     "type": "movie",
-    "genre": "Adventure",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2003",
     "rating": null,
@@ -4541,7 +6266,11 @@
     "id": "the-lord-of-the-rings-the-two-towers",
     "title": "The Lord of the Rings: The Two Towers",
     "type": "movie",
-    "genre": "Adventure",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2002",
     "rating": null,
@@ -4555,6 +6284,10 @@
     "title": "Me and Earl and the Dying Girl",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -4566,7 +6299,11 @@
     "id": "me-before-you",
     "title": "Me Before You",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -4579,6 +6316,10 @@
     "title": "Midnight Sun",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -4591,6 +6332,9 @@
     "title": "Miracle in Cell No. 7",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -4602,7 +6346,11 @@
     "id": "murder-report",
     "title": "Murder Report",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -4614,7 +6362,12 @@
     "id": "mystic-river",
     "title": "Mystic River",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2003",
     "rating": null,
@@ -4626,7 +6379,12 @@
     "id": "a-new-york-winter-s-tale",
     "title": "A New York Winter's Tale",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -4639,6 +6397,10 @@
     "title": "Noroi",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2005",
     "rating": null,
@@ -4651,6 +6413,9 @@
     "title": "One Mile: Chapter One",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4663,6 +6428,9 @@
     "title": "One Mile: Chapter Two",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4674,7 +6442,12 @@
     "id": "parasite",
     "title": "Parasite",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2019",
     "rating": null,
@@ -4687,6 +6460,10 @@
     "title": "People We Meet on Vacation",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4699,6 +6476,10 @@
     "title": "Pretty Lethal",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4711,6 +6492,11 @@
     "title": "Red Rooms",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -4722,7 +6508,11 @@
     "id": "return-to-sender",
     "title": "Return to Sender",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -4734,7 +6524,12 @@
     "id": "santosh",
     "title": "Santosh",
     "type": "movie",
-    "genre": "Thriller",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -4747,6 +6542,10 @@
     "title": "Scream 7",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -4758,7 +6557,12 @@
     "id": "the-secret-of-marrowbone",
     "title": "The Secret of Marrowbone",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -4771,6 +6575,11 @@
     "title": "Send Help",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Comedy"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -4782,7 +6591,12 @@
     "id": "the-shadow-s-edge",
     "title": "The Shadow's Edge",
     "type": "movie",
-    "genre": "Drama",
+    "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -4795,6 +6609,9 @@
     "title": "Shame",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -4807,6 +6624,10 @@
     "title": "Thelma",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -4818,7 +6639,12 @@
     "id": "tomorrowland-a-world-beyond",
     "title": "Tomorrowland: A World Beyond",
     "type": "movie",
-    "genre": "Action",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Family"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -4831,6 +6657,9 @@
     "title": "Undertone",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4843,6 +6672,11 @@
     "title": "Vadh 2",
     "type": "movie",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "watched",
     "year": "2026",
     "rating": null,
@@ -4855,6 +6689,9 @@
     "title": "Walk of Shame",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -4867,6 +6704,11 @@
     "title": "Warm Bodies",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -4878,7 +6720,12 @@
     "id": "warrior",
     "title": "Warrior",
     "type": "movie",
-    "genre": "Action",
+    "genre": "Sport",
+    "genres": [
+      "Sport",
+      "Drama",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -4891,6 +6738,10 @@
     "title": "The Art of Sarah",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4902,7 +6753,12 @@
     "id": "bhay-the-gaurav-tiwari-mystery",
     "title": "Bhay: The Gaurav Tiwari Mystery",
     "type": "series",
-    "genre": "Drama",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -4915,6 +6771,10 @@
     "title": "The Borderline",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -4927,6 +6787,10 @@
     "title": "The Girlfriend Experience",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2016",
     "rating": null,
@@ -4939,6 +6803,9 @@
     "title": "Halt and Catch Fire",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -4950,7 +6817,11 @@
     "id": "it-welcome-to-derry",
     "title": "It: Welcome to Derry",
     "type": "series",
-    "genre": "Mystery",
+    "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -4962,7 +6833,12 @@
     "id": "lincoln-rhyme-hunt-for-the-bone-collector",
     "title": "Lincoln Rhyme: Hunt for the Bone Collector",
     "type": "series",
-    "genre": "Mystery",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -4974,7 +6850,12 @@
     "id": "mare-of-easttown",
     "title": "Mare of Easttown",
     "type": "series",
-    "genre": "Drama",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
     "status": "watched",
     "year": "2021",
     "rating": null,
@@ -4988,6 +6869,11 @@
     "title": "Memory of a Killer",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -4999,7 +6885,12 @@
     "id": "the-outsider",
     "title": "The Outsider",
     "type": "series",
-    "genre": "Mystery",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -5012,6 +6903,9 @@
     "title": "Rooster",
     "type": "series",
     "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5024,6 +6918,11 @@
     "title": "Sacred Lies",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -5036,6 +6935,10 @@
     "title": "Secret Service",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5047,7 +6950,12 @@
     "id": "shining-girls",
     "title": "Shining Girls",
     "type": "series",
-    "genre": "Drama",
+    "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -5060,6 +6968,11 @@
     "title": "Siren's Kiss",
     "type": "series",
     "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Romance",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5072,6 +6985,11 @@
     "title": "The Tudors",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2007",
     "rating": null,
@@ -5083,7 +7001,12 @@
     "id": "westworld",
     "title": "Westworld",
     "type": "series",
-    "genre": "Drama",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -5095,7 +7018,12 @@
     "id": "the-x-files",
     "title": "The X-Files",
     "type": "series",
-    "genre": "Mystery",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Mystery",
+      "Crime"
+    ],
     "status": "watched",
     "year": "1993",
     "rating": null,
@@ -5108,6 +7036,9 @@
     "title": "The Young Pope",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -5120,6 +7051,11 @@
     "title": "Nocturne",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5131,6 +7067,10 @@
     "title": "Remember Me",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2010",
     "rating": null,
@@ -5142,6 +7082,9 @@
     "title": "Mama Bear",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5153,6 +7096,10 @@
     "title": "Way of the Warrior Kid",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5164,6 +7111,9 @@
     "title": "About an Intimate Matter",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "",
     "rating": null,
@@ -5175,6 +7125,10 @@
     "title": "Never After Dark",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5186,6 +7140,10 @@
     "title": "Intruders",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -5197,6 +7155,10 @@
     "title": "Baththa",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5208,6 +7170,10 @@
     "title": "Run Hide Fight: Infidels",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5219,6 +7185,10 @@
     "title": "Drop",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5230,6 +7200,11 @@
     "title": "Uri: The Surgical Strike",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "War",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5241,6 +7216,9 @@
     "title": "Spill",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5252,6 +7230,10 @@
     "title": "A Good Day to Die Hard",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -5263,6 +7245,9 @@
     "title": "The Curse of La Llorona",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5274,6 +7259,10 @@
     "title": "Love of Your Life",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5285,6 +7274,11 @@
     "title": "Tell Me a Story",
     "type": "series",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -5296,6 +7290,10 @@
     "title": "The Wailing",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -5306,7 +7304,12 @@
     "id": "the-assessment",
     "title": "The Assessment",
     "type": "movie",
-    "genre": "Science Fiction",
+    "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2024",
     "rating": null,
@@ -5318,6 +7321,11 @@
     "title": "City of Angels",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1998",
     "rating": null,
@@ -5329,6 +7337,10 @@
     "title": "The Cycle",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5340,6 +7352,11 @@
     "title": "Prime",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2005",
     "rating": null,
@@ -5351,6 +7368,9 @@
     "title": "Ponette",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1996",
     "rating": null,
@@ -5362,6 +7382,10 @@
     "title": "Sorry, Baby",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5373,6 +7397,10 @@
     "title": "Eden",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5384,6 +7412,10 @@
     "title": "The Hunting Wives",
     "type": "series",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5395,6 +7427,10 @@
     "title": "Miracle in Cell No. 7",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -5406,6 +7442,10 @@
     "title": "Follow the Stars Home",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Family"
+    ],
     "status": "to-watch",
     "year": "2001",
     "rating": null,
@@ -5417,6 +7457,9 @@
     "title": "Nayak",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "1966",
     "rating": null,
@@ -5428,6 +7471,10 @@
     "title": "The Glory",
     "type": "series",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -5439,6 +7486,10 @@
     "title": "Bombshell",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5450,6 +7501,10 @@
     "title": "Into the Labyrinth",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5461,6 +7516,10 @@
     "title": "Birth",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2004",
     "rating": null,
@@ -5472,6 +7531,10 @@
     "title": "Truth or Dare",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -5483,6 +7546,10 @@
     "title": "Play Dead",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -5494,6 +7561,11 @@
     "title": "Evil",
     "type": "series",
     "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Horror",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5505,6 +7577,10 @@
     "title": "Brightburn",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5516,6 +7592,11 @@
     "title": "The Crowded Room",
     "type": "series",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -5527,6 +7608,11 @@
     "title": "Where the Crawdads Sing",
     "type": "movie",
     "genre": "Mystery",
+    "genres": [
+      "Mystery",
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -5538,6 +7624,11 @@
     "title": "What Women Want",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Fantasy"
+    ],
     "status": "to-watch",
     "year": "2000",
     "rating": null,
@@ -5549,6 +7640,9 @@
     "title": "Insidious: Out of the Further",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5560,6 +7654,11 @@
     "title": "Mission: Impossible – The Final Reckoning",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5571,6 +7670,11 @@
     "title": "The Killing",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -5582,6 +7686,11 @@
     "title": "Ready or Not",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5593,6 +7702,11 @@
     "title": "River",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2015",
     "rating": null,
@@ -5604,6 +7718,11 @@
     "title": "Lie to Me",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2009",
     "rating": null,
@@ -5615,6 +7734,9 @@
     "title": "Strays",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -5626,6 +7748,11 @@
     "title": "Oppenheimer",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -5637,6 +7764,10 @@
     "title": "Life As We Know It",
     "type": "series",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2004",
     "rating": null,
@@ -5648,6 +7779,10 @@
     "title": "Khauf",
     "type": "series",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5659,6 +7794,11 @@
     "title": "The Ramen Girl",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2008",
     "rating": null,
@@ -5670,6 +7810,11 @@
     "title": "The Last Boy Scout",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Crime",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "1991",
     "rating": null,
@@ -5681,6 +7826,10 @@
     "title": "Serendipity",
     "type": "movie",
     "genre": "Romance",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2001",
     "rating": null,
@@ -5692,6 +7841,10 @@
     "title": "Missing",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -5703,6 +7856,10 @@
     "title": "Steal",
     "type": "series",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5714,6 +7871,10 @@
     "title": "Nocturnal Animals",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -5725,6 +7886,10 @@
     "title": "Gerald's Game",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -5736,6 +7901,10 @@
     "title": "Ode to Joy",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5747,6 +7916,10 @@
     "title": "Level 16",
     "type": "movie",
     "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2018",
     "rating": null,
@@ -5758,6 +7931,11 @@
     "title": "The Forever Purge",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2021",
     "rating": null,
@@ -5769,6 +7947,11 @@
     "title": "Arbitrage",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2012",
     "rating": null,
@@ -5780,6 +7963,9 @@
     "title": "Butchers",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2020",
     "rating": null,
@@ -5791,6 +7977,10 @@
     "title": "The Monkey",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5802,6 +7992,11 @@
     "title": "Mouse",
     "type": "series",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2021",
     "rating": null,
@@ -5813,6 +8008,10 @@
     "title": "The Crown",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "History"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -5824,6 +8023,11 @@
     "title": "The Listener",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2009",
     "rating": null,
@@ -5835,6 +8039,11 @@
     "title": "Hannibal",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -5846,6 +8055,11 @@
     "title": "Heart of the Beast",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Adventure",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5857,6 +8071,10 @@
     "title": "Chithha",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
     "status": "to-watch",
     "year": "2023",
     "rating": null,
@@ -5868,6 +8086,10 @@
     "title": "A Confession",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2019",
     "rating": null,
@@ -5879,6 +8101,10 @@
     "title": "Mr. Brooks",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2007",
     "rating": null,
@@ -5890,6 +8116,10 @@
     "title": "Roman J. Israel, Esq.",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
     "status": "to-watch",
     "year": "2017",
     "rating": null,
@@ -5901,6 +8131,10 @@
     "title": "Woman on Top",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
     "status": "to-watch",
     "year": "2000",
     "rating": null,
@@ -5912,6 +8146,9 @@
     "title": "Shutter",
     "type": "movie",
     "genre": "Horror",
+    "genres": [
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2008",
     "rating": null,
@@ -5923,6 +8160,11 @@
     "title": "The 5th Wave",
     "type": "movie",
     "genre": "Sci-Fi",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -5934,6 +8176,10 @@
     "title": "The Hand That Rocks the Cradle",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
     "status": "to-watch",
     "year": "2025",
     "rating": null,
@@ -5945,6 +8191,10 @@
     "title": "The Altruists",
     "type": "series",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -5956,6 +8206,11 @@
     "title": "From",
     "type": "series",
     "genre": "Horror",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Sci-Fi"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -5967,6 +8222,10 @@
     "title": "Mukti Bhawan",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2016",
     "rating": null,
@@ -5978,6 +8237,11 @@
     "title": "Wild",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Adventure",
+      "Biography"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -5989,6 +8253,11 @@
     "title": "Kiss Kiss Bang Bang",
     "type": "movie",
     "genre": "Comedy",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Mystery"
+    ],
     "status": "to-watch",
     "year": "2005",
     "rating": null,
@@ -6000,6 +8269,11 @@
     "title": "The Good Daughter",
     "type": "series",
     "genre": "Crime",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
@@ -6011,6 +8285,10 @@
     "title": "Kill",
     "type": "movie",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
     "status": "watched",
     "year": "2024",
     "rating": null,
@@ -6022,6 +8300,10 @@
     "title": "Men, Women & Children",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2014",
     "rating": null,
@@ -6033,6 +8315,10 @@
     "title": "Drag",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Comedy"
+    ],
     "status": "to-watch",
     "year": "2027",
     "rating": null,
@@ -6044,6 +8330,10 @@
     "title": "Straw Dogs",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2011",
     "rating": null,
@@ -6055,6 +8345,11 @@
     "title": "Cold Eyes",
     "type": "movie",
     "genre": "Thriller",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Action"
+    ],
     "status": "to-watch",
     "year": "2013",
     "rating": null,
@@ -6066,6 +8361,10 @@
     "title": "Weak Hero",
     "type": "series",
     "genre": "Action",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2022",
     "rating": null,
@@ -6077,6 +8376,9 @@
     "title": "A Fading Man",
     "type": "movie",
     "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
     "status": "to-watch",
     "year": "2026",
     "rating": null,
