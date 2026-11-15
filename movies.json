@@ -4215,11 +4215,12 @@
       "Drama",
       "Thriller"
     ],
-    "status": "to-watch",
+    "status": "watched",
     "year": "2024",
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/ilwO6elz3mLV9CToT7C8pjVeKX0.jpg",
-    "review": ""
+    "review": "",
+    "hallOfFame": true
   },
   {
     "id": "training-day",
