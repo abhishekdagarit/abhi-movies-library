@@ -8385,5 +8385,19 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/38FwsvznEdf9JrDHtikmtcbmLjG.jpg",
     "review": ""
+  },
+  {
+    "id": "swades",
+    "title": "Swades",
+    "type": "movie",
+    "genre": "Drama",
+    "genres": [
+      "Drama"
+    ],
+    "status": "watched",
+    "year": "2004",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/yUSL24kpHc9Nls4Pohia4shgcIM.jpg",
+    "review": ""
   }
 ]
