@@ -6071,5 +6071,16 @@
     "rating": null,
     "poster": "https://image.tmdb.org/t/p/w500/hS9VVF5ffTVWNoC9B48QNsZFGy9.jpg",
     "review": ""
+  },
+  {
+    "id": "a-fading-man",
+    "title": "A Fading Man",
+    "type": "movie",
+    "genre": "Drama",
+    "status": "to-watch",
+    "year": "2026",
+    "rating": null,
+    "poster": "https://image.tmdb.org/t/p/w500/38FwsvznEdf9JrDHtikmtcbmLjG.jpg",
+    "review": ""
   }
 ]
